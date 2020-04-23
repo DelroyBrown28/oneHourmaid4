@@ -16,6 +16,7 @@ $(document).ready(function () {
         $("#deepClean_top_contents_wrapper").animate({
             left: "0"
         })
+        $(".previousbutton").fadeIn();
 
 
     }
@@ -35,6 +36,8 @@ $(document).ready(function () {
         $("#deepClean_top_contents_wrapper").animate({
             left: "400px"
         })
+        $(".previousbutton").fadeOut();
+
 
     }
 
