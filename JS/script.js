@@ -1,6 +1,5 @@
 $(document).ready(function () {
-
-
+    
     $(".nextbutton").click(slideNextDiv);
 
     function slideNextDiv() {
@@ -40,6 +39,7 @@ $(document).ready(function () {
 
 
     }
+
 
 
 })
