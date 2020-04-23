@@ -17,6 +17,16 @@ html {
 
 }
 
+.houdini {
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.appear {
+    opacity: 1;
+    transition: 0.3s;
+}
+
 
 
 @media only screen and (min-device-width : 320px) {
@@ -25,7 +35,8 @@ html {
         overflow: hidden;
     }
 
-    #top_contents_wrapper {
+    #top_contents_wrapper,
+    #deepClean_top_contents_wrapper {
         position: relative;
         width: 100%;
         height: 15%;
@@ -33,10 +44,14 @@ html {
 
     }
 
+    #deepClean_top_contents_wrapper {
+        position: absolute;
+        right: 500px;
+    }
+
     #basicClean_add_wrap {
         position: absolute;
         width: 70%;
-        height: 40%;
         bottom: 5%;
         margin: 0px 15px;
 
@@ -90,6 +105,16 @@ html {
 
     }
 
+    .deepClean_tap_to_select {
+        position: absolute;
+        width: 70%;
+        height: 63%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
     #basicClean_image {
         position: absolute;
         align-self: center;
@@ -103,6 +128,16 @@ html {
         text-align: center;
         bottom: 0;
         font-weight: 400;
+    }
+
+    .deepCleaning_title_big {
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        bottom: 3.3%;
+        font-weight: 400;
+
+
     }
 
     #basicClean_blurb {
@@ -120,8 +155,8 @@ html {
         position: absolute;
         width: 100%;
         height: 70%;
-        left: 500px;
         overflow: hidden;
+        left: 500px;
         bottom: 10%;
         display: flex;
         justify-content: space-evenly;
@@ -139,6 +174,7 @@ html {
         position: absolute;
         color: #fff;
         text-align: center;
+        margin: ;
         font-weight: 100;
         font-size: 15px;
         bottom: 11%;
@@ -200,16 +236,25 @@ html {
 
 }
 
-    /*---HOVERS AND SUCH---*/
+/*---HOVERS AND SUCH---*/
 
-    .addButton:active {
-        background-color: rgb(143, 116, 69);
-    }
+.addButton:active {
+    background-color: rgb(143, 116, 69);
+}
 
-    .tap_to_select:active > .cleaning_title_big {
-        color: #EDC681;
-    }
+.tap_to_select:active>.cleaning_title_big {
+    color: #EDC681;
+}
 
-    .nextbutton:active>.rightArrow {
-        transform: translateX(20px);
-    }
+.deepClean_tap_to_select:active> .deepCleaning_title_big {
+    color: #EDC681;
+}
+
+
+.nextbutton:active>.rightArrow {
+    transform: translateX(20px);
+}
+
+.previousbutton:active > .leftArrow {
+    transform: translateX(20px);
+}
