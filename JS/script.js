@@ -3,6 +3,7 @@ $(document).ready(function () {
     $(".nextbutton").click(slideNextDiv);
 
     function slideNextDiv() {
+        
         $("#basicleanslider_contents_wrapper").animate({
             right: "500px",
         });
