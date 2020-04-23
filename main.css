@@ -72,7 +72,9 @@ html {
         overflow: hidden;
         top: 5%;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        
+        
         
     }
 
@@ -118,15 +120,14 @@ html {
         overflow: hidden;
         bottom: 10%;
         display: flex;
+        justify-content: space-evenly;
         visibility: hidden;
-        justify-content: center;
-        border: 1px solid white;
     }
 
     #deepClean_image {
         position: absolute;
         align-self: center;
-        top: 0;
+        top: 5%;
         height: 120px;
     }
 
