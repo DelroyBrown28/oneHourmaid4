@@ -1,0 +1,120 @@
+body,
+html {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Lato', sans-serif;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #131212, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #131212, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+@media only screen and (min-device-width : 320px) {
+
+    
+    #top_contents_wrapper {
+        position: relative;
+        width: 100%;
+        height: 20%;
+        
+        
+    }
+
+    #basicClean_add_wrap {
+        position: absolute;
+        width: 70%;
+        height: 40%;
+        bottom: 5%;
+        margin: 0px 15px;
+        
+    }
+
+    .cleaning_type_title {
+        position: relative;
+        margin: 0;
+        color: #EDC681;
+        font-weight: 300;
+        font-size: 22px;
+    }
+
+    .title_subtext {
+        color: #fff;
+        font-weight: 200;
+        font-size: 10px;
+    }
+
+    .addButton {
+        position: absolute;
+        right: 5%;
+        bottom: 20%;
+        border: none;
+        padding: 5px 15px;
+        font-size: 15px;
+        background-color: #EDC681;
+    }
+
+    /*---CENTER CONTENTS---*/
+
+    #slider_contents_wrapper {
+        position: relative;
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tap_to_select {
+        position: absolute;
+        width: 70%;
+        height: 55%;
+        display: flex;
+        justify-content: center;
+        border: 1px solid white;
+    }
+
+    #basicClean_image {
+        position: absolute;
+        align-self: center;
+        top: 5%;
+        height: 120px;
+    }
+
+    .cleaning_title_big {
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        bottom: 0;
+        font-weight: 400;
+    }
+
+    #basicClean_blurb {
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        font-weight: 100;
+        font-size: 15px;
+        bottom: 19%;
+
+
+    }
+
+
+    /*---HOVERS AND SUCH---*/
+
+    .addButton:active {
+        background-color: rgb(143, 116, 69);
+    }
+
+    
+}
