@@ -117,11 +117,12 @@ html {
         position: absolute;
         width: 100%;
         height: 70%;
+        left: 500px;
         overflow: hidden;
         bottom: 10%;
         display: flex;
         justify-content: space-evenly;
-        visibility: hidden;
+        
     }
 
     #deepClean_image {
@@ -187,16 +188,9 @@ html {
         height: 45px;
         align-self: center;
         left: 0;
+        transition: 0.3s;
 
     }
-
-    .leftArrow {
-        a
-    }
-
-
-
-
 
 
     /*---HOVERS AND SUCH---*/
@@ -207,6 +201,10 @@ html {
 
     .tap_to_select:active {
         border: 1px solid #EDC681;
+    }
+
+    .nextbutton:active > .rightArrow {
+        transform: translateX(20px);
     }
 
 
