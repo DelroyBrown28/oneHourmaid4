@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+
+
     $(".nextbutton").click(slideNextDiv);
 
     function slideNextDiv() {
@@ -9,8 +11,9 @@ $(document).ready(function () {
         });
         $("#deepcleanslider_contents_wrapper").animate({
             left: "0",
-        });
-    }
+        }).end();
+
+    };
 
     $(".previousbutton").click(slidePreviousDiv);
 
@@ -20,8 +23,10 @@ $(document).ready(function () {
         });
         $("#deepcleanslider_contents_wrapper").animate({
             left: "500px",
-        });
+        })
+        
         
 
-    }
+    };
+
 })
