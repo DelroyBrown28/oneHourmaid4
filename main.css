@@ -17,6 +17,14 @@ html {
 
 }
 
+.houdini {
+    visibility: hidden;
+}
+
+.noHoudini {
+    visibility: visible;
+}
+
 
 
 @media only screen and (min-device-width : 320px) {
@@ -36,7 +44,6 @@ html {
 
     #deepClean_top_contents_wrapper {
         position: absolute;
-        right: 500px;
     }
 
     #basicClean_add_wrap {
@@ -147,10 +154,10 @@ html {
         width: 100%;
         height: 70%;
         overflow: hidden;
-        left: 500px;
-        bottom: 10%;
+        bottom: 10%;  
         display: flex;
         justify-content: space-evenly;
+        
 
     }
 
@@ -173,8 +180,6 @@ html {
     }
 
 
-
-
     .next_prev_buttonWrap {
         position: relative;
         margin-bottom: 10px;
@@ -183,25 +188,27 @@ html {
         justify-content: center;
     }
 
-    .nextbutton {
-        position: absolute;
-        width: 60px;
-        height: 60px;
+    #toBasicClean_button,
+    #toDeepClean_button,
+    #toMovingInOut_button {
+        position: relative;
+        width: 25px;
+        height: 25px;
         border-radius: 100px;
         align-self: center;
         background-color: #EDC681;
-        display: flex;
-        justify-content: center;
 
+    }
 
-
+    #toDeepClean_button {
+        margin: 0px 50px;
     }
 
     .previousbutton {
         position: absolute;
         width: 60px;
         height: 60px;
-        align-self: center;
+        top: 25%;
         left: 15px;
         display: flex;
         justify-content: center;
@@ -249,3 +256,4 @@ html {
 .previousbutton:active>.leftArrow {
     transform: translateX(20px);
 }
+

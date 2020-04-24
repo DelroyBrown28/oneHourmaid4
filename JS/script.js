@@ -1,45 +1,21 @@
 $(document).ready(function () {
-    
-    $(".nextbutton").click(slideNextDiv);
 
-    function slideNextDiv() {
-        $("#basicleanslider_contents_wrapper").animate({
-            left: "400px",
-        });
-        $("#top_contents_wrapper").animate({
-            left: "400px"
-        })
-        $("#deepcleanslider_contents_wrapper").animate({
-            left: "0",
-        })
-        $("#deepClean_top_contents_wrapper").animate({
-            left: "0"
-        })
-        $(".previousbutton").fadeIn();
+    //KEEPS DEEP CLEAN CONTENTS HIDDEN UNTIL CALLED FOR
+    document.getElementById("deepcleanslider_contents_wrapper").style.visibility = "hidden";
 
+
+    $("#toDeepClean_button").click(toDeepClean);
+    function toDeepClean() {
+        $("#basicleanslider_contents_wrapper").addClass("houdini");
+        $("#deepcleanslider_contents_wrapper").css("visibility", "visible");
 
     }
 
-    $(".previousbutton").click(previousDiv);
-
-    function previousDiv() {
-        $("#basicleanslider_contents_wrapper").animate({
-            left: "0",
-        });
-        $("#top_contents_wrapper").animate({
-            left: "0"
-        })
-        $("#deepcleanslider_contents_wrapper").animate({
-            left: "400px",
-        })
-        $("#deepClean_top_contents_wrapper").animate({
-            left: "400px"
-        })
-        $(".previousbutton").fadeOut();
-
+    $("#toBasicClean_button").click(toBasicClean);
+    function toBasicClean() {
+        $("#deepcleanslider_contents_wrapper").css("visibility", "hidden");
+        $("#basicleanslider_contents_wrapper").css("visibility", "visible");
 
     }
-
-
 
 })
