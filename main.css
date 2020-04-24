@@ -8,23 +8,12 @@ html {
     display: flex;
     flex-flow: column;
     font-family: 'Lato', sans-serif;
-    background: #000000;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #131212, #000000);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #131212, #000000);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-color: #181717;
 }
 
-.houdini {
-    visibility: hidden;
+a {
+    position: relative;
 }
-
-.noHoudini {
-    visibility: visible;
-}
-
 
 
 @media only screen and (min-device-width : 320px) {
@@ -39,7 +28,6 @@ html {
         position: relative;
         width: 100%;
         height: 15%;
-
 
     }
 
@@ -83,7 +71,7 @@ html {
         background-color: #EDC681;
     }
 
-    /*---CENTER CONTENTS---*/
+    /*-----------------BASIC CLEAN CONTENTS-----------------*/
 
 
     #basicleanslider_contents_wrapper {
@@ -108,12 +96,96 @@ html {
 
     }
 
+    #basicClean_image {
+        position: absolute;
+        align-self: center;
+        top: 5%;
+        height: 120px;
+    }
+
+
+    .cleaning_title_big {
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        bottom: 0;
+        font-weight: 400;
+    }
+
+    #basicClean_blurb {
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        font-weight: 100;
+        font-size: 15px;
+        bottom: 11%;
+
+
+    }
+
+    /*-----------------DEEP CLEAN CONTENTS-----------------*/
+
+    #deepcleanslider_contents_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        overflow: hidden;
+        bottom: 10%;
+        display: flex;
+        justify-content: space-evenly;
+
+
+    }
+
+
     .deepClean_tap_to_select {
         position: absolute;
         width: 70%;
         height: 63%;
         display: flex;
         justify-content: center;
+
+    }
+
+    #deepClean_image {
+        position: absolute;
+        align-self: center;
+        top: 5%;
+        height: 120px;
+    }
+
+    .deepCleaning_title_big {
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        bottom: 3.3%;
+        font-weight: 400;
+
+
+    }
+
+    #deepClean_blurb {
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        font-weight: 100;
+        font-size: 15px;
+        bottom: 11%;
+
+
+    }
+
+    /*-----------------MOVING IN/OUT CONTENTS-----------------*/
+
+
+    #movingInOutslider_contents_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        overflow: hidden;
+        bottom: 10%;
+        display: flex;
+        justify-content: space-evenly;
 
     }
 
@@ -134,33 +206,6 @@ html {
     }
 
 
-
-
-    #basicClean_image {
-        position: absolute;
-        align-self: center;
-        top: 5%;
-        height: 120px;
-    }
-
-    .cleaning_title_big {
-        position: absolute;
-        color: #fff;
-        text-align: center;
-        bottom: 0;
-        font-weight: 400;
-    }
-
-    .deepCleaning_title_big {
-        position: absolute;
-        color: #fff;
-        text-align: center;
-        bottom: 3.3%;
-        font-weight: 400;
-
-
-    }
-
     .movingInOut_title_big {
         position: absolute;
         color: #fff;
@@ -169,51 +214,8 @@ html {
         font-weight: 400;
 
 
-
     }
 
-
-    #basicClean_blurb {
-        position: absolute;
-        color: #fff;
-        text-align: center;
-        font-weight: 100;
-        font-size: 15px;
-        bottom: 11%;
-
-
-    }
-
-    #deepcleanslider_contents_wrapper {
-        position: absolute;
-        width: 100%;
-        height: 70%;
-        overflow: hidden;
-        bottom: 10%;
-        display: flex;
-        justify-content: space-evenly;
-
-
-
-    }
-
-    #deepClean_image {
-        position: absolute;
-        align-self: center;
-        top: 5%;
-        height: 120px;
-    }
-
-    #deepClean_blurb {
-        position: absolute;
-        color: #fff;
-        text-align: center;
-        font-weight: 100;
-        font-size: 15px;
-        bottom: 11%;
-
-
-    }
 
     #movingInOut_blurb {
         position: absolute;
@@ -226,21 +228,7 @@ html {
 
     }
 
-
-    #movingInOutslider_contents_wrapper {
-        position: absolute;
-        width: 100%;
-        height: 70%;
-        overflow: hidden;
-        bottom: 10%;
-        display: flex;
-        justify-content: space-evenly;
-
-        
-
-
-    }
-
+    /*-----------------NEXT BUTTONS-----------------*/
 
 
     .next_prev_buttonWrap {
@@ -267,31 +255,121 @@ html {
         margin: 0px 50px;
     }
 
-    .previousbutton {
-        position: absolute;
-        width: 60px;
-        height: 60px;
-        top: 25%;
-        left: 15px;
+
+    /*-----------------** HOW MANY ROOMS START **-----------------*/
+
+
+
+    #rooms_topContents_wrapper {
+        position: relative;
+        width: 100%;
+        height: 15%;
         display: flex;
         justify-content: center;
-        display: none;
-
+        flex-flow: column;
 
 
     }
 
-
-    .rightArrow,
-    .leftArrow {
-        position: absolute;
-        height: 45px;
+    .rooms_title {
+        position: relative;
+        color: #EDC681;
+        font-weight: 200;
+        font-size: 22px;
+        margin: 0;
+        height: 36%;
         align-self: center;
-        left: 0;
-        transition: 0.3s;
+    }
+
+    .rooms_titleSubtext {
+        position: relative;
+        color: #fff;
+        font-weight: 200;
+        text-align: center;
+    }
+
+
+    #center_counters_wrap {
+        position: relative;
+        height: 75%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+
 
     }
 
+
+    .smallTitle {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 5%;
+        top: 0;
+        color: #fff;
+        z-index: 1;
+    }
+
+    #bedrooms_counter_wrap {
+        position: relative;
+        width: 100%;
+        height: 30%;
+        flex-flow: column;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .roomsWrap {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+
+    }
+
+    #addRoom,
+    #subtractRoom {
+        position: relative;
+        color: #EDC681;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        width: 40%;
+
+    }
+
+    #addRoom {
+        border-radius: 50px 0px 0px 50px;
+        background: #181717;
+        box-shadow:  -12px 12px 23px #121212, 
+                     12px -12px 23px #1e1c1c;
+
+    }
+
+    #subtractRoom {
+        border-radius: 0px 50px 50px 0px;
+        background: #181717;
+        box-shadow:  -12px 12px 23px #121212, 
+                     12px -12px 23px #1e1c1c;    }
+
+
+    #rooms_amount {
+        position: absolute;
+        border: none;
+        border-bottom: 1px solid #EDC681;
+        width: 75%;
+        height: 20%;
+        background: transparent;
+        outline: none;
+        bottom: 20%;
+        font-size: 20px;
+        text-align: center;
+
+    }
 
 
 
@@ -311,6 +389,11 @@ html {
     color: #EDC681;
 }
 
+.movingInOut_tap_to_select:active>.movingInOut_title_big {
+    color: #EDC681;
+}
+
+
 
 .nextbutton:active>.rightArrow {
     transform: translateX(20px);
@@ -318,4 +401,22 @@ html {
 
 .previousbutton:active>.leftArrow {
     transform: translateX(20px);
+}
+
+#addRoom:active {
+    border-radius: 100px 0px 0px 100px;
+    background: #181717;
+    box-shadow: inset -13px 13px 26px #121111,
+        inset 13px -13px 26px #1e1d1d;
+    color: #EDC68180;
+}
+
+#subtractRoom:active {
+    border-radius: 0px 100px 100px 0px;
+    background: #181717;
+    box-shadow: inset -13px 13px 26px #121111,
+        inset 13px -13px 26px #1e1d1d;
+    color: #EDC68180;
+
+
 }
