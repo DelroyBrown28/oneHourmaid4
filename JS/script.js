@@ -53,7 +53,11 @@ $(document).ready(function () {
 
     }
 
+    var i = 0;
+
+    function buttonClick() {
+        document.getElementById('rooms_amount').value = ++i;
+    }
 
 
 })
-
