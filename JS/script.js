@@ -53,11 +53,27 @@ $(document).ready(function () {
 
     }
 
-    var i = 0;
-
-    function buttonClick() {
-        document.getElementById('rooms_amount').value = ++i;
-    }
 
 
 })
+
+$(document).ready(function () {
+    const minus = $(".subtractRoom1");
+    const plus = $(".addRoom");
+    const input = $(".rooms_amount");
+    minus.click(function (e) {
+        e.preventDefault();
+        var value = input.val();
+        if (value > 0) {
+            value--;
+        }
+        input.val(value);
+    });
+
+    plus.click(function (e) {
+        e.preventDefault();
+        var value = input.val();
+        value++;
+        input.val(value);
+    });
+});

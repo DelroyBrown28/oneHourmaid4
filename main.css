@@ -329,8 +329,8 @@ a {
 
     }
 
-    #addRoom,
-    #subtractRoom {
+    .addRoom,
+    .subtractRoom {
         position: relative;
         color: #EDC681;
         font-size: 2em;
@@ -342,7 +342,7 @@ a {
 
     }
 
-    #addRoom {
+    .addRoom {
         border-radius: 50px 0px 0px 50px;
         background: #181717;
         box-shadow:  -12px 12px 23px #121212, 
@@ -350,14 +350,14 @@ a {
 
     }
 
-    #subtractRoom {
+    .subtractRoom {
         border-radius: 0px 50px 50px 0px;
         background: #181717;
         box-shadow:  -12px 12px 23px #121212, 
                      12px -12px 23px #1e1c1c;    }
 
 
-    #rooms_amount {
+    .rooms_amount {
         position: absolute;
         border: none;
         border-bottom: 1px solid #EDC681;
@@ -404,7 +404,7 @@ a {
     transform: translateX(20px);
 }
 
-#addRoom:active {
+.addRoom:active {
     border-radius: 100px 0px 0px 100px;
     background: #181717;
     box-shadow: inset -13px 13px 26px #121111,
@@ -412,7 +412,7 @@ a {
     color: #EDC68180;
 }
 
-#subtractRoom:active {
+.subtractRoom:active {
     border-radius: 0px 100px 100px 0px;
     background: #181717;
     box-shadow: inset -13px 13px 26px #121111,
