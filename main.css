@@ -387,8 +387,8 @@ a {
 
     }
 
-    .nextButton_toForm,
-    .previousButton_toForm {
+    #nextButton_toForm,
+    #previousButton {
         position: absolute;
         width: 50px;
         height: 50px;
@@ -403,7 +403,7 @@ a {
 
     }
 
-    .previousButton_toForm {
+    #previousButton {
         left: 40px;
         background-color: transparent;
     }
@@ -417,6 +417,7 @@ a {
         left: 0;
         transition: 0.1s;
 
+        
 
     }
 
@@ -478,10 +479,10 @@ a {
 
 }
 
-.nextButton_toForm:active>.right_arrow_button {
+#nextButton_toForm:active>.right_arrow_button {
     transform: translateX(15px);
 }
 
-.previousButton_toForm:active>.left_arrow_button {
+#previousButton:active>.left_arrow_button {
     transform: translateX(15px);
 }

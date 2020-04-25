@@ -72,6 +72,17 @@ $(document).ready(function () {
 
     }
 
+    $("#previousButton").click(previousPage);
+
+    function previousPage() {
+
+        window.open("./index.html");
+
+
+    }
+
+
+
 
 
 })
