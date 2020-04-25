@@ -1,5 +1,27 @@
 $(document).ready(function () {
 
+    //INCREMENTS ROOMS BY 1
+
+    const minus = $(".subtractRoom");
+    const plus = $(".addRoom");
+    const input = $(".rooms_amount");
+    minus.click(function (e) {
+        e.preventDefault();
+        var value = input.val();
+        if (value > 0) {
+            value--;
+        }
+        input.val(value);
+    });
+
+    plus.click(function (e) {
+        e.preventDefault();
+        var value = input.val();
+        value++;
+        input.val(value);
+    });
+
+
     //KEEPS CONTENTS HIDDEN UNTIL CALLED FOR
     document.getElementById("deepcleanslider_contents_wrapper").style.visibility = "hidden";
     document.getElementById("deepClean_top_contents_wrapper").style.visibility = "hidden";
@@ -15,7 +37,6 @@ $(document).ready(function () {
         $("#movingInOutslider_contents_wrapper").css("visibility", "hidden");
         $("#movingInOut_top_contents_wrapper").css("visibility", "hidden");
 
-
         $("#basicleanslider_contents_wrapper").css("visibility", "visible");
         $("#top_contents_wrapper").css("visibility", "visible");
 
@@ -24,13 +45,11 @@ $(document).ready(function () {
 
     $("#toDeepClean_button").click(toDeepClean);
 
-
     function toDeepClean() {
         $("#basicleanslider_contents_wrapper").css("visibility", "hidden");
         $("#top_contents_wrapper").css("visibility", "hidden");
         $("#movingInOutslider_contents_wrapper").css("visibility", "hidden");
         $("#movingInOut_top_contents_wrapper").css("visibility", "hidden");
-
 
         $("#deepcleanslider_contents_wrapper").css("visibility", "visible");
         $("#deepClean_top_contents_wrapper").css("visibility", "visible");
@@ -56,24 +75,3 @@ $(document).ready(function () {
 
 
 })
-
-$(document).ready(function () {
-    const minus = $(".subtractRoom1");
-    const plus = $(".addRoom");
-    const input = $(".rooms_amount");
-    minus.click(function (e) {
-        e.preventDefault();
-        var value = input.val();
-        if (value > 0) {
-            value--;
-        }
-        input.val(value);
-    });
-
-    plus.click(function (e) {
-        e.preventDefault();
-        var value = input.val();
-        value++;
-        input.val(value);
-    });
-});

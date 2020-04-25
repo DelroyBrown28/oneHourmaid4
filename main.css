@@ -291,10 +291,11 @@ a {
 
     #center_counters_wrap {
         position: relative;
-        height: 75%;
+        height: 70%;
         display: flex;
         justify-content: space-between;
         flex-flow: column;
+
 
 
     }
@@ -318,6 +319,7 @@ a {
         display: flex;
         align-items: center;
 
+
     }
 
     .roomsWrap {
@@ -326,6 +328,7 @@ a {
         display: flex;
         justify-content: center;
         height: 100%;
+
 
     }
 
@@ -345,16 +348,17 @@ a {
     .addRoom {
         border-radius: 50px 0px 0px 50px;
         background: #181717;
-        box-shadow:  -12px 12px 23px #121212, 
-                     12px -12px 23px #1e1c1c;
+        box-shadow: -12px 12px 23px #121212,
+            12px -12px 23px #1e1c1c;
 
     }
 
     .subtractRoom {
         border-radius: 0px 50px 50px 0px;
         background: #181717;
-        box-shadow:  -12px 12px 23px #121212, 
-                     12px -12px 23px #1e1c1c;    }
+        box-shadow: -12px 12px 23px #121212,
+            12px -12px 23px #1e1c1c;
+    }
 
 
     .rooms_amount {
@@ -369,6 +373,58 @@ a {
         font-size: 20px;
         text-align: center;
         color: #fff;
+
+    }
+
+    .nextPrevious_button_wrap {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 17%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .nextButton_toForm,
+    .previousButton_toForm {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        border: none;
+        background-color: #EDC681;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .previousButton_toForm {
+        left: 40px;
+        background-color: transparent;
+    }
+
+    .left_arrow_button {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 100px;
+        border: none;
+        left: 0;
+        transition: 0.1s;
+
+
+    }
+
+    .right_arrow_button {
+        position: absolute;
+        left: 0;
+        height: 35px;
+        transition: 0.1s;
 
     }
 
@@ -420,4 +476,12 @@ a {
     color: #EDC68180;
 
 
+}
+
+.nextButton_toForm:active>.right_arrow_button {
+    transform: translateX(15px);
+}
+
+.previousButton_toForm:active>.left_arrow_button {
+    transform: translateX(15px);
 }
