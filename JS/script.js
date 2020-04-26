@@ -52,9 +52,7 @@ $(document).ready(function () {
 
 });
 
-//INCREMENTS ROOMS BY 1
-
-
+//INCREMENTS/DECREMENTS BEDROOMS BY 1
 function plusOneBedrooms() {
     var addRoom = document.getElementById('rooms_amount_bedroom');
     value = parseInt(addRoom.getAttribute('value'), 10) + 1;
@@ -71,6 +69,7 @@ function minusOneBedrooms() {
 
 }
 
+//INCREMENTS/DECREMENTS BATHROOMS BY 1
 function plusOneBathrooms() {
     var addRoom = document.getElementById('rooms_amount_bathrooms');
     value = parseInt(addRoom.getAttribute('value'), 10) + 1;
@@ -86,7 +85,7 @@ function minusOneBathrooms() {
     subtractRoom.innerHTML = value;
 
 }
-
+//INCREMENTS/DECREMENTS KITCHENS BY 1
 function plusOneKitchens() {
     var addRoom = document.getElementById('rooms_amount_kitchens');
     value = parseInt(addRoom.getAttribute('value'), 10) + 1;
