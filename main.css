@@ -518,6 +518,23 @@ a {
         font-size: 1.2em;
         text-transform: uppercase;
         transition: 0.1s;
+        
+    }
+
+    .backToPrevious {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .backToPreviousButton {
+        position: absolute;
+        height: 30px;
+        top: 33%;
+        left: 30px;
+        transition: 0.1s;
+        
     }
 
     textarea::-webkit-input-placeholder {
@@ -647,4 +664,8 @@ a {
 .findcleaner_button:active {
     color: #000;
     background-color: #EDC681;
+}
+
+.backToPreviousButton:active {
+    transform: translateX(20px);
 }

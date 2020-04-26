@@ -72,5 +72,11 @@ $(document).ready(function () {
 
     }
 
+    $(".findcleaner_button").mouseenter(showPreviousButton);
+
+    function showPreviousButton() {
+        $(".backToPreviousButton").fadeIn();
+    }
+
 
 });
