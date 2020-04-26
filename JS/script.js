@@ -2,9 +2,9 @@ $(document).ready(function () {
 
     //INCREMENTS ROOMS BY 1
 
-    const minus = $(".subtractRoom");
-    const plus = $(".addRoom");
-    const input = $(".rooms_amount");
+    var minus = $(".subtractRoom");
+    var plus = $(".addRoom");
+    var input = $(".rooms_amount");
     minus.click(function (e) {
         e.preventDefault();
         var value = input.val();
@@ -72,17 +72,5 @@ $(document).ready(function () {
 
     }
 
-    $("#previousButton").click(previousPage);
 
-    function previousPage() {
-
-        window.open("./index.html");
-
-
-    }
-
-
-
-
-
-})
+});

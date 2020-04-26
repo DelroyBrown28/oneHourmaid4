@@ -289,6 +289,9 @@ a {
     }
 
 
+    /*-----------------CENTER COUNTERS-----------------*/
+
+
     #center_counters_wrap {
         position: relative;
         height: 70%;
@@ -376,6 +379,9 @@ a {
 
     }
 
+    /*-----------------NEXT BUTTONS-----------------*/
+
+
     .nextPrevious_button_wrap {
         position: relative;
         bottom: 0;
@@ -417,7 +423,7 @@ a {
         left: 0;
         transition: 0.1s;
 
-        
+
 
     }
 
@@ -428,6 +434,136 @@ a {
         transition: 0.1s;
 
     }
+
+
+    /*-----------------** CONTACT FORM **-----------------*/
+
+
+
+    .locationDetails_title {
+        position: relative;
+        color: #EDC681;
+        font-weight: 200;
+        font-size: 22px;
+        margin: 0;
+        height: 36%;
+        align-self: center;
+    }
+
+    .contact_form {
+        position: relative;
+        height: 70%;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        flex-flow: column;
+
+    }
+
+
+
+    .form_inputs {
+        position: relative;
+        width: 70%;
+        height: 20px;
+        border: none;
+        border-bottom: 1px solid #EDC681;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        padding-left: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+    }
+
+    .cleaningLocationTitle {
+        position: relative;
+        color: #EDC681;
+        font-weight: 300;
+        margin: 0;
+        margin-left: 40px;
+        align-self: flex-start;
+    }
+
+    .short_description_box {
+        position: relative;
+        width: 70%;
+        height: 20%;
+        border: none;
+        border: 1px solid #EDC681;
+        background-color: transparent;
+        color: #fff;
+        padding: 7px;
+
+    }
+
+    textarea::-webkit-input-placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea:-moz-placeholder {
+        /* Firefox 18- */
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea:-ms-input-placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea::placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    ::-webkit-input-placeholder {
+        /* Edge */
+        color: #ffffff;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #ffffff;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    ::placeholder {
+        color: #ffffff;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+
+    }
+
 
 
 
