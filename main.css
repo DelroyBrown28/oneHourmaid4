@@ -248,6 +248,8 @@ a {
         border-radius: 100px;
         align-self: center;
         background-color: #EDC681;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
 
     }
 
@@ -439,6 +441,25 @@ a {
     /*-----------------** CONTACT FORM **-----------------*/
 
 
+    /*--------BACK TO PREVIOS PAGE--------*/
+
+
+    .backToPrevious {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .backToPreviousButton {
+        position: absolute;
+        height: 30px;
+        top: 33%;
+        left: 30px;
+        transition: 0.1s;
+
+    }
+
 
     .locationDetails_title {
         position: relative;
@@ -450,10 +471,12 @@ a {
         align-self: center;
     }
 
+    /*-----------------FORM START-----------------*/
+
+
     .contact_form {
         position: relative;
         height: 70%;
-        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -499,9 +522,11 @@ a {
 
     }
 
+    /*-----------------BOTTOM BUTTON-----------------*/
+
+
     .findcleaner_buttonWrap {
         position: relative;
-        
         height: 15%;
 
     }
@@ -518,24 +543,12 @@ a {
         font-size: 1.2em;
         text-transform: uppercase;
         transition: 0.1s;
-        
-    }
-
-    .backToPrevious {
-        position: absolute;
-        height: 100%;
-        width: 100%;
 
     }
 
-    .backToPreviousButton {
-        position: absolute;
-        height: 30px;
-        top: 33%;
-        left: 30px;
-        transition: 0.1s;
-        
-    }
+
+    /*-----------------FORM PLACEHOLDERS-----------------*/
+
 
     textarea::-webkit-input-placeholder {
         color: #fff;
@@ -603,8 +616,6 @@ a {
     }
 
 
-
-
 }
 
 /*---HOVERS AND SUCH---*/
@@ -668,4 +679,11 @@ a {
 
 .backToPreviousButton:active {
     transform: translateX(20px);
+}
+
+#toBasicClean_button:active,
+#toDeepClean_button:active,
+#toMovingInOut_button:active {
+    animation-name: flash;
+    background-color: #fff;
 }
