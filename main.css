@@ -11,9 +11,15 @@ html {
     background-color: #181717;
 }
 
+* {
+    cursor: ;
+}
+
 a {
     position: relative;
 }
+
+
 
 
 @media only screen and (min-device-width : 320px) {
@@ -351,6 +357,7 @@ a {
 
     }
 
+
     .addRoom {
         border-radius: 50px 0px 0px 50px;
         background: #181717;
@@ -367,7 +374,9 @@ a {
     }
 
 
-    .rooms_amount {
+    #rooms_amount_bedroom,
+    #rooms_amount_bathrooms,
+    #rooms_amount_kitchens {
         position: absolute;
         border: none;
         border-bottom: 1px solid #EDC681;
@@ -381,6 +390,8 @@ a {
         color: #fff;
 
     }
+
+
 
     /*-----------------NEXT BUTTONS-----------------*/
 

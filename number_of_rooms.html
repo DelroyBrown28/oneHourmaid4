@@ -24,19 +24,19 @@
         <small class="smallTitle">Bedrooms</small>
         <div id="bedrooms_counter_wrap">
             <div class="roomsWrap">
-                <div class="addRoom">+</div>
-                <div class="subtractRoom">-</div>
-                <input class="rooms_amount" value="0" placeholder="0" type="number" autocomplete="off" placeholder="0"
-                    required>
+                <div class="addRoom" onclick="plusOneBedrooms()">+</div>
+                <div class="subtractRoom" onclick="minusOneBedrooms()">-</div>
+                <input id="rooms_amount_bedroom" value="0" placeholder="0" type="number" autocomplete="off"
+                    placeholder="0" required>
             </div>
         </div>
 
         <small class="smallTitle">Bathrooms</small>
         <div id="bedrooms_counter_wrap">
             <div class="roomsWrap">
-                <div class="addRoom">+</div>
-                <div class="subtractRoom subtractRoom2">-</div>
-                <input class="rooms_amount" value="0" type="number" autocomplete="off" placeholder="0" required>
+                <div class="addRoom" onclick="plusOneBathrooms()">+</div>
+                <div class="subtractRoom" onclick="minusOneBathrooms()">-</div>
+                <input id="rooms_amount_bathrooms" value="0" type="number" autocomplete="off" placeholder="0" required>
 
             </div>
         </div>
@@ -44,9 +44,9 @@
         <small class="smallTitle">Kitchens</small>
         <div id="bedrooms_counter_wrap">
             <div class="roomsWrap">
-                <div class="addRoom">+</div>
-                <div class="subtractRoom subtractRoom3">-</div>
-                <input class="rooms_amount" value="0" type="number" autocomplete="off" placeholder="0" required>
+                <div class="addRoom" onclick="plusOneKitchens()">+</div>
+                <div class="subtractRoom" onclick="minusOneKitchens()">-</div>
+                <input id="rooms_amount_kitchens" value="0" type="number" autocomplete="off" placeholder="0" required>
 
             </div>
 
@@ -55,9 +55,9 @@
 
     <div class="nextPrevious_button_wrap">
 
-            <button id="nextButton_toForm" onClick="location.href='contact_form.html'">
-                <img src="./images/rightarrow.png" class="right_arrow_button" alt="">
-            </button>
+        <button id="nextButton_toForm" onClick="location.href='contact_form.html'">
+            <img src="./images/rightarrow.png" class="right_arrow_button" alt="">
+        </button>
 
         <button id="previousButton" onClick="location.href='index.html'">
             <img src="./images/arrowleft.png" class="left_arrow_button" alt="">

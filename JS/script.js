@@ -1,27 +1,5 @@
 $(document).ready(function () {
 
-    //INCREMENTS ROOMS BY 1
-
-    var minus = $(".subtractRoom");
-    var plus = $(".addRoom");
-    var input = $(".rooms_amount");
-    minus.click(function (e) {
-        e.preventDefault();
-        var value = input.val();
-        if (value > 0) {
-            value--;
-        }
-        input.val(value);
-    });
-
-    plus.click(function (e) {
-        e.preventDefault();
-        var value = input.val();
-        value++;
-        input.val(value);
-    });
-
-
     //KEEPS CONTENTS HIDDEN UNTIL CALLED FOR
     document.getElementById("deepcleanslider_contents_wrapper").style.visibility = "hidden";
     document.getElementById("deepClean_top_contents_wrapper").style.visibility = "hidden";
@@ -72,11 +50,55 @@ $(document).ready(function () {
 
     }
 
-    $(".findcleaner_button").mouseenter(showPreviousButton);
-
-    function showPreviousButton() {
-        $(".backToPreviousButton").fadeIn();
-    }
-
-
 });
+
+//INCREMENTS ROOMS BY 1
+
+
+function plusOneBedrooms() {
+    var addRoom = document.getElementById('rooms_amount_bedroom');
+    value = parseInt(addRoom.getAttribute('value'), 10) + 1;
+    addRoom.setAttribute('value', value);
+    addRoom.innerHTML = value;
+
+}
+
+function minusOneBedrooms() {
+    var subtractRoom = document.getElementById('rooms_amount_bedroom');
+    value = parseInt(subtractRoom.getAttribute('value'), 10) - 1;
+    subtractRoom.setAttribute('value', value);
+    subtractRoom.innerHTML = value;
+
+}
+
+function plusOneBathrooms() {
+    var addRoom = document.getElementById('rooms_amount_bathrooms');
+    value = parseInt(addRoom.getAttribute('value'), 10) + 1;
+    addRoom.setAttribute('value', value);
+    addRoom.innerHTML = value;
+
+}
+
+function minusOneBathrooms() {
+    var subtractRoom = document.getElementById('rooms_amount_bathrooms');
+    value = parseInt(subtractRoom.getAttribute('value'), 10) - 1;
+    subtractRoom.setAttribute('value', value);
+    subtractRoom.innerHTML = value;
+
+}
+
+function plusOneKitchens() {
+    var addRoom = document.getElementById('rooms_amount_kitchens');
+    value = parseInt(addRoom.getAttribute('value'), 10) + 1;
+    addRoom.setAttribute('value', value);
+    addRoom.innerHTML = value;
+
+}
+
+function minusOneKitchens() {
+    var subtractRoom = document.getElementById('rooms_amount_kitchens');
+    value = parseInt(subtractRoom.getAttribute('value'), 10) - 1;
+    subtractRoom.setAttribute('value', value);
+    subtractRoom.innerHTML = value;
+
+}
