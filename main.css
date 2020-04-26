@@ -493,10 +493,10 @@ a {
         width: 70%;
         height: 20px;
         border: none;
-        border-bottom: 1px solid #EDC681;
+        border-bottom: 1px solid #fff;
         outline: none;
         background-color: transparent;
-        color: #fff;
+        color: #EDC681;
         padding-left: 15px;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
@@ -596,7 +596,7 @@ a {
 
     ::-webkit-input-placeholder {
         /* Edge */
-        color: #ffffff;
+        color: #fff;
         font-weight: 300;
         font-family: 'Lato', sans-serif;
 
@@ -604,14 +604,14 @@ a {
 
     :-ms-input-placeholder {
         /* Internet Explorer 10-11 */
-        color: #ffffff;
+        color: #fff;
         font-weight: 300;
         font-family: 'Lato', sans-serif;
 
     }
 
     ::placeholder {
-        color: #ffffff;
+        color: #fff;
         font-weight: 300;
         font-family: 'Lato', sans-serif;
 
@@ -691,4 +691,8 @@ a {
 #toMovingInOut_button:active {
     animation-name: flash;
     background-color: #fff;
+}
+
+.form_inputs:focus {
+    border-bottom: 1px solid #EDC681;
 }
