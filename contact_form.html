@@ -19,18 +19,37 @@
         <h1 class="locationDetails_title">Location Details</h1>
     </div>
 
+    <!--LOCATION FORM-->
+
     <form class="contact_form">
-        <input type="text" class="form_inputs fullName_input" autocomplete="off" placeholder="Full Name" required>
-        <input type="text" class="form_inputs emailAddress_input" autocomplete="off" placeholder="Email Address">
+        <input type="text" class="form_inputs fullName_input" autocomplete="off" placeholder="Full Name"
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'">
+
+        <input type="text" class="form_inputs emailAddress_input" autocomplete="off" placeholder="Email Address"
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+
         <p class="cleaningLocationTitle">Cleaning Location:</p>
-        <input type="text" class="form_inputs streetAddress_input" autocomplete="off" placeholder="Street Address">
-        <input type="text" class="form_inputs townCity_input" autocomplete="off" placeholder="Town/City">
-        <input type="text" class="form_inputs postcode_input" autocomplete="off" placeholder="Postcode">
+
+        <input type="text" class="form_inputs streetAddress_input" autocomplete="off" placeholder="Street Address"
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Street Address'" required>
+
+        <input type="text" class="form_inputs townCity_input" autocomplete="off" placeholder="Town/City"
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Town/City'" required>
+
+        <input type="text" class="form_inputs postcode_input" autocomplete="off" placeholder="Postcode"
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'">
+
         <textarea class="short_description_box"
-            placeholder="Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout..."></textarea>
+            placeholder="Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout..."
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout...'"></textarea>
 
 
     </form>
+
+    <div class="findcleaner_buttonWrap">
+        <div class="findcleaner_button">Find me a cleaner</div>
+    </div>
 
 
 
