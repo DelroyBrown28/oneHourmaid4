@@ -342,6 +342,7 @@ a {
         position: relative;
         color: #EDC681;
         font-size: 2em;
+        font-family: 'Nova Mono', monospace;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -536,6 +537,7 @@ a {
         width: 100%;
         height: 100%;
         color: #fff;
+        border-top: 1px solid #EDC681;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -562,7 +564,7 @@ a {
         /* Firefox 18- */
         color: #fff;
         text-align: center;
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -571,7 +573,7 @@ a {
         /* Firefox 19+ */
         color: #fff;
         text-align: center;
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -579,7 +581,7 @@ a {
     textarea:-ms-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -587,7 +589,7 @@ a {
     textarea::placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -614,6 +616,9 @@ a {
         font-family: 'Lato', sans-serif;
 
     }
+
+    /*-----------------** MAPS PAGE START // CLEANER ON THE WAY **-----------------*/
+
 
 
 }
