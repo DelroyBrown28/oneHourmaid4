@@ -11,9 +11,6 @@ html {
     background-color: #181717;
 }
 
-* {
-    cursor: ;
-}
 
 a {
     position: relative;
@@ -719,6 +716,50 @@ a {
 
     /*---------** MAPS PAGE **---------*/
 
+    #cancel_cleaner_popUp {
+        position: absolute;
+        width: 80%;
+        height: 20%;
+        top: 50%;
+        align-self: center;
+        background-color: #fff;
+        z-index: 1;
+        padding: 15px;
+        opacity: 0.9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+
+
+    }
+
+    .cancelCleaner_areYouSure {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .answer_yes,
+    .answer_no {
+        position: absolute;
+        bottom: 17%;
+        font-size: 1.3em;
+        font-weight: 300;
+
+
+    }
+
+    .answer_yes {
+        left: 30%;
+        
+    }
+
+    .answer_no {
+        right: 30%;
+    }
+
 
     .cleanerOnTheWay_title {
         position: relative;
@@ -771,7 +812,7 @@ a {
 
         to {
             opacity: 1;
-            
+
         }
     }
 
@@ -782,7 +823,7 @@ a {
 
         to {
             opacity: 1;
-            
+
         }
     }
 
@@ -793,7 +834,7 @@ a {
 
         to {
             opacity: 1;
-            
+
         }
     }
 
@@ -870,7 +911,7 @@ a {
 
     .service_type {
         font-weight: 300;
-        
+
     }
 
     .roomsInfo,
@@ -878,7 +919,7 @@ a {
         position: relative;
         width: 100%;
         height: 50%;
-        
+
         font-weight: 300;
         text-align: center;
         display: flex;
