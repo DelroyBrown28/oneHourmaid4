@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./JS/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="./JS/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-marker-clusterer/1.0.0/markerclusterer_compiled.js">
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOTUPWNqxR4wNAFerPPw5MBSFMcSw9h7E&callback=initMap">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <title>oneHourmaid - Your Cleaners On The Way...</title>
+</head>
+
+<body>
+
+    <div id="rooms_topContents_wrapper">
+        <h1 class="cleanerOnTheWay_title">Your cleaner is on the way<span class="dot1">.</span><span
+                class="dot2">.</span><span class="dot3">.</span><span class="dot4">.</span> </h1>
+
+        <small class="cleanerSubtitle">You can cancel at anytime by tapping below</small>
+    </div>
+
+
+    <div id="mapWrap">
+        <div id="map"></div>
+    </div>
+
+
+    <div class="cleaner_information">
+
+        <h2 class="cleanerForToday_title">
+            Your cleaner for today will be:
+        </h2>
+        <p class="cleaner_name">Jonathan Millbury</p>
+
+        <hr>
+
+        <div class="service_type_wrap">
+            <h2 class="service">Service:</h2>
+            <h2 class="service_type">Basic Clean</h2>
+        </div>
+
+        <div class="numberOfRooms_wrap">
+            <h2 class="noOfRooms">Rooms / Type</h2>
+            <div class="roomsInfo_wrap">
+                <small class="roomsInfo">2 Bedrooms</small>
+                <small class="roomsInfo2">1 Kitchen</small>
+            </div>
+        </div>
+
+        <div class="leave_tip_wrap">
+            <button class="TIPbutton">
+                Leave your cleaner a tip?
+            </button>
+        </div>
+
+    </div>
+
+    <div class="cancelCleaner_buttonWrap">
+
+        <div class="cancelCleaner_button">Cancel cleaner!
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

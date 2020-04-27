@@ -101,3 +101,37 @@ function minusOneKitchens() {
     subtractRoom.innerHTML = value;
 
 }
+
+//GOOGLE MAPS API
+function initMap() {
+    var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        disableDefaultUI: true, //DISABLES GOOGLE MAPS DEFAULT FUNCTIONS
+
+        center: {
+            lat: 51.630770,
+            lng: -0.735230,
+        }
+
+
+    });
+
+
+    var labels = "S"
+    var locations = [{
+        lat: 51.630770,
+        lng: -0.735230,
+    }, ];
+
+
+    var marker = new google.maps.Marker({
+        position: map.getCenter(),
+        icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            scale: 6.5,
+        },
+        draggable: true,
+        map: map
+    });
+
+}
