@@ -5,7 +5,6 @@ $(document).ready(function () {
     document.getElementById("deepClean_top_contents_wrapper").style.visibility = "hidden";
     document.getElementById("movingInOut_top_contents_wrapper").style.visibility = "hidden";
     document.getElementById("movingInOutslider_contents_wrapper").style.visibility = "hidden";
-    document.getElementById("cancel_cleaner_popUp").style.visibility = "hidden";
 
 
 
