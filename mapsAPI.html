@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="./JS/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="./JS/jquery-3.5.0.min.js"></script>
     <script type="text/javascript" src="./JS/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-marker-clusterer/1.0.0/markerclusterer_compiled.js">
     </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOTUPWNqxR4wNAFerPPw5MBSFMcSw9h7E&callback=initMap">
     </script>
+    <link rel="icon" type="image/x-icon" href="./images/oHmfavicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css">
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
@@ -20,11 +21,6 @@
 
 <body>
 
-    <div id="cancel_cleaner_popUp">
-        <h1 class="cancelCleaner_areYouSure">Are you sure?</h1>
-        <span class="answer_yes"><i class="fas fa-check"></i></span>
-        <span class="answer_no"><i class="fas fa-times"></i></span>
-    </div>
 
     <div id="rooms_topContents_wrapper">
         <h1 class="cleanerOnTheWay_title">Your cleaner is on the way<span class="dot1">.</span><span
@@ -69,9 +65,10 @@
 
     </div>
 
-    <div class="cancelCleaner_buttonWrap">
 
-        <div class="cancelCleaner_button">Cancel cleaner!
+
+    <div class="cancelCleaner_buttonWrap">
+        <div class="cancelCleaner_button" onClick="location.href='index.html'">Cancel cleaner!
         </div>
     </div>
 

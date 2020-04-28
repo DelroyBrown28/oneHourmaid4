@@ -716,23 +716,7 @@ a {
 
     /*---------** MAPS PAGE **---------*/
 
-    #cancel_cleaner_popUp {
-        position: absolute;
-        width: 80%;
-        height: 20%;
-        top: 50%;
-        align-self: center;
-        background-color: #fff;
-        z-index: 1;
-        padding: 15px;
-        opacity: 0.9;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        visibility: hidden;
 
-
-    }
 
     .cancelCleaner_areYouSure {
         position: relative;
@@ -978,6 +962,7 @@ a {
         font-size: 1.2em;
         text-transform: uppercase;
         transition: 0.1s;
+        z-index: 1;
 
     }
 
