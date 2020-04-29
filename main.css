@@ -486,7 +486,8 @@ a {
 
     .contact_form {
         position: relative;
-        height: 70%;
+        height: 100%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -538,6 +539,10 @@ a {
     .findcleaner_buttonWrap {
         position: relative;
         height: 15%;
+        width: 100%;
+        bottom: 0;
+        
+        
 
     }
 
@@ -548,7 +553,9 @@ a {
         color: #fff;
         background-color: transparent;
         border: none;
-        border-top: 1px solid #EDC681;
+        border-left: 1px solid #EDC681;
+        border-right: 1px solid #EDC681;
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -739,7 +746,7 @@ a {
 
     .answer_yes {
         left: 30%;
-        
+
     }
 
     .answer_no {
@@ -1027,6 +1034,8 @@ a {
 .bookCleaner_button:active {
     color: #000;
     background-color: #EDC681;
+    border-width: 50px;
+
 }
 
 .backToPreviousButton:active {
@@ -1051,3 +1060,4 @@ a {
 .cancelCleaner_button:active {
     background-color: #FF6961;
 }
+

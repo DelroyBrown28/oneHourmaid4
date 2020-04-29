@@ -34,10 +34,9 @@
 
     <!--LOCATION FORM-->
 
-
     <form class="contact_form" onsubmit="return sendMail(this);">
-        <input type="text" name="full_name" class="form_inputs fullName_input" autocomplete="off" placeholder="Full Name"
-            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'">
+        <input type="text" name="full_name" class="form_inputs fullName_input" autocomplete="off"
+            placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'">
 
         <input type="text" name="emailAddress" class="form_inputs emailAddress_input" autocomplete="off"
             placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
@@ -58,16 +57,17 @@
             placeholder="Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout...'"></textarea>
+
+        <div class="findcleaner_buttonWrap">
+            <button class="findcleaner_button" type="submit" onClick="location.href='mapsAPI.html'">Find me a cleaner
+            </button>
+        </div>
+
     </form>
-    
-
-    <div class="findcleaner_buttonWrap">
-        <button class="findcleaner_button" type="submit" onClick="location.href='mapsAPI.html'">Find me a cleaner
-        </button>
-    </div>
+    <script type="text/javascript" src="/JS/sendEmail.js"></script>
 
 
-    <script src="/JS/sendEmail.js"></script>
+
 
 
 </body>

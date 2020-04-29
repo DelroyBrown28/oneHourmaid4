@@ -9,6 +9,7 @@ function sendMail(contactForm) {
         })
         .then(
             function (response) {
+                location.href='mapsAPI.html,
                 console.log("success", response);
             },
             function (error) {
