@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <script src="./JS/jquery-3.5.0.min.js"></script>
-    <script src="./JS/script.js" type="text/javascript"></script>
-    <link rel="icon" type="image/x-icon" href="./images/oHmfavicon.png"/>
+    <link rel="icon" type="image/x-icon" href="./images/oHmfavicon.png" />
     <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="./slick.css" type="text/css">
+    <link rel="stylesheet" href="./slick-theme.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <title>oneHourmaid</title>
 </head>
@@ -17,89 +16,77 @@
 
     <!--TOP CONTENTS-->
 
-    <div id="top_contents_wrapper">
-        <div id="add_wrap">
-            <h1 class="cleaning_type_title">Basic Clean</h1>
-            <small class="title_subtext">A one hour basic clean</small>
-            <button class="addButton" onClick="location.href='number_of_rooms.html'">ADD</button>
+    <div class="top_contents_wrapper">
+        <div class="service_title">Basic Clean
+            <small class="subtitle">A one hour basic clean</small>
         </div>
-    </div>
-
-    <div id="deepClean_top_contents_wrapper">
-        <div id="add_wrap">
-            <h1 class="cleaning_type_title">Deep Clean</h1>
-            <small class="title_subtext">A one hour deep clean</small>
-            <button class="addButton" onClick="location.href='number_of_rooms.html'">ADD</button>
-        </div>
-    </div>
-
-    <div id="movingInOut_top_contents_wrapper">
-        <div id="add_wrap">
-            <h1 class="cleaning_type_title">Moving In/Out</h1>
-            <small class="title_subtext">New or old property clean up</small>
-            <button class="addButton">ADD</button>
-        </div>
+        <button class="add_button">ADD</button>
     </div>
 
 
 
     <!--CENTER CONTENTS-->
 
+    <div class="slick_wrap">
 
-    <div id="basicleanslider_contents_wrapper">
-
-
-        <div class="tap_to_select" onClick="location.href='number_of_rooms.html'">
-            <img id="basicClean_image" src="./images/basiclean_mop.png" alt="">
-
-            <h1 class="cleaning_title_big">Onehourmaid's<br>Basic Clean</h1>
+        <div class="basic_clean_wrap">
+            <img class="basic_clean_image" src="./images/basiclean_mop.png" alt="">
+            <h1 class="basic_clean_title">OneHourmaid's<br>Basic Clean</h1>
+            <p class="basic_clean_blurb">
+                Our Basic Clean consists of your general in<br>
+                home clean, including washing
+                dishes,<br>vacuuming throughout<br>
+                (or specific rooms) mopping of kitchen,<br>
+                wooden or ceramic floors.
+            </p>
         </div>
 
-        <p id="basicClean_blurb">Our Basic Clean consists of your general in<br>home clean, including washing
-            dishes,<br>
-            vacuuming throughout<br>
-            (or specific rooms) mopping of kitchen,<br> wooden or ceramic floors.</p>
-    </div>
-
-
-    <div id="deepcleanslider_contents_wrapper">
-
-        <div class="deepClean_tap_to_select" onClick="location.href='number_of_rooms.html'">
-            <img id="deepClean_image" src="./images/deepclean_image.png" alt="">
-
-            <h1 class="deepCleaning_title_big">Onehourmaid's<br>Deep Clean</h1>
+        <div class="deep_clean_wrap">
+            <img class="deep_clean_image" src="./images/deepclean_image.png" alt="">
+            <h1 class="deep_clean_title">OneHourmaid's<br>Deep Clean</h1>
+            <p class="deep_clean_blurb">
+                Our Deep Clean consists of pulling out and<br>
+                cleaning behind “white goods” i.e
+                Washing<br>Maschines, Regridgerators, Cookers or any<br>heavy goods with in the house. We
+                also<br>provide the
+                choice of
+                deep
+                carpet and oven<br>cleans.
+            </p>
         </div>
-        <p id="deepClean_blurb">Our Deep Clean consists of pulling out and<br>cleaning behind “white goods” i.e
-            Washing<br>
-            Maschines, Regridgerators, Cookers or any<br>heavy goods with in the house. We also<br>provide the
-            choice of
-            deep
-            carpet and oven<br>cleans</p>
-    </div>
 
-    <div id="movingInOutslider_contents_wrapper">
-
-        <div class="movingInOut_tap_to_select" onClick="location.href='movingInOut_form.html'">
-            <img id="movingInOut_image" src="./images/movinginout.png" alt="">
-
-            <h1 class="movingInOut_title_big">Property Moving In/Out</h1>
+        <div class="moving_in_out_wrap">
+            <img class="moving_in_out_image" src="./images/movinginout.png" alt="">
+            <h1 class="moving_in_out_title">Property<br>Moving In/Out</h1>
+            <p class="deep_clean_blurb">
+                If you’re moving in to a new house<br>
+                and would like to ensure the property is<br>
+                clean tidy and ready for your arrival,<br>
+                OneHourmaid provide
+                moving
+                in service to<br>
+                make sure your new home is beautifully<br>
+                clean and ready for you.
+            </p>
         </div>
-        <p id="movingInOut_blurb">If you’re moving in to a new house<br>
-            and would like to ensure the property is<br>clean tidy and ready for your arrival,<br> OneHourmaid provide
-            moving
-            in service to<br>make sure your new home is beautifully<br>clean and ready for you</p>
+
+
+
     </div>
+
 
 
     <!--NEXT AND PREVIOUS BUTTONS-->
 
-    <div class="next_prev_buttonWrap">
-        <span id="toBasicClean_button"></span>
-        <span id="toDeepClean_button"></span>
-        <span id="toMovingInOut_button"></span>
-    </div>
 
-    <!--CURSORS-->
+
+    <!-- //NEXT AND PREVIOUS BUTTONS-->
+
+
+    <script src="./JS/jquery-3.5.0.min.js" type="text/javascript"></script>
+    <script src="./JS/script.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="./JS/slick.js" type="text/javascript"></script>
 
 
 </body>

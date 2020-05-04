@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+
+    $(".slick_wrap").slick();
+
+
     //KEEPS CONTENTS HIDDEN UNTIL CALLED FOR
     document.getElementById("deepcleanslider_contents_wrapper").style.visibility = "hidden";
     document.getElementById("deepClean_top_contents_wrapper").style.visibility = "hidden";
@@ -50,6 +54,8 @@ $(document).ready(function () {
 
 
     }
+
+
 
 
 });

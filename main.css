@@ -25,236 +25,115 @@ a {
         overflow: hidden;
     }
 
-    #top_contents_wrapper,
-    #deepClean_top_contents_wrapper,
-    #movingInOut_top_contents_wrapper {
-        position: relative;
+    .top_contents_wrapper {
         width: 100%;
-        height: 15%;
+        height: 40px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+
 
     }
 
-    #deepClean_top_contents_wrapper {
-        position: absolute;
-    }
 
-    #movingInOut_top_contents_wrapper {
-        position: absolute;
-    }
-
-    #add_wrap {
-        position: absolute;
-        width: 70%;
-        bottom: 5%;
-        margin: 0px 15px;
-
-    }
-
-    .cleaning_type_title {
-        position: relative;
-        margin: 0;
-        color: #EDC681;
-        font-weight: 300;
-        font-size: 22px;
-    }
-
-    .title_subtext {
+    .service_title {
+        margin-left: 15px;
+        left: 15px;
         color: #fff;
-        font-weight: 200;
-        font-size: 10px;
+        left: 15px;
+        font-size: 22px;
+        font-weight: 300;
+        color: #EDC681;
+        display: flex;
+        flex-flow: column;
     }
 
-    .addButton {
-        position: absolute;
-        right: 5%;
-        bottom: 15%;
+    .subtitle {
+        color: #fff;
+        font-size: 10px;
+        font-weight: 200;
+        margin-top: 3px;
+
+    }
+
+    .add_button {
+        background-color: #EDC681;
+        margin-right: 15px;
         border: none;
         padding: 5px 15px;
-        font-size: 15px;
-        background-color: #EDC681;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
+
 
     /*---------BASIC CLEAN CONTENTS---------*/
 
-
-    #basicleanslider_contents_wrapper {
-        position: relative;
+    .slick_wrap {
         width: 100%;
-        height: 70%;
-        overflow: hidden;
-        top: 5%;
-        display: flex;
-        justify-content: space-evenly;
-
-
+        height: 100%;
+        margin-top: 50px;
 
     }
 
-    .tap_to_select {
-        position: absolute;
-        width: 70%;
-        height: 63%;
+    .basic_clean_wrap,
+    .deep_clean_wrap,
+    .moving_in_out_wrap {
+        width: 100%;
+        height: 100%;
         display: flex;
+        align-items: center;
         justify-content: center;
+        flex-flow: column;
 
     }
 
-    #basicClean_image {
-        position: absolute;
-        align-self: center;
-        top: 5%;
+    .basic_clean_image,
+    .deep_clean_image,
+    .moving_in_out_image {
+        position: relative;
+        margin: auto;
         height: 120px;
     }
 
-
-    .cleaning_title_big {
-        position: absolute;
+    .basic_clean_title,
+    .deep_clean_title,
+    .moving_in_out_title {
         color: #fff;
         text-align: center;
-        bottom: 0;
         font-weight: 400;
+        margin: 13px 0px;
     }
 
-    #basicClean_blurb {
-        position: absolute;
+    .basic_clean_blurb,
+    .deep_clean_blurb {
         color: #fff;
-        text-align: center;
-        font-weight: 100;
         font-size: 15px;
-        bottom: 11%;
-
+        font-weight: 200;
+        text-align: center;
+        margin: 0;
 
     }
+
+
+
+
 
     /*---------DEEP CLEAN CONTENTS---------*/
 
-    #deepcleanslider_contents_wrapper {
-        position: absolute;
-        width: 100%;
-        height: 70%;
-        overflow: hidden;
-        bottom: 10%;
-        display: flex;
-        justify-content: space-evenly;
 
-
-    }
-
-
-    .deepClean_tap_to_select {
-        position: absolute;
-        width: 70%;
-        height: 63%;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    #deepClean_image {
-        position: absolute;
-        align-self: center;
-        top: 5%;
-        height: 120px;
-    }
-
-    .deepCleaning_title_big {
-        position: absolute;
-        color: #fff;
-        text-align: center;
-        bottom: 3.3%;
-        font-weight: 400;
-
-
-    }
-
-    #deepClean_blurb {
-        position: absolute;
-        color: #fff;
-        text-align: center;
-        font-weight: 100;
-        font-size: 15px;
-        bottom: 11%;
-
-
-    }
 
     /*---------MOVING IN/OUT CONTENTS---------*/
 
 
-    #movingInOutslider_contents_wrapper {
-        position: absolute;
-        width: 100%;
-        height: 70%;
-        overflow: hidden;
-        bottom: 10%;
-        display: flex;
-        justify-content: space-evenly;
-
-    }
-
-    .movingInOut_tap_to_select {
-        position: absolute;
-        width: 70%;
-        height: 63%;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    #movingInOut_image {
-        position: absolute;
-        align-self: center;
-        top: 5%;
-        height: 120px;
-    }
-
-
-    .movingInOut_title_big {
-        position: absolute;
-        color: #fff;
-        text-align: center;
-        bottom: 3.3%;
-        font-weight: 400;
-
-
-    }
-
-
-    #movingInOut_blurb {
-        position: absolute;
-        color: #fff;
-        text-align: center;
-        font-weight: 100;
-        font-size: 15px;
-        bottom: 11%;
-
-
-    }
 
     /*---------NEXT BUTTONS---------*/
 
 
-    .next_prev_buttonWrap {
-        position: relative;
-        margin-bottom: 10px;
-        height: 17%;
-        display: flex;
-        justify-content: center;
-    }
-
-    #toBasicClean_button,
-    #toDeepClean_button,
-    #toMovingInOut_button {
-        position: relative;
-        width: 25px;
-        height: 25px;
-        border-radius: 100px;
-        align-self: center;
-        background-color: #EDC681;
-        animation-duration: 0.5s;
-        animation-iteration-count: 1;
-
-    }
 
     #toDeepClean_button {
         margin: 0px 50px;
@@ -541,8 +420,8 @@ a {
         height: 15%;
         width: 100%;
         bottom: 0;
-        
-        
+
+
 
     }
 
@@ -555,7 +434,7 @@ a {
         border: none;
         border-left: 1px solid #EDC681;
         border-right: 1px solid #EDC681;
-        
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -637,15 +516,6 @@ a {
 
     /*---------** MOVING IN/OUT FORM **---------*/
 
-
-    .movingInOut_blurb {
-        position: relative;
-        color: #EDC681;
-        font-weight: 200;
-        font-size: 16.5px;
-        text-align: center;
-        height: 36%;
-    }
 
     .movingInOut_contact_form {
         position: relative;
@@ -980,21 +850,8 @@ a {
 
 /*---HOVERS AND SUCH---*/
 
-.addButton:active {
-    background-color: rgb(143, 116, 69);
-}
 
-.tap_to_select:active>.cleaning_title_big {
-    color: #EDC681;
-}
 
-.deepClean_tap_to_select:active>.deepCleaning_title_big {
-    color: #EDC681;
-}
-
-.movingInOut_tap_to_select:active>.movingInOut_title_big {
-    color: #EDC681;
-}
 
 
 .nextbutton:active>.rightArrow {
@@ -1042,12 +899,6 @@ a {
     transform: translateX(20px);
 }
 
-#toBasicClean_button:active,
-#toDeepClean_button:active,
-#toMovingInOut_button:active {
-    animation-name: flash;
-    background-color: #fff;
-}
 
 .form_inputs:focus {
     border-bottom: 1px solid #EDC681;
@@ -1060,4 +911,3 @@ a {
 .cancelCleaner_button:active {
     background-color: #FF6961;
 }
-
