@@ -2,8 +2,8 @@ $(document).ready(function () {
 
 
     $(".slick_wrap").slick({
-        arrows: "true",
-
+        dots: false,
+        nextArrow: $('#next_button')
     });
 
 
@@ -145,4 +145,3 @@ function initMap() {
     });
 
 }
-

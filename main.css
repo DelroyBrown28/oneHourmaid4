@@ -120,12 +120,36 @@ a {
 
     /*---------NEXT BUTTONS---------*/
 
-    .slick-prev:before,
-    .slick-next:before {
-        color: red;
+    .button_wrap {
+        width: 100%;
+        height: 23%;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+
     }
 
+    #next_button,
+    .previous_button {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 100px;
+        background-color: #EDC681;
+        
 
+    }
+
+    .fa-chevron-right {
+        font-size: 2.1em;
+        color: #000;
+        transition: 0.3s;
+    }
 
 
 
@@ -899,4 +923,8 @@ a {
 
 .cancelCleaner_button:active {
     background-color: #FF6961;
+}
+
+#next_button:active>.fa-chevron-right {
+    transform: translateX(20px);
 }
