@@ -27,48 +27,46 @@ a {
 
     .top_contents_wrapper {
         width: 100%;
-        height: 40px;
         margin-top: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
-        justify-content: space-between;
-
-
-    }
-
-
-    .service_title {
-        margin-left: 15px;
-        left: 15px;
-        color: #fff;
-        left: 15px;
-        font-size: 22px;
-        font-weight: 300;
-        color: #EDC681;
-        display: flex;
         flex-flow: column;
+
     }
 
-    .subtitle {
+    .index_logo {
+        width: 35px;
+        height: 35px;
+        animation-name: logoSpin;
+        animation-delay: 1000ms;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes logoSpin {
+
+        0% {
+            transform: rotate(0deg)
+        }
+
+        20% {
+            transform: rotate(360deg)
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+
+    .tap_to_select {
         color: #fff;
         font-size: 10px;
-        font-weight: 200;
-        margin-top: 3px;
-
+        margin-top: 5px;
     }
 
-    .add_button {
-        background-color: #EDC681;
-        margin-right: 15px;
-        border: none;
-        padding: 5px 15px;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
 
 
     /*---------BASIC CLEAN CONTENTS---------*/
@@ -120,24 +118,15 @@ a {
     }
 
 
-
-
-
-    /*---------DEEP CLEAN CONTENTS---------*/
-
-
-
-    /*---------MOVING IN/OUT CONTENTS---------*/
-
-
-
     /*---------NEXT BUTTONS---------*/
 
-
-
-    #toDeepClean_button {
-        margin: 0px 50px;
+    .slick-prev:before,
+    .slick-next:before {
+        color: red;
     }
+
+
+
 
 
     /*---------** HOW MANY ROOMS START **---------*/

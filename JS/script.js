@@ -1,7 +1,10 @@
 $(document).ready(function () {
 
 
-    $(".slick_wrap").slick();
+    $(".slick_wrap").slick({
+        arrows: "true",
+
+    });
 
 
     //KEEPS CONTENTS HIDDEN UNTIL CALLED FOR
