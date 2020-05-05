@@ -45,8 +45,8 @@ function minusOneBedrooms() {
 }
 
 //INCREMENTS/DECREMENTS BATHROOMS BY 1
-function plusOneBathrooms() {
-    var addRoom = document.getElementById('rooms_amount_bathrooms');
+function plusOneBathrooms() { //make sure onclick goes to this function
+    var addRoom = document.getElementById('rooms_amount_bathrooms'); //make sure input ID has this name
     value = parseInt(addRoom.getAttribute('value'), 10) + 1;
     addRoom.setAttribute('value', value);
     addRoom.innerHTML = value;

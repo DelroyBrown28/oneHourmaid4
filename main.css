@@ -15,6 +15,8 @@ html {
     text-decoration: none;
     outline: none;
 }
+
+
 @media only screen and (min-device-width : 320px) {
 
     .button_wrap__ipad,
@@ -167,7 +169,7 @@ html {
 
     .next_arrow_icon,
     .previous_arrow_icon {
-        height: 35px;
+        height: 27px;
         opacity: 0.3;
         transition: 0.3s;
     }
@@ -175,196 +177,149 @@ html {
     .to_select_service_text {
         color: #EDC681;
         text-align: center;
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
 
     /*---------** HOW MANY ROOMS START **---------*/
 
+    /*-----TOP CONTENTS-----*/
 
-
-    #rooms_topContents_wrapper {
-        position: relative;
+    .top_contents_wrapper__rooms {
         width: 100%;
         height: 15%;
         display: flex;
+        align-items: center;
         justify-content: center;
-        flex-flow: column;
 
 
     }
 
-    .rooms_title {
-        position: relative;
+    .how_many_rooms_title {
         color: #EDC681;
-        font-weight: 200;
-        font-size: 22px;
         margin: 0;
-        height: 36%;
-        align-self: center;
-    }
-
-    .rooms_titleSubtext {
-        position: relative;
-        color: #fff;
+        font-size: 22px;
         font-weight: 200;
-        text-align: center;
     }
 
+    /*-----//  TOP CONTENTS-----*/
+    /*-----ROOM TYPE COUNTERS-----*/
 
-    /*---------CENTER COUNTERS---------*/
 
-
-    #center_counters_wrap {
-        position: relative;
+    .room_type_wrap {
+        width: 100%;
         height: 70%;
         display: flex;
+        align-items: center;
         justify-content: space-between;
         flex-flow: column;
 
-
-
     }
 
-
-    .smallTitle {
-        position: relative;
-        text-align: center;
-        width: 100%;
-        height: 5%;
-        top: 0;
+    .counter_title {
+        width: 85%;
         color: #fff;
-        z-index: 1;
+        text-align: center;
+        font-size: 1em;
     }
 
-    #bedrooms_counter_wrap {
-        position: relative;
-        width: 100%;
-        height: 30%;
-        flex-flow: column;
+    .counter_title_underline {
+        width: 55%;
+        margin: 0;
+        border: 0.8px solid #EDC681;
+    }
+
+
+    .counter_wrap {
+        width: 85%;
         display: flex;
         align-items: center;
-
-
-    }
-
-    .roomsWrap {
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        height: 100%;
-
+        justify-content: space-between;
 
     }
 
     .addRoom,
     .subtractRoom {
-        position: relative;
-        color: #EDC681;
-        font-size: 2em;
-        font-family: 'Nova Mono', monospace;
+        width: 50px;
+        height: 44.5px;
         display: flex;
-        justify-content: center;
         align-items: center;
-        height: 40%;
-        width: 40%;
-
+        justify-content: center;
+        border-radius: 0px;
+        background: linear-gradient(145deg, #1a1919, #161515);
+        box-shadow: 5px 5px 0px #161515,
+            -5px -5px 0px #1a1919;
     }
 
-
-    .addRoom {
-        border-radius: 50px 0px 0px 50px;
-        background: #181717;
-        box-shadow: -12px 12px 23px #121212,
-            12px -12px 23px #1e1c1c;
-
+    .counter_down_arrow,
+    .counter_up_arrow {
+        height: 20px;
     }
-
-    .subtractRoom {
-        border-radius: 0px 50px 50px 0px;
-        background: #181717;
-        box-shadow: -12px 12px 23px #121212,
-            12px -12px 23px #1e1c1c;
-    }
-
 
     #rooms_amount_bedroom,
     #rooms_amount_bathrooms,
     #rooms_amount_kitchens {
-        position: absolute;
         border: none;
-        border-bottom: 1px solid #EDC681;
-        width: 75%;
-        height: 20%;
+        height: 40px;
+        width: 50%;
+        font-size: 1.2em;
         background: transparent;
-        outline: none;
-        bottom: 20%;
-        font-size: 20px;
-        text-align: center;
         color: #fff;
-
+        text-align: center;
     }
 
+    /*-----//  ROOM TYPE COUNTERS-----*/
+    /*-----NEXT/PREVIOUS BUTTONS-----*/
 
 
-    /*---------NEXT BUTTONS---------*/
-
-
-    .nextPrevious_button_wrap {
-        position: relative;
-        bottom: 0;
+    .next_prev_button_wrap {
         width: 100%;
-        height: 17%;
+        height: 15%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
 
     }
 
-    #nextButton_toForm,
-    #previousButton {
-        position: absolute;
+    .previous_button__rooms,
+    .next_button__rooms {
+        position: relative;
         width: 50px;
         height: 50px;
-        border-radius: 100px;
-        border: none;
-        background-color: #EDC681;
-        outline: none;
         display: flex;
         align-items: center;
         justify-content: center;
-
-
-    }
-
-    #previousButton {
-        left: 40px;
-        background-color: transparent;
-    }
-
-    .left_arrow_button {
-        position: absolute;
-        width: 35px;
-        height: 35px;
-        border-radius: 100px;
+        transition: 0.3s;
         border: none;
-        left: 0;
-        transition: 0.1s;
 
+    }
+
+    .next_button__rooms {
+        margin-right: 15px;
+    }
+
+    .previous_button__rooms {
+        margin-left: 15px;
+    }
+
+    .to_select_service_text__rooms {
+        color: #EDC681;
+        margin: 0;
+        text-align: center;
+        font-size: 0.8em;
 
 
     }
 
-    .right_arrow_button {
-        position: absolute;
-        left: 0;
-        height: 35px;
+    .next_arrow_icon__rooms,
+    .previous_arrow_icon__rooms {
+        height: 27px;
+        opacity: 0.3;
         transition: 0.1s;
 
     }
 
-
+    /*-----//  NEXT/PREVIOUS BUTTONS-----*/
     /*---------** CONTACT FORM **---------*/
 
 
@@ -1179,22 +1134,6 @@ html {
     transform: translateX(20px);
 }
 
-.addRoom:active {
-    border-radius: 100px 0px 0px 100px;
-    background: #181717;
-    box-shadow: inset -13px 13px 26px #121111,
-        inset 13px -13px 26px #1e1d1d;
-    color: #EDC68180;
-}
-
-.subtractRoom:active {
-    border-radius: 0px 100px 100px 0px;
-    background: #181717;
-    box-shadow: inset -13px 13px 26px #121111,
-        inset 13px -13px 26px #1e1d1d;
-    color: #EDC68180;
-
-}
 
 #nextButton_toForm:active>.right_arrow_button {
     transform: translateX(15px);
@@ -1265,4 +1204,23 @@ html {
 .deep_clean_wrap:active,
 .moving_in_out_wrap:active {
     opacity: 0.5;
+}
+
+.next_button__rooms:active>.next_arrow_icon__rooms {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.previous_button__rooms:active>.previous_arrow_icon__rooms {
+    opacity: 1;
+    transform: translateX(-5px);
+}
+
+.addRoom:active,
+.subtractRoom:active {
+    border-radius: 0px;
+    background: linear-gradient(145deg, #161515, #1a1919);
+    box-shadow: 5px 5px 0px #161515,
+        -5px -5px 0px #1a1919;
+
 }

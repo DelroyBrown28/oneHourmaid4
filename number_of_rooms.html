@@ -7,7 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script src="./JS/jquery-3.5.0.min.js"></script>
     <script src="./JS/script.js" type="text/javascript"></script>
-    <link rel="icon" type="image/x-icon" href="./images/oHmfavicon.png"/>
+    <link rel="icon" type="image/x-icon" href="./images/oHmfavicon.png" />
     <link rel="stylesheet" href="main.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -17,54 +17,69 @@
 
 <body>
 
-    <div id="rooms_topContents_wrapper">
-        <h1 class="rooms_title">How Many Rooms?</h1>
+    <!--TOP CONTENTS-->
+    <div class="top_contents_wrapper__rooms">
+        <h1 class="how_many_rooms_title">How Many Rooms?</h1>
     </div>
+    <!--// TOP CONTENTS-->
 
-    <div id="center_counters_wrap">
+    <!--ROOM TYPE COUNTERS-->
+    <div class="room_type_wrap">
 
-        <small class="smallTitle">Bedrooms</small>
-        <div id="bedrooms_counter_wrap">
-            <div class="roomsWrap">
-                <div class="addRoom" onclick="plusOneBedrooms()">+</div>
-                <div class="subtractRoom" onclick="minusOneBedrooms()">-</div>
-                <input id="rooms_amount_bedroom" value="0" placeholder="0" type="number" autocomplete="off"
-                    placeholder="0" required>
+        <small class="counter_title">Bedrooms</small>
+        <hr class="counter_title_underline">
+        <div class="counter_wrap">
+            <div class="subtractRoom" onclick="minusOneBedrooms()">
+                <img src="./images/arrow_down.png" alt="" class="counter_down_arrow">
+            </div>
+            <input type="number" id="rooms_amount_bedroom" autocomplete="off" value="0">
+            <div class="addRoom" onclick="plusOneBedrooms()">
+                <img src="./images/arrow_up_white.png" alt="" class="counter_up_arrow">
             </div>
         </div>
 
-        <small class="smallTitle">Bathrooms</small>
-        <div id="bedrooms_counter_wrap">
-            <div class="roomsWrap">
-                <div class="addRoom" onclick="plusOneBathrooms()">+</div>
-                <div class="subtractRoom" onclick="minusOneBathrooms()">-</div>
-                <input id="rooms_amount_bathrooms" value="0" type="number" autocomplete="off" placeholder="0" required>
-
+        <small class="counter_title">Bathrooms</small>
+        <hr class="counter_title_underline">
+        <div class="counter_wrap">
+            <div class="subtractRoom" onclick="minusOneBathrooms()">
+                <img src="./images/arrow_down.png" alt="" class="counter_down_arrow">
+            </div>
+            <input type="number" id="rooms_amount_bathrooms" autocomplete="off" value="0">
+            <div class="addRoom" onclick="plusOneBathrooms()">
+                <img src="./images/arrow_up_white.png" alt="" class="counter_up_arrow">
             </div>
         </div>
 
-        <small class="smallTitle">Kitchens</small>
-        <div id="bedrooms_counter_wrap">
-            <div class="roomsWrap">
-                <div class="addRoom" onclick="plusOneKitchens()">+</div>
-                <div class="subtractRoom" onclick="minusOneKitchens()">-</div>
-                <input id="rooms_amount_kitchens" value="0" type="number" autocomplete="off" placeholder="0" required>
-
+        <small class="counter_title">Kitchens</small>
+        <hr class="counter_title_underline">
+        <div class="counter_wrap">
+            <div class="subtractRoom" onclick="minusOneKitchens()">
+                <img src="./images/arrow_down.png" alt="" class="counter_down_arrow">
             </div>
-
+            <input type="number" id="rooms_amount_kitchens" autocomplete="off" value="0">
+            <div class="addRoom" onclick="plusOneKitchens()">
+                <img src="./images/arrow_up_white.png" alt="" class="counter_up_arrow">
+            </div>
         </div>
+
+
     </div>
+    <!--// ROOM TYPE COUNTERS-->
 
-    <div class="nextPrevious_button_wrap">
+    <!--NEXT/PREVIOUS BUTTONS-->
+    <div class="next_prev_button_wrap">
 
-        <button id="nextButton_toForm" onClick="location.href='contact_form.html'">
-            <img src="./images/rightarrow.png" class="right_arrow_button" alt="">
-        </button>
+        <div class="previous_button__rooms" onClick="location.href='index.html'">
+            <img src="./images/previous_arrow.png" alt="" class="previous_arrow_icon__rooms">
+        </div>
+        <p class="to_select_service_text__rooms">Tap <em>next</em> to enter your details</p>
+        <div class="next_button__rooms">
+            <img src="./images/next_arrow.png" alt="" class="next_arrow_icon__rooms">
+        </div>
 
-        <button id="previousButton" onClick="location.href='index.html'">
-            <img src="./images/arrowleft.png" class="left_arrow_button" alt="">
-        </button>
     </div>
+    <!--// NEXT/PREVIOUS BUTTONS-->
+
 
 
 </body>
