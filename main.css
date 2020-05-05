@@ -1109,6 +1109,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
+        
 
     }
 
@@ -1122,6 +1123,7 @@ a {
         justify-content: center;
         flex-flow: column;
         cursor: pointer;
+        opacity: 0;
         border-radius: 0px;
         background: linear-gradient(145deg, #1a1919, #161515);
         box-shadow: 5px 5px 10px #161515,
