@@ -1,83 +1,28 @@
 $(document).ready(function () {
 
 
-
+    // DELAYS CARD APPEARANCE IN DESKTOP VIEW
     function cardsOnLoad() {
         $(".basic_clean_wrap__desktop").animate({
             opacity: "1",
-        },2000);
+        }, 2000);
         $(".deep_clean_wrap__desktop").animate({
             opacity: "1",
-        },3000);
+        }, 3000);
         $(".moving_in_out_wrap__desktop").animate({
             opacity: "1",
-        },4000);
+        }, 4000);
 
     }
-
     window.onload = cardsOnLoad();
 
 
+    // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
     $(".slick_wrap").slick({
         dots: false,
         nextArrow: $('.next_button'),
         prevArrow: $('.previous_button'),
     });
-
-
-    //KEEPS CONTENTS HIDDEN UNTIL CALLED FOR
-    document.getElementById("deepcleanslider_contents_wrapper").style.visibility = "hidden";
-    document.getElementById("deepClean_top_contents_wrapper").style.visibility = "hidden";
-    document.getElementById("movingInOut_top_contents_wrapper").style.visibility = "hidden";
-    document.getElementById("movingInOutslider_contents_wrapper").style.visibility = "hidden";
-
-
-
-    $("#toBasicClean_button").click(toBasicClean);
-
-    function toBasicClean() {
-        $("#deepcleanslider_contents_wrapper").css("visibility", "hidden");
-        $("#deepClean_top_contents_wrapper").css("visibility", "hidden");
-        $("#movingInOutslider_contents_wrapper").css("visibility", "hidden");
-        $("#movingInOut_top_contents_wrapper").css("visibility", "hidden");
-
-        $("#basicleanslider_contents_wrapper").css("visibility", "visible");
-        $("#top_contents_wrapper").css("visibility", "visible");
-
-
-    }
-
-    $("#toDeepClean_button").click(toDeepClean);
-
-    function toDeepClean() {
-        $("#basicleanslider_contents_wrapper").css("visibility", "hidden");
-        $("#top_contents_wrapper").css("visibility", "hidden");
-        $("#movingInOutslider_contents_wrapper").css("visibility", "hidden");
-        $("#movingInOut_top_contents_wrapper").css("visibility", "hidden");
-
-        $("#deepcleanslider_contents_wrapper").css("visibility", "visible");
-        $("#deepClean_top_contents_wrapper").css("visibility", "visible");
-
-
-    }
-
-
-    $("#toMovingInOut_button").click(toMovingInOut);
-
-    function toMovingInOut() {
-        $("#basicleanslider_contents_wrapper").css("visibility", "hidden");
-        $("#top_contents_wrapper").css("visibility", "hidden");
-        $("#deepcleanslider_contents_wrapper").css("visibility", "hidden");
-        $("#deepClean_top_contents_wrapper").css("visibility", "hidden");
-
-        $("#movingInOutslider_contents_wrapper").css("visibility", "visible");
-        $("#movingInOut_top_contents_wrapper").css("visibility", "visible");
-
-
-    }
-
-
-
 
 });
 
