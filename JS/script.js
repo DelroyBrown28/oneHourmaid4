@@ -3,7 +3,8 @@ $(document).ready(function () {
 
     $(".slick_wrap").slick({
         dots: false,
-        nextArrow: $('#next_button')
+        nextArrow: $('#next_button'),
+        prevArrow: $('#previous_button'),
     });
 
 

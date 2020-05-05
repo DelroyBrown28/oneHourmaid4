@@ -139,33 +139,45 @@ a {
         height: 15%;
         display: flex;
         align-items: center;
-        justify-content: center;
-        justify-content: space-evenly;
-
-
+        justify-content: space-between;
 
     }
 
     #next_button,
-    .previous_button {
-        width: 50px;
+    #previous_button {
+        position: relative;
+        width: 80px;
         height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: 0.3s;
         border: none;
-        border-radius: 100px;
-        background-color: #EDC681;
+        border-radius: 0px;
+        background: linear-gradient(145deg, #1a1919, #161515);
+        box-shadow: 5px 5px 10px #0a0909,
+            -5px -5px 10px #262525;
 
 
     }
 
-    .fa-chevron-right {
-        font-size: 2.1em;
-        color: #000;
+    #next_button {
+        margin-right: 20px;
+    }
+
+    #previous_button {
+        margin-left: 20px;
+        background-color: transparent;
+
+    }
+
+
+    .next_arrow_icon,
+    .previous_arrow_icon {
+        height: 35px;
+        opacity: 0.3;
         transition: 0.3s;
     }
-
 
 
     /*---------** HOW MANY ROOMS START **---------*/
@@ -898,8 +910,7 @@ a {
 @media only screen and (min-device-width : 414px) {
 
 
-    .slick_wrap {
-    }
+    .slick_wrap {}
 
     .basic_clean_wrap,
     .deep_clean_wrap,
@@ -917,10 +928,10 @@ a {
     }
 }
 
-/*---HOVERS AND SUCH---*/
 
 
 
+/*---:HOVERS/:ACTIVES---*/
 
 
 .nextbutton:active>.rightArrow {
@@ -981,6 +992,21 @@ a {
     background-color: #FF6961;
 }
 
-#next_button:active>.fa-chevron-right {
+#next_button:active>.next_arrow_icon {
     transform: translateX(20px);
+    opacity: 1;
+}
+
+#previous_button:active>.previous_arrow_icon {
+    transform: translateX(20px);
+    opacity: 1;
+}
+
+#next_button:active,
+#previous_button:active {
+    border-radius: 0px;
+    background: #181717;
+    box-shadow: inset 5px 5px 10px #0a0909,
+        inset -5px -5px 10px #262525;
+
 }
