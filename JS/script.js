@@ -5,14 +5,13 @@ $(document).ready(function () {
     function cardsOnLoad() {
         $(".basic_clean_wrap__desktop").animate({
             opacity: "1",
-        }, 2000);
+        }, 1000);
         $(".deep_clean_wrap__desktop").animate({
             opacity: "1",
-        }, 3000);
+        }, 2000);
         $(".moving_in_out_wrap__desktop").animate({
             opacity: "1",
-        }, 4000);
-
+        }, 3000);
     }
     window.onload = cardsOnLoad();
 
