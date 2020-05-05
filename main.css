@@ -20,7 +20,9 @@ a {
 
 
 
-    .button_wrap__ipad {
+    .button_wrap__ipad,
+    .services_wrap__desktop,
+    .bottom_wrap__desktop {
         display: none;
     }
 
@@ -936,6 +938,7 @@ a {
 
 
     .button_wrap {
+        /*--HIDES BUTTON WRAP FROM IPAD DISPLAY---*/
         display: none;
     }
 
@@ -1005,6 +1008,162 @@ a {
 
     /*---//  NEXT/PREVIOUS BUTTONS---*/
 
+
+}
+
+/* iPad Pro ----------- */
+@media only screen and (min-device-width : 1024px) {
+
+    /*---TOP CONTENTS---*/
+
+
+    .index_logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tap_to_select {
+        font-size: 22px;
+    }
+
+    /*---//  TOP CONTENTS---*/
+
+    /*---SERVICE CONTENTS---*/
+
+
+    .basic_clean_image,
+    .deep_clean_image,
+    .moving_in_out_image {
+        height: 200px;
+    }
+
+    .basic_clean_title,
+    .deep_clean_title,
+    .moving_in_out_title {
+        font-size: 3em;
+    }
+
+    .basic_clean_blurb,
+    .deep_clean_blurb,
+    .moving_in_out_blurb {
+        font-size: 30px;
+    }
+
+    /*---//  SERVICE CONTENTS---*/
+
+    /*---NEXT/PREVIOUS BUTTONS---*/
+
+
+    .next_button,
+    .previous_button {
+        width: 160px;
+        height: 100px;
+
+    }
+
+    .next_arrow_icon,
+    .previous_arrow_icon {
+        height: 80px;
+    }
+
+    .to_select_service_text__ipad {
+        color: #EDC681;
+        font-size: 1.8em;
+        font-weight: 200;
+    }
+
+    /*---//  NEXT/PREVIOUS BUTTONS---*/
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+    .slick_wrap,
+    .button_wrap__ipad {
+        display: none !important;
+    }
+
+    /*---TOP CONTENTS---*/
+    .top_contents_wrapper {
+        height: 15%;
+
+    }
+
+    .index_logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tap_to_select {
+        font-size: 13px;
+    }
+
+    /*---//  TOP CONTENTS---*/
+
+    /*---SERVICE CONTENTS---*/
+
+    .services_wrap__desktop {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .basic_clean_wrap__desktop,
+    .deep_clean_wrap__desktop,
+    .moving_in_out_wrap__desktop {
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        cursor: pointer;
+        border-radius: 0px;
+        background: linear-gradient(145deg, #1a1919, #161515);
+        box-shadow: 5px 5px 10px #161515,
+            -5px -5px 10px #1a1919;
+
+    }
+
+
+    .basic_clean_title__desktop,
+    .deep_clean_title__desktop,
+    .moving_in_out_title__desktop {
+        color: #fff;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .basic_clean_blurb__desktop,
+    .deep_clean_blurb__desktop,
+    .moving_in_out_blurb__desktop {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 200;
+        text-align: center;
+        margin: 0;
+    }
+
+    /*---//  SERVICE CONTENTS---*/
+
+    /*---BOTTOM DESKTOP CONTENTS---*/
+
+    .bottom_wrap__desktop {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+
+    }
+
+
+    /*---//  BOTTOM DESKTOP CONTENTS---*/
 
 }
 
@@ -1080,4 +1239,13 @@ a {
 .previous_button:active>.previous_arrow_icon {
     transform: translateX(20px);
     opacity: 1;
+}
+
+.basic_clean_wrap__desktop:active,
+.deep_clean_wrap__desktop:active,
+.moving_in_out_wrap__desktop:active {
+    border-radius: 0px;
+    background: linear-gradient(145deg, #161515, #1a1919);
+    box-shadow: 5px 5px 10px #161515,
+        -5px -5px 10px #1a1919;
 }
