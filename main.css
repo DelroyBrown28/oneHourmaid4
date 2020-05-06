@@ -379,9 +379,16 @@ html {
 
     .short_description_box {
         background: transparent;
+        color: #fff;
+        padding: 10px;
+        font-size: 1.5em;
+        font-weight: 200;
         width: 80%;
         height: 20%;
+        outline: none;
         border: 0.5px solid #EDC681;
+        font-family: 'Lato', sans-serif;
+
     }
 
     .submit_form_button {
@@ -400,7 +407,7 @@ html {
     textarea::-webkit-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1em;
+        font-size: 1em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -409,7 +416,7 @@ html {
         /* Firefox 18- */
         color: #fff;
         text-align: center;
-        font-size: 1em;
+        font-size: 1em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -418,7 +425,7 @@ html {
         /* Firefox 19+ */
         color: #fff;
         text-align: center;
-        font-size: 1em;
+        font-size: 1em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -426,7 +433,7 @@ html {
     textarea:-ms-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1em;
+        font-size: 1em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -434,7 +441,7 @@ html {
     textarea::placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1em;
+        font-size: 1em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -982,6 +989,7 @@ html {
 
     .submit_form_button {
         font-size: 1.4em;
+        cursor: pointer;
     }
 
     /*-----FORM PLACEHOLDERS-----*/
@@ -1161,6 +1169,91 @@ html {
     }
 
     /*---------//  ** HOW MANY ROOMS START **---------*/
+    /*---------** LOCATION FORM PAGE **---------*/
+
+
+    .location_details_title {
+        font-size: 2.7em;
+    }
+
+    .cleaning_location_title {
+        font-size: 35px;
+    }
+
+    /*-----FORM PLACEHOLDERS-----*/
+    textarea::-webkit-input-placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea:-moz-placeholder {
+        /* Firefox 18- */
+        color: #fff;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #fff;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea:-ms-input-placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea::placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    ::-webkit-input-placeholder {
+        /* Edge */
+        color: #fff;
+        font-weight: 300;
+        font-size: 1.7em;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #fff;
+        font-weight: 300;
+        font-size: 1.7em;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    ::placeholder {
+        color: #fff;
+        font-weight: 300;
+        font-size: 1.7em;
+        font-family: 'Lato', sans-serif;
+    }
+
+    /*-----// FORM PLACEHOLDERS-----*/
+
+
+
+
+    /*---------//  ** LOCATION FORM PAGE **---------*/
 
 
 }
@@ -1253,7 +1346,7 @@ html {
     }
 
     /*---//  BOTTOM DESKTOP CONTENTS---*/
-    /*---------** HOW MANY ROOMS START **---------*/
+    /*---------** HOW MANY ROOMS PAGE **---------*/
 
     body {
         align-items: center;
@@ -1311,7 +1404,92 @@ html {
         cursor: pointer;
     }
 
-    /*---------//  ** HOW MANY ROOMS START **---------*/
+    /*---------//  ** HOW MANY ROOMS PAGE **---------*/
+    /*---------** LOCATION FORM PAGE **---------*/
+
+    .location_details_title {
+        font-size: 2.4em;
+    }
+
+    .contact_form {
+        width: 50%;
+
+    }
+
+    .cleaning_location_title {
+        font-size: 20px;
+    }
+
+    /*-----FORM PLACEHOLDERS-----*/
+    textarea::-webkit-input-placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea:-moz-placeholder {
+        /* Firefox 18- */
+        color: #fff;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #fff;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea:-ms-input-placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea::placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    ::-webkit-input-placeholder {
+        /* Edge */
+        color: #fff;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #fff;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    ::placeholder {
+        color: #fff;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+    }
+
+    /*-----// FORM PLACEHOLDERS-----*/
+
+
+    /*---------//  ** LOCATION FORM PAGE **---------*/
+
 
 
 }
