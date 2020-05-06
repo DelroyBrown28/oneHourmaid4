@@ -337,6 +337,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
 
     .location_details_title {
@@ -345,6 +346,12 @@ html {
         font-size: 22px;
         font-weight: 200;
 
+    }
+
+    .back_button {
+        position: absolute;
+        left: 20px;
+        height: 30px;
     }
 
     /*-----//  TOP CONTENTS-----*/
@@ -362,9 +369,10 @@ html {
 
     .form_inputs {
         width: 85%;
-        height: 20px;
+        height: 30px;
         border: none;
-        padding-left: 15px;
+        font-size: 1em;
+        padding-left: 10px;
         border-bottom: 1px solid #EDC681;
         outline: none;
         color: #fff;
@@ -381,13 +389,14 @@ html {
         background: transparent;
         color: #fff;
         padding: 10px;
-        font-size: 1.5em;
+        font-size: 22px;
         font-weight: 200;
         width: 80%;
         height: 20%;
         outline: none;
         border: 0.5px solid #EDC681;
         font-family: 'Lato', sans-serif;
+        resize: none;
 
     }
 
@@ -407,7 +416,7 @@ html {
     textarea::-webkit-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1em !important;
+        font-size: 0.7em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -416,7 +425,7 @@ html {
         /* Firefox 18- */
         color: #fff;
         text-align: center;
-        font-size: 1em !important;
+        font-size: 0.7em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -425,7 +434,7 @@ html {
         /* Firefox 19+ */
         color: #fff;
         text-align: center;
-        font-size: 1em !important;
+        font-size: 0.7em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -433,7 +442,7 @@ html {
     textarea:-ms-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1em !important;
+        font-size: 0.7em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -441,7 +450,7 @@ html {
     textarea::placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1em !important;
+        font-size: 0.7em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -449,6 +458,7 @@ html {
     ::-webkit-input-placeholder {
         /* Edge */
         color: #fff;
+        opacity: 0.5;
         font-weight: 300;
         font-family: 'Lato', sans-serif;
 
@@ -457,6 +467,7 @@ html {
     :-ms-input-placeholder {
         /* Internet Explorer 10-11 */
         color: #fff;
+        opacity: 0.5;
         font-weight: 300;
         font-family: 'Lato', sans-serif;
 
@@ -464,7 +475,9 @@ html {
 
     ::placeholder {
         color: #fff;
+        opacity: 0.5;
         font-weight: 300;
+        font-size: 0.9em;
         font-family: 'Lato', sans-serif;
     }
 
@@ -996,7 +1009,7 @@ html {
     textarea::-webkit-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.3em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1005,7 +1018,7 @@ html {
         /* Firefox 18- */
         color: #fff;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.3em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1014,7 +1027,7 @@ html {
         /* Firefox 19+ */
         color: #fff;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.3em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1022,7 +1035,7 @@ html {
     textarea:-ms-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.3em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1030,7 +1043,7 @@ html {
     textarea::placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.3em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1184,7 +1197,7 @@ html {
     textarea::-webkit-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.8em;
+        font-size: 1.8em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1193,7 +1206,7 @@ html {
         /* Firefox 18- */
         color: #fff;
         text-align: center;
-        font-size: 1.8em;
+        font-size: 1.8em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1202,7 +1215,7 @@ html {
         /* Firefox 19+ */
         color: #fff;
         text-align: center;
-        font-size: 1.8em;
+        font-size: 1.8em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1210,7 +1223,7 @@ html {
     textarea:-ms-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.8em;
+        font-size: 1.8em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1218,7 +1231,7 @@ html {
     textarea::placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.8em;
+        font-size: 1.8em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1378,6 +1391,12 @@ html {
         font-size: 1.1em;
     }
 
+    .counter_opacity1,
+    .counter_opacity2,
+    .counter_opacity3 {
+        opacity: 0;
+    }
+
 
     .addRoom,
     .subtractRoom {
@@ -1409,22 +1428,35 @@ html {
 
     .location_details_title {
         font-size: 2.4em;
+        opacity: 0;
     }
 
     .contact_form {
         width: 50%;
 
+
+    }
+
+    .submit_form_button {
+        opacity: 0;
     }
 
     .cleaning_location_title {
         font-size: 20px;
+        opacity: 0;
+    }
+
+    .back_button {
+        left: 576px;
+        cursor: pointer;
+        opacity: 0.5;
     }
 
     /*-----FORM PLACEHOLDERS-----*/
     textarea::-webkit-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1.3em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1433,7 +1465,7 @@ html {
         /* Firefox 18- */
         color: #fff;
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1.3em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1442,7 +1474,7 @@ html {
         /* Firefox 19+ */
         color: #fff;
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1.3em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1450,7 +1482,7 @@ html {
     textarea:-ms-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1.3em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1458,7 +1490,7 @@ html {
     textarea::placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1.3em !important;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1466,6 +1498,7 @@ html {
     ::-webkit-input-placeholder {
         /* Edge */
         color: #fff;
+        font-size: 1.3em;
         font-weight: 300;
         font-family: 'Lato', sans-serif;
 
@@ -1474,6 +1507,7 @@ html {
     :-ms-input-placeholder {
         /* Internet Explorer 10-11 */
         color: #fff;
+        font-size: 1.3em;
         font-weight: 300;
         font-family: 'Lato', sans-serif;
 
@@ -1481,13 +1515,12 @@ html {
 
     ::placeholder {
         color: #fff;
+        font-size: 1.3em;
         font-weight: 300;
         font-family: 'Lato', sans-serif;
     }
 
     /*-----// FORM PLACEHOLDERS-----*/
-
-
     /*---------//  ** LOCATION FORM PAGE **---------*/
 
 
@@ -1593,5 +1626,16 @@ html {
 
 .submit_form_button:active {
     border-width: 10px;
+    outline: none;
+
+}
+
+.back_button:hover {
+    opacity: 1;
+}
+
+.back_button:active {
+    opacity: 0.5;
+    transform: translateX(-5px);
 
 }

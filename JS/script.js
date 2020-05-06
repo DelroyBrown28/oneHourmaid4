@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
 
-    // DELAYS CARD APPEARANCE IN DESKTOP VIEW
+    // DELAYS APPEARANCE IN DESKTOP VIEW
     function cardsOnLoad() {
         $(".basic_clean_wrap__desktop").animate({
             opacity: "1",
@@ -23,10 +23,22 @@ $(document).ready(function () {
         $(".bottom_wrap__desktop").animate({
             opacity: "1",
         }, 5000)
-
-
     }
     window.onload = fadeInOnload();
+
+    function locationDetailsFadeIn() {
+        $(".location_details_title, .counter_opacity1").animate({
+            opacity: "1",
+        }, 1000);
+        $(".cleaning_location_title, .counter_opacity2").animate({
+            opacity: "1",
+        }, 2000);
+
+        $(".submit_form_button, .counter_opacity3").animate({
+            opacity: "1",
+        }, 3000);
+    }
+    window.onload = locationDetailsFadeIn();
 
     // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
     $(".slick_wrap").slick({
