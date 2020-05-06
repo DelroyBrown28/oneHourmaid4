@@ -333,6 +333,76 @@ html {
     /*-----//  NEXT/PREVIOUS BUTTONS-----*/
     /*---------** CONTACT FORM **---------*/
 
+    #contact_form_body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top_contents_wrapper__form {
+        position: relative;
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .location_details_title {
+        color: #EDC681;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 200;
+
+    }
+
+    .contact_form {
+        width: 90%;
+        height: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column;
+
+    }
+
+    .form_inputs {
+        width: 85%;
+        height: 20px;
+        border: none;
+        padding-left: 15px;
+        border-bottom: 1px solid #EDC681;
+        outline: none;
+        color: #fff;
+        background-color: transparent;
+    }
+
+    .cleaning_location_title {
+        color: #EDC681;
+        font-weight: 100;
+        margin: 5px 0px;
+    }
+
+    .short_description_box {
+        background: transparent;
+        width: 80%;
+        height: 20%;
+        border: 0.5px solid #EDC681;
+    }
+
+    .submit_form_button {
+        width: 100%;
+        height: 10%;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        border-left: 1px solid #EDC681;
+        border-right: 1px solid #EDC681;
+        transition: 0.1s;
+    }
+
 
     /*--------BACK TO PREVIOS PAGE--------*/
 
@@ -344,111 +414,17 @@ html {
 
     }
 
-    .backToPreviousButton {
-        position: absolute;
-        height: 30px;
-        top: 33%;
-        left: 30px;
-        transition: 0.1s;
-        z-index: 1;
 
-    }
-
-
-    .locationDetails_title {
-        position: relative;
-        color: #EDC681;
-        font-weight: 200;
-        font-size: 22px;
-        margin: 0;
-        height: 36%;
-        align-self: center;
-    }
 
     /*---------FORM START---------*/
 
 
-    .contact_form {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-evenly;
-        flex-flow: column;
-
-    }
 
 
-
-    .form_inputs {
-        position: relative;
-        width: 70%;
-        height: 20px;
-        border: none;
-        border-bottom: 1px solid #fff;
-        outline: none;
-        background-color: transparent;
-        color: #EDC681;
-        padding-left: 15px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-    }
-
-    .cleaningLocationTitle {
-        position: relative;
-        color: #EDC681;
-        font-weight: 300;
-        margin: 0;
-        margin-left: 40px;
-        align-self: flex-start;
-    }
-
-    .short_description_box {
-        position: relative;
-        width: 70%;
-        height: 20%;
-        border: none;
-        border: 1px solid #EDC681;
-        background-color: transparent;
-        color: #fff;
-        padding: 7px;
-
-    }
 
     /*---------BOTTOM BUTTON---------*/
 
 
-    .findcleaner_buttonWrap {
-        position: relative;
-        height: 15%;
-        width: 100%;
-        bottom: 0;
-
-
-
-    }
-
-    .findcleaner_button {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        background-color: transparent;
-        border: none;
-        border-left: 1px solid #EDC681;
-        border-right: 1px solid #EDC681;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 300;
-        font-size: 1.2em;
-        text-transform: uppercase;
-        transition: 0.1s;
-
-    }
 
 
     /*---------FORM PLACEHOLDERS---------*/
@@ -457,7 +433,7 @@ html {
     textarea::-webkit-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -466,7 +442,7 @@ html {
         /* Firefox 18- */
         color: #fff;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -475,7 +451,7 @@ html {
         /* Firefox 19+ */
         color: #fff;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -483,7 +459,7 @@ html {
     textarea:-ms-input-placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -491,7 +467,7 @@ html {
     textarea::placeholder {
         color: #fff;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 100;
         opacity: 0.7;
     }
@@ -1277,10 +1253,6 @@ html {
         cursor: pointer;
     }
 
-
-
-
-
     /*---------//  ** HOW MANY ROOMS START **---------*/
 
 
@@ -1307,7 +1279,7 @@ html {
     transform: translateX(15px);
 }
 
-.findcleaner_button:active,
+
 .bookCleaner_button:active {
     color: #000;
     background-color: #EDC681;
@@ -1315,14 +1287,8 @@ html {
 
 }
 
-.backToPreviousButton:active {
-    transform: translateX(20px);
-}
 
 
-.form_inputs:focus {
-    border-bottom: 1px solid #EDC681;
-}
 
 .TIPbutton:active {
     background-color: #EDC681;
@@ -1386,5 +1352,10 @@ html {
     background: linear-gradient(145deg, #161515, #1a1919);
     box-shadow: 5px 5px 0px #161515,
         -5px -5px 0px #1a1919;
+
+}
+
+.submit_form_button:active {
+    border-width: 10px;
 
 }
