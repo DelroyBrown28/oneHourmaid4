@@ -26,7 +26,8 @@
     <form action="" class="contact_form" onsubmit="return sendMail(this);">
 
         <input type="text" name="full_name" class="form_inputs fullName_input" autocomplete="off"
-            placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'">
+            placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required>
+
         <input type="text" name="emailAddress" class="form_inputs emailAddress_input" autocomplete="off"
             placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
 
@@ -40,42 +41,33 @@
             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Town/City'" required>
 
         <input type="text" name="postcode" class="form_inputs postcode_input" autocomplete="off" placeholder="Postcode"
-            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'">
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" required>
 
         <textarea class="short_description_box" name="cleanRequest"
             placeholder="Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout..."
             onfocus="this.placeholder = ''"
-            onblur="this.placeholder = 'Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout...'"></textarea>
+            onblur="this.placeholder = 'Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout...'"
+            required></textarea>
 
-        <button class="submit_form_button" type="submit" on//Click="location.href='mapsAPI.html'">FIND ME A CLEANER</button>
-
-
-    </form>
-    <!--// LOCATION FORM-->
-
-    <!--FINE ME A CLEANER BUTTON-->
+        <button class="submit_form_button" type="submit" on//Click="location.href='mapsAPI.html'">FIND ME A
+            CLEANER</button> </form> <!--// LOCATION FORM-->
 
 
 
-
-    <!--// FINE ME A CLEANER BUTTON-->
-
-
-
-
-    <script src="./JS/jquery-3.5.0.min.js"></script>
-    <script src="./JS/script.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/JS/sendEmail.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_zOJXdo5flT9TmEDrhagtW");
-        })();
-    </script>
+            <script src="./JS/jquery-3.5.0.min.js"></script>
+            <script src="./JS/script.js" type="text/javascript"></script>
+            <script type="text/javascript" src="/JS/sendEmail.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+                (function () {
+                    emailjs.init("user_zOJXdo5flT9TmEDrhagtW");
+                })();
+            </script>
 
 
-    <script>
-    </script>
+            <script>
+            </script>
 
 
 

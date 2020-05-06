@@ -25,7 +25,6 @@ html {
 
 }
 
-
 @media only screen and (min-device-width : 320px) {
 
     .button_wrap__ipad,
@@ -83,8 +82,7 @@ html {
     }
 
 
-    /*---------BASIC CLEAN CONTENTS---------*/
-
+    /*-----SERVICE CONTENTS-----*/
     .slick_wrap {
         width: 100%;
         height: 60%;
@@ -138,9 +136,10 @@ html {
 
     }
 
+    /*-----//  SERVICE CONTENTS-----*/
 
-    /*---------NEXT BUTTONS---------*/
 
+    /*-----NEXT/PREVIOUS BUTTONS-----*/
     .button_wrap {
         position: relative;
         width: 100%;
@@ -175,7 +174,6 @@ html {
 
     }
 
-
     .next_arrow_icon,
     .previous_arrow_icon {
         height: 27px;
@@ -190,7 +188,9 @@ html {
         /*--Opacity set to 0, JS sets to 1 on window load--*/
     }
 
-    /*---------** HOW MANY ROOMS START **---------*/
+    /*-----// NEXT/PREVIOUS BUTTONS-----*/
+
+    /*---------** HOW MANY ROOMS PAGE **---------*/
     /*-----TOP CONTENTS-----*/
 
     .top_contents_wrapper__rooms {
@@ -212,8 +212,6 @@ html {
 
     /*-----//  TOP CONTENTS-----*/
     /*-----ROOM TYPE COUNTERS-----*/
-
-
     .room_type_wrap {
         width: 100%;
         height: 70%;
@@ -221,7 +219,6 @@ html {
         align-items: center;
         justify-content: space-between;
         flex-flow: column;
-
     }
 
     .counter_title {
@@ -243,7 +240,6 @@ html {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
     }
 
     .addRoom,
@@ -279,8 +275,6 @@ html {
 
     /*-----//  ROOM TYPE COUNTERS-----*/
     /*-----NEXT/PREVIOUS BUTTONS-----*/
-
-
     .next_prev_button_wrap {
         width: 100%;
         height: 15%;
@@ -288,7 +282,6 @@ html {
         align-items: center;
         justify-content: space-between;
         opacity: 0;
-
     }
 
     .previous_button__rooms,
@@ -301,7 +294,6 @@ html {
         justify-content: center;
         transition: 0.3s;
         border: none;
-
     }
 
     .next_button__rooms {
@@ -318,20 +310,17 @@ html {
         text-align: center;
         font-size: 0.7em;
         font-weight: 200;
-        /*--Opacity set to 0, JS sets to 1 on window load--*/
-
-
     }
 
     .next_arrow_icon__rooms,
     .previous_arrow_icon__rooms {
         height: 27px;
         transition: 0.1s;
-
     }
 
     /*-----//  NEXT/PREVIOUS BUTTONS-----*/
-    /*---------** CONTACT FORM **---------*/
+
+    /*---------** CONTACT FORM PAGE **---------*/
 
     #contact_form_body {
         display: flex;
@@ -339,6 +328,8 @@ html {
         justify-content: center;
     }
 
+
+    /*-----TOP CONTENTS-----*/
     .top_contents_wrapper__form {
         position: relative;
         width: 100%;
@@ -346,8 +337,6 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-
-
     }
 
     .location_details_title {
@@ -357,6 +346,9 @@ html {
         font-weight: 200;
 
     }
+
+    /*-----//  TOP CONTENTS-----*/
+    /*-----CONTACT FORM-----*/
 
     .contact_form {
         width: 90%;
@@ -403,33 +395,8 @@ html {
         transition: 0.1s;
     }
 
-
-    /*--------BACK TO PREVIOS PAGE--------*/
-
-
-    .backToPrevious {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-
-    }
-
-
-
-    /*---------FORM START---------*/
-
-
-
-
-
-    /*---------BOTTOM BUTTON---------*/
-
-
-
-
-    /*---------FORM PLACEHOLDERS---------*/
-
-
+    /*-----// CONTACT FORM-----*/
+    /*-----FORM PLACEHOLDERS-----*/
     textarea::-webkit-input-placeholder {
         color: #fff;
         text-align: center;
@@ -492,8 +459,9 @@ html {
         color: #fff;
         font-weight: 300;
         font-family: 'Lato', sans-serif;
-
     }
+
+    /*-----// FORM PLACEHOLDERS-----*/
 
     /*---------** MOVING IN/OUT FORM **---------*/
 
@@ -937,9 +905,7 @@ html {
 
     /*---//  NEXT/PREVIOUS BUTTONS---*/
 
-    /*-------**HOW MANY ROOMS PAGE**------*/
-
-
+    /*------------**HOW MANY ROOMS PAGE**-----------*/
     /*-----ROOM TYPE COUNTERS-----*/
     .how_many_rooms_title {
         font-size: 2em;
@@ -996,7 +962,99 @@ html {
     }
 
     /*-----//  NEXT/PREVIOUS BUTTONS-----*/
-    /*-------//  **HOW MANY ROOMS PAGE**------*/
+    /*------------//  **HOW MANY ROOMS PAGE**-----------*/
+
+    /*------------**LOCATION FORM PAGE**-----------*/
+
+
+    .location_details_title {
+        font-size: 30px;
+    }
+
+    .contact_form {
+        width: 80%;
+    }
+
+    .cleaning_location_title {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .submit_form_button {
+        font-size: 1.4em;
+    }
+
+    /*-----FORM PLACEHOLDERS-----*/
+    textarea::-webkit-input-placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea:-moz-placeholder {
+        /* Firefox 18- */
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea:-ms-input-placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea::placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    ::-webkit-input-placeholder {
+        /* Edge */
+        color: #fff;
+        font-weight: 300;
+        font-size: 1.3em;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #fff;
+        font-weight: 300;
+        font-size: 1.3em;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    ::placeholder {
+        color: #fff;
+        font-weight: 300;
+        font-size: 1.3em;
+        font-family: 'Lato', sans-serif;
+    }
+
+    /*-----// FORM PLACEHOLDERS-----*/
+    /*------------//  **LOCATION FORM PAGE**-----------*/
+
 
 
 }
