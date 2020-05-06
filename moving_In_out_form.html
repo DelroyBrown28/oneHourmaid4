@@ -15,52 +15,51 @@
     <title>oneHourmaid - Moving in/Out Location Form</title>
 </head>
 
-<body>
-
-    <div id="rooms_topContents_wrapper">
-
-        <p class="movingInOut_blurb">Let us know the location, date and<br>time you would like us to do a full
-            house<br>clean
-        </p>
-
-        <a href="./index.html">
-            <img class="backToPreviousButton" src="./images/arrowleft.png">
-        </a>
-
-
-        
+<body id="moving_in_out_body">
+    <!--TOP CONTENTS-->
+    <div class="top_contents_wrap__movingform">
+        <img src="./images/arrowleft.png" alt="" class="back_button" onClick="location.href='#'">
+        <h1 class="moving_details_title">Moving Details</h1>
     </div>
+    <!--// TOP CONTENTS-->
 
-    <form class="movingInOut_contact_form">
-        <input type="text" class="form_inputs fullName_input" autocomplete="off" placeholder="Full Name"
+    <!--MOVING IN/OUT FORM-->
+
+
+    <form class="moving_contact_form">
+
+        <input type="text" class="form_inputs__movingform fullName_input" autocomplete="off" placeholder="Full Name"
             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'">
 
-        <input type="number" class="form_inputs contactNum_input" autocomplete="off" placeholder="Contact Number"
-            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact Number'">
+        <input type="number" class="form_inputs__movingform contactNum_input" autocomplete="off"
+            placeholder="Contact Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact Number'">
 
-        <p class="cleaningLocationTitle">Cleaning Location:</p>
+        <p class="cleaning_location_title__movingform">Cleaning Location:</p>
 
-        <input type="text" class="form_inputs streetAddress_input" autocomplete="off"
+        <input type="text" class="form_inputs__movingform streetAddress_input" autocomplete="off"
             placeholder="Street Address (of cleaning location)" onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Street Address (of cleaning location)'" required>
 
-        <input type="text" class="form_inputs townCity_input" autocomplete="off"
+        <input type="text" class="form_inputs__movingform townCity_input" autocomplete="off"
             placeholder="Town/City (of cleaning location)" onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Town/City (of cleaning location)'" required>
 
-        <input type="text" class="form_inputs postcode_input" autocomplete="off"
+        <input type="text" class="form_inputs__movingform postcode_input" autocomplete="off"
             placeholder="Postcode (of cleaning location)" onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Postcode (of cleaning location)'">
 
-        <input class="form_inputs dateTime_input" type="datetime-local" autocomplete="off">
+        <input class="form_inputs dateTime_input" type="datetime-local" autocomplete="off" required>
+
+        <button class="submit_button__movingform">BOOK MY CLEANER</button>
+
+
+
 
     </form>
 
-    <div class="bookCleaner_buttonWrap">
 
-        <div class="bookCleaner_button">Book me a cleaner
-        </div>
-    </div>
+
+    <!--// MOVING IN/OUT FORM-->
 
 
 
