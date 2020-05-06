@@ -15,6 +15,15 @@ $(document).ready(function () {
     }
     window.onload = cardsOnLoad();
 
+    function fadeInOnload() {
+        $(".button_wrap__ipad, .next_prev_button_wrap").animate({
+            opacity: "1",
+        }, 1000)
+
+    }
+    window.onload = fadeInOnload();
+
+
 
     // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
     $(".slick_wrap").slick({
