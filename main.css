@@ -1272,6 +1272,11 @@ html {
 
     }
 
+    .next_button__rooms,
+    .previous_button__rooms {
+        cursor: pointer;
+    }
+
 
 
 
