@@ -20,6 +20,11 @@ html {
     color: #EDC681;
 }
 
+.border_width {
+    border-width: 8px;
+
+}
+
 
 @media only screen and (min-device-width : 320px) {
 
@@ -185,670 +190,665 @@ html {
         /*--Opacity set to 0, JS sets to 1 on window load--*/
     }
 
+    /*---------** HOW MANY ROOMS START **---------*/
+    /*-----TOP CONTENTS-----*/
 
+    .top_contents_wrapper__rooms {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-}
 
-
-/*---------** HOW MANY ROOMS START **---------*/
-/*-----TOP CONTENTS-----*/
-
-.top_contents_wrapper__rooms {
-    width: 100%;
-    height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-.how_many_rooms_title {
-    color: #EDC681;
-    margin: 0;
-    font-size: 22px;
-    font-weight: 200;
-}
-
-/*-----//  TOP CONTENTS-----*/
-/*-----ROOM TYPE COUNTERS-----*/
-
-
-.room_type_wrap {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-flow: column;
-
-}
-
-.counter_title {
-    width: 85%;
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
-}
-
-.counter_title_underline {
-    width: 55%;
-    margin: 0;
-    border: 0.8px solid #EDC681;
-}
-
-
-.counter_wrap {
-    width: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.addRoom,
-.subtractRoom {
-    width: 50px;
-    height: 44.5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 0px;
-    background: linear-gradient(145deg, #1a1919, #161515);
-    box-shadow: 5px 5px 0px #161515,
-        -5px -5px 0px #1a1919;
-}
-
-.counter_down_arrow,
-.counter_up_arrow {
-    height: 20px;
-}
-
-#rooms_amount_bedroom,
-#rooms_amount_bathrooms,
-#rooms_amount_kitchens {
-    border: none;
-    height: 40px;
-    width: 50%;
-    font-size: 1.2em;
-    background: transparent;
-    color: #fff;
-    text-align: center;
-}
-
-/*-----//  ROOM TYPE COUNTERS-----*/
-/*-----NEXT/PREVIOUS BUTTONS-----*/
-
-
-.next_prev_button_wrap {
-    width: 100%;
-    height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    opacity: 0;
-
-}
-
-.previous_button__rooms,
-.next_button__rooms {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-    border: none;
-
-}
-
-.next_button__rooms {
-    margin-right: 15px;
-}
-
-.previous_button__rooms {
-    margin-left: 15px;
-}
-
-.to_select_service_text__rooms {
-    color: #fff;
-    margin: 0;
-    text-align: center;
-    font-size: 0.8em;
-    font-weight: 200;
-    /*--Opacity set to 0, JS sets to 1 on window load--*/
-
-
-}
-
-.next_arrow_icon__rooms,
-.previous_arrow_icon__rooms {
-    height: 27px;
-    transition: 0.1s;
-
-}
-
-/*-----//  NEXT/PREVIOUS BUTTONS-----*/
-/*---------** CONTACT FORM **---------*/
-
-
-/*--------BACK TO PREVIOS PAGE--------*/
-
-
-.backToPrevious {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-
-}
-
-.backToPreviousButton {
-    position: absolute;
-    height: 30px;
-    top: 33%;
-    left: 30px;
-    transition: 0.1s;
-    z-index: 1;
-
-}
-
-
-.locationDetails_title {
-    position: relative;
-    color: #EDC681;
-    font-weight: 200;
-    font-size: 22px;
-    margin: 0;
-    height: 36%;
-    align-self: center;
-}
-
-/*---------FORM START---------*/
-
-
-.contact_form {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
-    flex-flow: column;
-
-}
-
-
-
-.form_inputs {
-    position: relative;
-    width: 70%;
-    height: 20px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background-color: transparent;
-    color: #EDC681;
-    padding-left: 15px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-}
-
-.cleaningLocationTitle {
-    position: relative;
-    color: #EDC681;
-    font-weight: 300;
-    margin: 0;
-    margin-left: 40px;
-    align-self: flex-start;
-}
-
-.short_description_box {
-    position: relative;
-    width: 70%;
-    height: 20%;
-    border: none;
-    border: 1px solid #EDC681;
-    background-color: transparent;
-    color: #fff;
-    padding: 7px;
-
-}
-
-/*---------BOTTOM BUTTON---------*/
-
-
-.findcleaner_buttonWrap {
-    position: relative;
-    height: 15%;
-    width: 100%;
-    bottom: 0;
-
-
-
-}
-
-.findcleaner_button {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    border-left: 1px solid #EDC681;
-    border-right: 1px solid #EDC681;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    transition: 0.1s;
-
-}
-
-
-/*---------FORM PLACEHOLDERS---------*/
-
-
-textarea::-webkit-input-placeholder {
-    color: #fff;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 100;
-    opacity: 0.7;
-}
-
-textarea:-moz-placeholder {
-    /* Firefox 18- */
-    color: #fff;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 100;
-    opacity: 0.7;
-}
-
-textarea::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #fff;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 100;
-    opacity: 0.7;
-}
-
-textarea:-ms-input-placeholder {
-    color: #fff;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 100;
-    opacity: 0.7;
-}
-
-textarea::placeholder {
-    color: #fff;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 100;
-    opacity: 0.7;
-}
-
-::-webkit-input-placeholder {
-    /* Edge */
-    color: #fff;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
-
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #fff;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
-
-}
-
-::placeholder {
-    color: #fff;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
-
-}
-
-/*---------** MOVING IN/OUT FORM **---------*/
-
-
-.movingInOut_contact_form {
-    position: relative;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
-    flex-flow: column;
-
-}
-
-/*---------DATE/TIME STYLES---------*/
-
-
-.dateTime_input {
-    text-align: center;
-}
-
-::-webkit-datetime-edit {
-    padding: 1em;
-}
-
-::-webkit-datetime-edit-fields-wrapper {
-    background: transparent;
-}
-
-::-webkit-datetime-edit-text {
-    color: #fff;
-    padding: 0 0.3em;
-}
-
-::-webkit-datetime-edit-month-field {
-    color: #EDC681;
-}
-
-::-webkit-datetime-edit-day-field {
-    color: #EDC681;
-}
-
-::-webkit-datetime-edit-year-field {
-    color: #EDC681;
-}
-
-::-webkit-inner-spin-button {
-    display: none;
-}
-
-::-webkit-calendar-picker-indicator {
-    display: none;
-}
-
-.bookCleaner_buttonWrap {
-    position: relative;
-    height: 15%;
-
-}
-
-/*---------BOTTOM NEXT BUTTON---------*/
-
-
-.bookCleaner_button {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    border-top: 1px solid #EDC681;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    transition: 0.1s;
-
-}
-
-/*---------** MAPS PAGE **---------*/
-
-
-
-.cancelCleaner_areYouSure {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    font-size: 1.7em;
-}
-
-.answer_yes,
-.answer_no {
-    position: absolute;
-    bottom: 17%;
-    font-size: 1.3em;
-    font-weight: 300;
-
-
-}
-
-.answer_yes {
-    left: 30%;
-
-}
-
-.answer_no {
-    right: 30%;
-}
-
-
-.cleanerOnTheWay_title {
-    position: relative;
-    color: #EDC681;
-    font-weight: 200;
-    font-size: 22px;
-    margin: 0;
-    height: 36%;
-    align-self: center;
-}
-
-.cleanerSubtitle {
-    position: relative;
-    color: #fff;
-    text-align: center;
-    font-weight: 300;
-    font-size: 12px;
-}
-
-
-/*---------END OF TITLE DOT ANIMATION---------*/
-
-.dot1,
-.dot2,
-.dot3,
-.dot4 {
-    -webkit-animation: fadein 1s ease-in alternate infinite;
-    -moz-animation: fadein 1s ease-in alternate infinite;
-    animation: fadein 1s ease-in alternate infinite;
-}
-
-.dot2 {
-    animation-delay: 0.3s;
-}
-
-.dot3 {
-    animation-delay: 0.6s;
-}
-
-.dot3 {
-    animation-delay: 0.9s;
-}
-
-
-
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0.3;
     }
 
-    to {
-        opacity: 1;
-
-    }
-}
-
-@-moz-keyframes fadein {
-    from {
-        opacity: 0.3;
+    .how_many_rooms_title {
+        color: #EDC681;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 200;
     }
 
-    to {
-        opacity: 1;
+    /*-----//  TOP CONTENTS-----*/
+    /*-----ROOM TYPE COUNTERS-----*/
+
+
+    .room_type_wrap {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: column;
 
     }
-}
 
-@keyframes fadein {
-    from {
-        opacity: 0.3;
+    .counter_title {
+        width: 85%;
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
     }
 
-    to {
-        opacity: 1;
+    .counter_title_underline {
+        width: 55%;
+        margin: 0;
+        border: 0.8px solid #EDC681;
+    }
+
+
+    .counter_wrap {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
     }
-}
+
+    .addRoom,
+    .subtractRoom {
+        width: 50px;
+        height: 44.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 0px;
+        background: linear-gradient(145deg, #1a1919, #161515);
+        box-shadow: 5px 5px 0px #161515,
+            -5px -5px 0px #1a1919;
+    }
+
+    .counter_down_arrow,
+    .counter_up_arrow {
+        height: 20px;
+    }
+
+    #rooms_amount_bedroom,
+    #rooms_amount_bathrooms,
+    #rooms_amount_kitchens {
+        border: none;
+        height: 40px;
+        width: 50%;
+        font-size: 1.2em;
+        background: transparent;
+        color: #fff;
+        text-align: center;
+    }
+
+    /*-----//  ROOM TYPE COUNTERS-----*/
+    /*-----NEXT/PREVIOUS BUTTONS-----*/
 
 
-#mapWrap {
-    position: relative;
-    width: 100%;
-    height: 25%;
+    .next_prev_button_wrap {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 0;
 
-}
+    }
 
-#map {
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
+    .previous_button__rooms,
+    .next_button__rooms {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        border: none;
 
-/*---------CLEANER INFORMATION---------*/
+    }
 
+    .next_button__rooms {
+        margin-right: 15px;
+    }
 
-.cleaner_information {
-    position: relative;
+    .previous_button__rooms {
+        margin-left: 15px;
+    }
 
-    width: 100%;
-    height: 45%;
-}
-
-.cleanerForToday_title {
-    position: relative;
-    color: #fff;
-    font-size: 1.2em;
-    text-align: center;
-}
-
-.cleaner_name {
-    position: relative;
-    color: #fff;
-    font-weight: 300;
-    text-align: center;
-    margin: 0;
-
-}
-
-hr {
-    width: 50%;
-}
-
-.service_type_wrap,
-.numberOfRooms_wrap {
-    position: relative;
-    width: 100%;
-    height: 20%;
-
-    display: flex;
-}
-
-.service,
-.service_type,
-.noOfRooms,
-.roomsInfo_wrap {
-    position: relative;
-    color: #fff;
-    margin: 0;
-    font-size: 1em;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.roomsInfo_wrap {
-    flex-flow: column;
-}
-
-.service_type {
-    font-weight: 300;
-
-}
-
-.roomsInfo,
-.roomsInfo2 {
-    position: relative;
-    width: 100%;
-    height: 50%;
-
-    font-weight: 300;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.leave_tip_wrap {
-    position: relative;
-    width: 100%;
-    height: 22%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.TIPbutton {
-    position: absolute;
-    width: 65%;
-    height: 50%;
-    color: #fff;
-    font-weight: 300;
-    opacity: 0.7;
-    border: none;
-    border-radius: 100px;
-    background: #181717;
-    box-shadow: -12px 12px 23px #121212,
-        12px -12px 23px #1e1c1c;
-    outline: none;
-}
+    .to_select_service_text__rooms {
+        color: #fff;
+        margin: 0;
+        text-align: center;
+        font-size: 0.7em;
+        font-weight: 200;
+        /*--Opacity set to 0, JS sets to 1 on window load--*/
 
 
-/*---------CANCEL CLEANER BUTTON---------*/
+    }
+
+    .next_arrow_icon__rooms,
+    .previous_arrow_icon__rooms {
+        height: 27px;
+        transition: 0.1s;
+
+    }
+
+    /*-----//  NEXT/PREVIOUS BUTTONS-----*/
+    /*---------** CONTACT FORM **---------*/
+
+
+    /*--------BACK TO PREVIOS PAGE--------*/
+
+
+    .backToPrevious {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .backToPreviousButton {
+        position: absolute;
+        height: 30px;
+        top: 33%;
+        left: 30px;
+        transition: 0.1s;
+        z-index: 1;
+
+    }
+
+
+    .locationDetails_title {
+        position: relative;
+        color: #EDC681;
+        font-weight: 200;
+        font-size: 22px;
+        margin: 0;
+        height: 36%;
+        align-self: center;
+    }
+
+    /*---------FORM START---------*/
+
+
+    .contact_form {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        flex-flow: column;
+
+    }
 
 
 
-.cancelCleaner_buttonWrap {
-    position: relative;
-    height: 15%;
+    .form_inputs {
+        position: relative;
+        width: 70%;
+        height: 20px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background-color: transparent;
+        color: #EDC681;
+        padding-left: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+    }
 
-}
+    .cleaningLocationTitle {
+        position: relative;
+        color: #EDC681;
+        font-weight: 300;
+        margin: 0;
+        margin-left: 40px;
+        align-self: flex-start;
+    }
 
-.cancelCleaner_button {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    border-top: 1px solid #EDC681;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    transition: 0.1s;
-    z-index: 1;
+    .short_description_box {
+        position: relative;
+        width: 70%;
+        height: 20%;
+        border: none;
+        border: 1px solid #EDC681;
+        background-color: transparent;
+        color: #fff;
+        padding: 7px;
 
-}
+    }
+
+    /*---------BOTTOM BUTTON---------*/
+
+
+    .findcleaner_buttonWrap {
+        position: relative;
+        height: 15%;
+        width: 100%;
+        bottom: 0;
+
+
+
+    }
+
+    .findcleaner_button {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        border-left: 1px solid #EDC681;
+        border-right: 1px solid #EDC681;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        transition: 0.1s;
+
+    }
+
+
+    /*---------FORM PLACEHOLDERS---------*/
+
+
+    textarea::-webkit-input-placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea:-moz-placeholder {
+        /* Firefox 18- */
+        color: #fff;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #fff;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea:-ms-input-placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    textarea::placeholder {
+        color: #fff;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 100;
+        opacity: 0.7;
+    }
+
+    ::-webkit-input-placeholder {
+        /* Edge */
+        color: #fff;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #fff;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    ::placeholder {
+        color: #fff;
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    /*---------** MOVING IN/OUT FORM **---------*/
+
+
+    .movingInOut_contact_form {
+        position: relative;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        flex-flow: column;
+
+    }
+
+    /*---------DATE/TIME STYLES---------*/
+
+
+    .dateTime_input {
+        text-align: center;
+    }
+
+    ::-webkit-datetime-edit {
+        padding: 1em;
+    }
+
+    ::-webkit-datetime-edit-fields-wrapper {
+        background: transparent;
+    }
+
+    ::-webkit-datetime-edit-text {
+        color: #fff;
+        padding: 0 0.3em;
+    }
+
+    ::-webkit-datetime-edit-month-field {
+        color: #EDC681;
+    }
+
+    ::-webkit-datetime-edit-day-field {
+        color: #EDC681;
+    }
+
+    ::-webkit-datetime-edit-year-field {
+        color: #EDC681;
+    }
+
+    ::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    ::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+
+    .bookCleaner_buttonWrap {
+        position: relative;
+        height: 15%;
+
+    }
+
+    /*---------BOTTOM NEXT BUTTON---------*/
+
+
+    .bookCleaner_button {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        border-top: 1px solid #EDC681;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        transition: 0.1s;
+
+    }
+
+    /*---------** MAPS PAGE **---------*/
+
+
+
+    .cancelCleaner_areYouSure {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .answer_yes,
+    .answer_no {
+        position: absolute;
+        bottom: 17%;
+        font-size: 1.3em;
+        font-weight: 300;
+
+
+    }
+
+    .answer_yes {
+        left: 30%;
+
+    }
+
+    .answer_no {
+        right: 30%;
+    }
+
+
+    .cleanerOnTheWay_title {
+        position: relative;
+        color: #EDC681;
+        font-weight: 200;
+        font-size: 22px;
+        margin: 0;
+        height: 36%;
+        align-self: center;
+    }
+
+    .cleanerSubtitle {
+        position: relative;
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+
+    /*---------END OF TITLE DOT ANIMATION---------*/
+
+    .dot1,
+    .dot2,
+    .dot3,
+    .dot4 {
+        -webkit-animation: fadein 1s ease-in alternate infinite;
+        -moz-animation: fadein 1s ease-in alternate infinite;
+        animation: fadein 1s ease-in alternate infinite;
+    }
+
+    .dot2 {
+        animation-delay: 0.3s;
+    }
+
+    .dot3 {
+        animation-delay: 0.6s;
+    }
+
+    .dot3 {
+        animation-delay: 0.9s;
+    }
+
+
+
+    @-webkit-keyframes fadein {
+        from {
+            opacity: 0.3;
+        }
+
+        to {
+            opacity: 1;
+
+        }
+    }
+
+    @-moz-keyframes fadein {
+        from {
+            opacity: 0.3;
+        }
+
+        to {
+            opacity: 1;
+
+        }
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0.3;
+        }
+
+        to {
+            opacity: 1;
+
+        }
+    }
+
+
+    #mapWrap {
+        position: relative;
+        width: 100%;
+        height: 25%;
+
+    }
+
+    #map {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    /*---------CLEANER INFORMATION---------*/
+
+
+    .cleaner_information {
+        position: relative;
+
+        width: 100%;
+        height: 45%;
+    }
+
+    .cleanerForToday_title {
+        position: relative;
+        color: #fff;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .cleaner_name {
+        position: relative;
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    hr {
+        width: 50%;
+    }
+
+    .service_type_wrap,
+    .numberOfRooms_wrap {
+        position: relative;
+        width: 100%;
+        height: 20%;
+
+        display: flex;
+    }
+
+    .service,
+    .service_type,
+    .noOfRooms,
+    .roomsInfo_wrap {
+        position: relative;
+        color: #fff;
+        margin: 0;
+        font-size: 1em;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .roomsInfo_wrap {
+        flex-flow: column;
+    }
+
+    .service_type {
+        font-weight: 300;
+
+    }
+
+    .roomsInfo,
+    .roomsInfo2 {
+        position: relative;
+        width: 100%;
+        height: 50%;
+
+        font-weight: 300;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .leave_tip_wrap {
+        position: relative;
+        width: 100%;
+        height: 22%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .TIPbutton {
+        position: absolute;
+        width: 65%;
+        height: 50%;
+        color: #fff;
+        font-weight: 300;
+        opacity: 0.7;
+        border: none;
+        border-radius: 100px;
+        background: #181717;
+        box-shadow: -12px 12px 23px #121212,
+            12px -12px 23px #1e1c1c;
+        outline: none;
+    }
+
+
+    /*---------CANCEL CLEANER BUTTON---------*/
+
+
+
+    .cancelCleaner_buttonWrap {
+        position: relative;
+        height: 15%;
+
+    }
+
+    .cancelCleaner_button {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        border-top: 1px solid #EDC681;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        transition: 0.1s;
+        z-index: 1;
+
+    }
 
 
 }
@@ -1116,7 +1116,7 @@ hr {
     }
 
     .to_select_service_text__rooms {
-        font-size: 2em;
+        font-size: 1.8em;
         color: #fff;
     }
 
@@ -1157,7 +1157,6 @@ hr {
     }
 
     /*---//  TOP CONTENTS---*/
-
     /*---SERVICE CONTENTS---*/
 
     .services_wrap__desktop {
@@ -1207,9 +1206,7 @@ hr {
     }
 
     /*---//  SERVICE CONTENTS---*/
-
     /*---BOTTOM DESKTOP CONTENTS---*/
-
     .bottom_wrap__desktop {
         width: 100%;
         height: 15%;
@@ -1217,11 +1214,70 @@ hr {
         align-items: center;
         justify-content: center;
         color: #fff;
+        opacity: 0;
+
+    }
+
+    /*---//  BOTTOM DESKTOP CONTENTS---*/
+    /*---------** HOW MANY ROOMS START **---------*/
+
+    body {
+        align-items: center;
+    }
+
+    .counter_title_underline {
+        border: 0.5px solid #EDC681;
+        transform: rotate(90deg);
+        width: 30px;
+        display: none;
+
+    }
+
+    .how_many_rooms_title {
+        font-size: 2em;
+        /*---Opacity set to 0, resets to 1 on window load---*/
+        opacity: 0;
+    }
+
+    .room_type_wrap {
+        width: 50%;
+    }
+
+    .counter_wrap {
+        justify-content: space-evenly;
+    }
+
+    .counter_title {
+        font-size: 1.1em;
+    }
+
+
+    .addRoom,
+    .subtractRoom {
+        width: 80px;
+        height: 80px;
+    }
+
+    #rooms_amount_bedroom,
+    #rooms_amount_bathrooms,
+    #rooms_amount_kitchens {
+        border-left: 0.5px solid #EDC681;
+        border-right: 0.5px solid #EDC681;
+
+    }
+
+    .next_prev_button_wrap {
+        font-size: 0.7em;
+        justify-content: space-evenly;
 
     }
 
 
-    /*---//  BOTTOM DESKTOP CONTENTS---*/
+
+
+
+    /*---------//  ** HOW MANY ROOMS START **---------*/
+
 
 }
 

@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
 
+
     // DELAYS CARD APPEARANCE IN DESKTOP VIEW
     function cardsOnLoad() {
         $(".basic_clean_wrap__desktop").animate({
@@ -16,14 +17,16 @@ $(document).ready(function () {
     window.onload = cardsOnLoad();
 
     function fadeInOnload() {
-        $(".button_wrap__ipad, .next_prev_button_wrap").animate({
+        $(".button_wrap__ipad, .next_prev_button_wrap, .how_many_rooms_title").animate({
             opacity: "1",
         }, 1000)
+        $(".bottom_wrap__desktop").animate({
+            opacity: "1",
+        }, 5000)
+
 
     }
     window.onload = fadeInOnload();
-
-
 
     // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
     $(".slick_wrap").slick({
@@ -31,6 +34,9 @@ $(document).ready(function () {
         nextArrow: $('.next_button'),
         prevArrow: $('.previous_button'),
     });
+
+
+
 
 });
 
@@ -116,3 +122,4 @@ function initMap() {
     });
 
 }
+
