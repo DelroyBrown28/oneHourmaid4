@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-
-
     // DELAYS APPEARANCE IN DESKTOP VIEW
 
     function fadeInOnload() {
@@ -20,8 +18,7 @@ $(document).ready(function () {
     }
     window.onload = fadeInOnload();
 
-    function locationDetailsFadeIn() {
-    }
+    function locationDetailsFadeIn() {}
     window.onload = locationDetailsFadeIn();
 
     // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
@@ -32,7 +29,10 @@ $(document).ready(function () {
     });
 
 
+
 });
+
+
 
 
 
@@ -116,4 +116,3 @@ function initMap() {
     });
 
 }
-
