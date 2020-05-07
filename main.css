@@ -137,8 +137,6 @@ html {
     }
 
     /*-----//  SERVICE CONTENTS-----*/
-
-
     /*-----NEXT/PREVIOUS BUTTONS-----*/
     .button_wrap {
         position: relative;
@@ -185,14 +183,14 @@ html {
         color: #EDC681;
         text-align: center;
         font-size: 0.8em;
-        /*--Opacity set to 0, JS sets to 1 on window load--*/
     }
 
     /*-----// NEXT/PREVIOUS BUTTONS-----*/
 
+
+
     /*---------** HOW MANY ROOMS PAGE **---------*/
     /*-----TOP CONTENTS-----*/
-
     .top_contents_wrapper__rooms {
         width: 100%;
         height: 15%;
@@ -319,6 +317,8 @@ html {
     }
 
     /*-----//  NEXT/PREVIOUS BUTTONS-----*/
+
+
 
     /*---------** CONTACT FORM PAGE **---------*/
 
@@ -512,7 +512,6 @@ html {
 
     /*-----//  TOP CONTENTS-----*/
     /*-----MOVING IN/OUT FORM-----*/
-
     .moving_contact_form {
         width: 80%;
         height: 85%;
@@ -555,14 +554,7 @@ html {
 
     }
 
-
-
-
-
     /*-----// MOVING IN/OUT FORM-----*/
-
-
-
     /*-----DATE/TIME STYLES-----*/
     .dateTime_input {
         text-align: center;
@@ -606,257 +598,68 @@ html {
 
 
 
-    /*---------** MAPS PAGE **---------*/
-
-
-
-    .cancelCleaner_areYouSure {
-        position: relative;
+    /*---------** GOOGLE MAPS API PAGE **---------*/
+    /*-----TOP CONTENTS-----*/
+    .top_contents_wrap__maps {
+        top: 0;
         width: 100%;
-        text-align: center;
-        font-size: 1.7em;
-    }
-
-    .answer_yes,
-    .answer_no {
-        position: absolute;
-        bottom: 17%;
-        font-size: 1.3em;
-        font-weight: 300;
-
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
 
-    .answer_yes {
-        left: 30%;
-
-    }
-
-    .answer_no {
-        right: 30%;
-    }
-
-
-    .cleanerOnTheWay_title {
-        position: relative;
+    .cleaner_on_the_way_title {
         color: #EDC681;
-        font-weight: 200;
-        font-size: 22px;
         margin: 0;
-        height: 36%;
-        align-self: center;
+        font-size: 22px;
+        font-weight: 200;
+        padding: 10px;
     }
 
-    .cleanerSubtitle {
-        position: relative;
-        color: #fff;
-        text-align: center;
-        font-weight: 300;
-        font-size: 12px;
-    }
-
-
-    /*---------END OF TITLE DOT ANIMATION---------*/
-
-    .dot1,
-    .dot2,
-    .dot3,
-    .dot4 {
-        -webkit-animation: fadein 1s ease-in alternate infinite;
-        -moz-animation: fadein 1s ease-in alternate infinite;
-        animation: fadein 1s ease-in alternate infinite;
-    }
-
-    .dot2 {
-        animation-delay: 0.3s;
-    }
-
-    .dot3 {
-        animation-delay: 0.6s;
-    }
-
-    .dot3 {
-        animation-delay: 0.9s;
+    /*-----//  TOP CONTENTS-----*/
+    /*-----GOOGLE MAP API STYLEs-----*/
+    #maps_body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 
-
-    @-webkit-keyframes fadein {
-        from {
-            opacity: 0.3;
-        }
-
-        to {
-            opacity: 1;
-
-        }
-    }
-
-    @-moz-keyframes fadein {
-        from {
-            opacity: 0.3;
-        }
-
-        to {
-            opacity: 1;
-
-        }
-    }
-
-    @keyframes fadein {
-        from {
-            opacity: 0.3;
-        }
-
-        to {
-            opacity: 1;
-
-        }
-    }
-
-
-    #mapWrap {
-        position: relative;
+    .map_wrap {
+        height: 30%;
         width: 100%;
-        height: 25%;
 
     }
 
     #map {
-        position: relative;
-        height: 100%;
-        width: 100%;
-    }
-
-    /*---------CLEANER INFORMATION---------*/
-
-
-    .cleaner_information {
-        position: relative;
-
-        width: 100%;
-        height: 45%;
-    }
-
-    .cleanerForToday_title {
-        position: relative;
-        color: #fff;
-        font-size: 1.2em;
-        text-align: center;
-    }
-
-    .cleaner_name {
-        position: relative;
-        color: #fff;
-        font-weight: 300;
-        text-align: center;
-        margin: 0;
-
-    }
-
-    hr {
-        width: 50%;
-    }
-
-    .service_type_wrap,
-    .numberOfRooms_wrap {
-        position: relative;
-        width: 100%;
-        height: 20%;
-
-        display: flex;
-    }
-
-    .service,
-    .service_type,
-    .noOfRooms,
-    .roomsInfo_wrap {
-        position: relative;
-        color: #fff;
-        margin: 0;
-        font-size: 1em;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .roomsInfo_wrap {
-        flex-flow: column;
-    }
-
-    .service_type {
-        font-weight: 300;
-
-    }
-
-    .roomsInfo,
-    .roomsInfo2 {
-        position: relative;
-        width: 100%;
-        height: 50%;
-
-        font-weight: 300;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .leave_tip_wrap {
-        position: relative;
-        width: 100%;
-        height: 22%;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .TIPbutton {
-        position: absolute;
-        width: 65%;
-        height: 50%;
-        color: #fff;
-        font-weight: 300;
-        opacity: 0.7;
-        border: none;
-        border-radius: 100px;
-        background: #181717;
-        box-shadow: -12px 12px 23px #121212,
-            12px -12px 23px #1e1c1c;
-        outline: none;
-    }
-
-
-    /*---------CANCEL CLEANER BUTTON---------*/
-
-
-
-    .cancelCleaner_buttonWrap {
-        position: relative;
-        height: 15%;
-
-    }
-
-    .cancelCleaner_button {
-        position: relative;
         width: 100%;
         height: 100%;
-        color: #fff;
-        border-top: 1px solid #EDC681;
+
+
+    }
+
+    /*-----// GOOGLE MAP API STYLES-----*/
+    /*-----SERVICE INFORMATION-----*/
+    
+    .service_info_wrap {
+        width: 100%;
+        height: 55%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-weight: 300;
-        font-size: 1.2em;
-        text-transform: uppercase;
-        transition: 0.1s;
-        z-index: 1;
 
+        border: 1px solid red;
     }
+    
+    
+    
+    
+    /*-----//  SERVICE INFORMATION-----*/
+
+
+
 
 
 }
