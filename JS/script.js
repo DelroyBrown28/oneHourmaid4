@@ -35,19 +35,6 @@ $(document).ready(function () {
 
     }
 
-    $(".open_close_button").click(closeSideInfo);
-
-    function closeSideInfo() {
-        $(".arrow_down_icon").addClass("spin");
-        $(".chosen_service_wrap").css("visibility", "hidden");
-        $(".side_info").animate({
-            height: "50px",
-        })
-        $(".arrow_down_icon").unbind(openSideInfo);
-
-    }
-
-
 
     // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
     $(".slick_wrap").slick({
