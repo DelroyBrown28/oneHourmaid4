@@ -25,6 +25,14 @@ html {
 
 }
 
+.spin {
+    transform: rotate(180deg);
+}
+
+.spin_back {
+    transform: rotate(-180);
+}
+
 @media only screen and (min-device-width : 320px) {
 
     .button_wrap__ipad,
@@ -603,44 +611,122 @@ html {
 
     .side_info {
         position: absolute;
-        width: 70%;
+        width: 100%;
         height: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
         top: 0;
         left: 0;
         z-index: 1;
         background-color: #181717;
     }
 
-    .cleaner_info {
-        width: 100%;
-        height: 80px;
+    .cleaner_info_wrap {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        flex-flow: column;
+        margin-top: 7px;
 
     }
 
-    .cleaner_avatar {
-        width: 40px;
-        height: 40px;
-        border-radius: 100px;
-
-    }
-
-    .avatar_image {
-        width: 40px;
-        height: 40px;
-        border-radius: 100px;
-
+    .cleaner_info {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 200;
+        margin: 0;
     }
 
     .cleaner_name {
         color: #EDC681;
-        margin-right: 30px;
         font-weight: 200;
+        margin: 0;
+        
     }
 
     /*-----//  SIDE CONTENTS-----*/
+
+
+    /*-----CHOSEN SERVICE INFO-----*/
+
+    .chosen_service_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: column;
+        width: 100%;
+        height: 70%;
+
+
+    }
+
+    .your_service_wrap,
+    .your_service_rooms_wrap,
+    .cleaner_will_be_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        width: 150px;
+        height: 75px;
+        border-radius: 0px;
+        background: linear-gradient(145deg, #161515, #1a1919);
+        box-shadow: 12px 12px 24px #121111,
+            -12px -12px 24px #1e1d1d;
+    }
+
+    .your_service,
+    .your_service_rooms,
+    .cleaner_will_be {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 200;
+        margin: 0;
+    }
+
+    .cleaner_will_be {
+        margin-bottom: 5px;
+    }
+
+    .service_type_wrap,
+    .room_type_wrap,
+    .chosen_cleaner_wrap {
+        width: 65%;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .chosen_cleaner_wrap {
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+
+    .chosen_service,
+    .chosen_service__room_types {
+        color: #EDC681;
+        margin: 0;
+        font-weight: 200;
+    }
+
+    .cleaner_avatar {
+        height: 30px;
+        border-radius: 100px;
+    }
+
+    .info_line {
+        border: 0.5px solid #EDC681;
+        width: 20px;
+        margin-top: 10px;
+    }
+
+
+    /*-----//  CHOSEN SERVICE INFO-----*/
     /*-----GOOGLE MAP API STYLEs-----*/
     #maps_body {
         display: flex;
@@ -658,7 +744,6 @@ html {
     #map {
         width: 100%;
         height: 100%;
-
 
     }
 
@@ -682,27 +767,18 @@ html {
     /*-----//  CANCEL CLEANER BUTTON-----*/
     /*-----OPEN/CLOSE SIDE INFO BUTTON-----*/
 
-    .sideinfo_opn_cls_btn {
+    .open_close_button {
         position: absolute;
-        width: 50px;
-        height: 50px;
-        bottom: 30px;
-        right: -10px;
+        bottom: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #fff;
-        border-radius: 5px;
-        z-index: 2;
-
+        width: 100%;
+        
     }
 
-    .fa-arrow-circle-right {
-        font-size: 1.8em;
-        transition: 0.3s;
-        transform: rotate(180deg);
-
-
+    .arrow_down_icon {
+        height: 27px;
     }
 
     /*-----//  OPEN/CLOSE SIDE INFO BUTTON-----*/
