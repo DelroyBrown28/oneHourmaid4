@@ -1,5 +1,16 @@
 $(document).ready(function () {
 
+
+    $(".open_close_info_button").click(openSideInfo);
+
+    function openSideInfo() {
+        $(this).addClass("add_shadow");
+
+        $(".side_info").slideToggle(500);
+
+    }
+
+
     // DELAYS APPEARANCE IN DESKTOP VIEW
 
     function fadeInOnload() {
@@ -23,18 +34,6 @@ $(document).ready(function () {
 
 
 
-    $(".open_close_button").click(openSideInfo);
-
-    function openSideInfo() {
-        $(".arrow_down_icon").addClass("spin_back");
-        $(".chosen_service_wrap").css("visibility", "visible");
-        $(".side_info").animate({
-            height: "85%",
-        })
-        $(".arrow_down_icon").unbind(openSideInfo);
-
-    }
-
 
     // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
     $(".slick_wrap").slick({
@@ -42,6 +41,9 @@ $(document).ready(function () {
         nextArrow: $('.next_button'),
         prevArrow: $('.previous_button'),
     });
+
+
+
 
 
 
