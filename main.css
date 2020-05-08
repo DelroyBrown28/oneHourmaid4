@@ -602,7 +602,6 @@ html {
         display: none;
     }
 
-
     /*-----//  DATE/TIME STYLES-----*/
 
 
@@ -648,8 +647,6 @@ html {
     }
 
     /*-----//  SIDE CONTENTS-----*/
-
-
     /*-----CHOSEN SERVICE INFO-----*/
 
     .chosen_service_wrap {
@@ -693,7 +690,7 @@ html {
     }
 
     .service_type_wrap,
-    .room_type_wrap,
+    .room_type_wrap__maps,
     .chosen_cleaner_wrap {
         width: 65%;
         height: 35px;
