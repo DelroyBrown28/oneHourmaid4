@@ -1,13 +1,26 @@
 $(document).ready(function () {
 
 
-    $(".tap_for_map, .open_close_info_button").click(openSideInfo);
+    $(".open_close_info_button").click(openSideInfo);
 
     function openSideInfo() {
-
-        $(".side_info").slideToggle(200);
+        $(".side_info").animate({
+            height: "85%",
+        });
+        $(".chosen_service_wrap").css("visibility", "visible");
 
     }
+
+    $(".tap_for_map").click(closeSideInfo);
+
+    function closeSideInfo() {
+        $(".side_info").animate({
+            height: "5%",
+        });
+        $(".chosen_service_wrap").css("visibility", "hidden");
+
+    }
+
 
     // DELAYS APPEARANCE IN DESKTOP VIEW
 
