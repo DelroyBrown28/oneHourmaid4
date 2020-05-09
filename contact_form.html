@@ -44,31 +44,30 @@
         <input type="text" name="postcode" class="form_inputs postcode_input" autocomplete="off" placeholder="Postcode"
             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" required>
 
-        <textarea class="short_description_box" name="cleanRequest" 
+        <textarea class="short_description_box" name="cleanRequest"
             placeholder="Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout...'"
             required></textarea>
 
-        <button class="submit_form_button" type="submit" on//Click="location.href='mapsAPI.html'">FIND ME A
-            CLEANER</button> </form> <!--// LOCATION FORM-->
+        <button class="submit_form_button" type="submit" onClick="location.href='mapsAPI.html'">FIND ME A
+            CLEANER</button>
+    </form>
+    <!--// LOCATION FORM-->
 
+    <!--SCRIPTS-->
+    <script src="./JS/jquery-3.5.0.min.js"></script>
+    <script src="./JS/script.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/JS/sendEmail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_zOJXdo5flT9TmEDrhagtW");
+        })();
+    </script>
+    <!--// SCRIPTS-->
 
-
-            <script src="./JS/jquery-3.5.0.min.js"></script>
-            <script src="./JS/script.js" type="text/javascript"></script>
-            <script type="text/javascript" src="/JS/sendEmail.js"></script>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
-            </script>
-            <script type="text/javascript">
-                (function () {
-                    emailjs.init("user_zOJXdo5flT9TmEDrhagtW");
-                })();
-            </script>
-
-
-            <script>
-            </script>
 
 
 

@@ -1,16 +1,14 @@
 $(document).ready(function () {
 
 
-    $(".open_close_info_button").click(openSideInfo);
+    $(".tap_for_map, .open_close_info_button").click(openSideInfo);
 
     function openSideInfo() {
-        $(this).addClass("add_shadow");
-
+        
         $(".side_info").slideToggle(500);
 
     }
-
-
+    
     // DELAYS APPEARANCE IN DESKTOP VIEW
 
     function fadeInOnload() {
