@@ -4,11 +4,11 @@ $(document).ready(function () {
     $(".tap_for_map, .open_close_info_button").click(openSideInfo);
 
     function openSideInfo() {
-        
-        $(".side_info").slideToggle(500);
+
+        $(".side_info").slideToggle(200);
 
     }
-    
+
     // DELAYS APPEARANCE IN DESKTOP VIEW
 
     function fadeInOnload() {
@@ -101,33 +101,3 @@ function minusOneKitchens() {
 
 }
 
-//GOOGLE MAPS API
-function initMap() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
-        disableDefaultUI: true, //DISABLES GOOGLE MAPS DEFAULT FUNCTIONS
-        center: {
-            lat: 51.630770,
-            lng: -0.735230,
-        }
-    });
-
-
-    var labels = "S"
-    var locations = [{
-        lat: 51.630770,
-        lng: -0.735230,
-    }, ];
-
-
-    var marker = new google.maps.Marker({
-        position: map.getCenter(),
-        icon: {
-            path: google.maps.SymbolPath.CIRCLE,
-            scale: 6.5,
-        },
-        draggable: true,
-        map: map
-    });
-
-}
