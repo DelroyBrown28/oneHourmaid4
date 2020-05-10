@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
-   
-   
+      
     // SHOWS AND HIDES INFO ON MAPS API PAGE
     $(".open_close_info_button").click(openSideInfo);
 
@@ -46,8 +45,6 @@ $(document).ready(function () {
     window.onload = locationDetailsFadeIn();
 
 
-
-
     // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
     $(".slick_wrap").slick({
         dots: false,
@@ -55,18 +52,9 @@ $(document).ready(function () {
         prevArrow: $('.previous_button'),
     });
 
-    var bedroomsInput = document.getElementById("rooms_amount_bedroom").value;
-    var bedroomsInputValue = chosen_service__room_types.innerHTML;
-
-
-
-
-
+    
 
 });
-
-
-
 
 
 //INCREMENTS/DECREMENTS BEDROOMS BY 1
