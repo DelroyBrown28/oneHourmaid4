@@ -1,12 +1,14 @@
 $(document).ready(function () {
 
-
+   
+   
+    // SHOWS AND HIDES INFO ON MAPS API PAGE
     $(".open_close_info_button").click(openSideInfo);
 
     function openSideInfo() {
         $(".side_info").animate({
             height: "85%",
-        });
+        }, 200);
         $(".chosen_service_wrap").css("visibility", "visible");
 
     }
@@ -52,6 +54,9 @@ $(document).ready(function () {
         nextArrow: $('.next_button'),
         prevArrow: $('.previous_button'),
     });
+
+    var bedroomsInput = document.getElementById("rooms_amount_bedroom").value;
+    var bedroomsInputValue = chosen_service__room_types.innerHTML;
 
 
 
@@ -113,4 +118,3 @@ function minusOneKitchens() {
     subtractRoom.innerHTML = value;
 
 }
-
