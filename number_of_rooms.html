@@ -63,6 +63,9 @@
         </div>
 
 
+
+
+
     </div>
     <!--// ROOM TYPE COUNTERS-->
 
@@ -72,13 +75,27 @@
         <div class="previous_button__rooms" onClick="location.href='index.html'">
             <img src="./images/previous_arrow.png" alt="" class="previous_arrow_icon__rooms">
         </div>
-        <p class="to_select_service_text__rooms">Tap the <span class="gold_text">next arrow</span> to enter your details</p>
+        <p class="to_select_service_text__rooms">Tap the <span class="gold_text">next arrow</span> to enter your details
+        </p>
         <div class="next_button__rooms" onClick="location.href='contact_form.html'">
             <img src="./images/next_arrow.png" alt="" class="next_arrow_icon__rooms">
         </div>
 
     </div>
     <!--// NEXT/PREVIOUS BUTTONS-->
+
+    <script>
+        //GRABS VALUE OF BEDROOM IN PUT AND DISPLAYS IN MAPSAPI PAGE
+        window.addEventListener("load", function () {
+            document.querySelector(".next_button__rooms").addEventListener("click", function (e) {
+                e.preventDefault(); // if it is a link or a submit button
+                location = "mapsAPI.html?chosen_service__room_types=" + document.getElementById(
+                    "rooms_amount_bedroom").value;
+            })
+        })
+
+    </script>
+
 
 
 

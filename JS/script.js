@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-      
+
     // SHOWS AND HIDES INFO ON MAPS API PAGE
     $(".open_close_info_button").click(openSideInfo);
 
@@ -52,7 +52,7 @@ $(document).ready(function () {
         prevArrow: $('.previous_button'),
     });
 
-    
+
 
 });
 
@@ -106,3 +106,4 @@ function minusOneKitchens() {
     subtractRoom.innerHTML = value;
 
 }
+

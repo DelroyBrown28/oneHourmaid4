@@ -41,7 +41,7 @@
             <div class="your_service_wrap">
                 <h2 class="your_service">Your Service:</h2>
                 <div class="service_type_wrap">
-                    <p class="chosen_service">Basic Clean</p>
+                    <p class="chosen_service">""</p>
                     <!--service type would be generated based on what service the user selects-->
                 </div>
             </div>
@@ -51,7 +51,7 @@
             <div class="your_service_rooms_wrap">
                 <h2 class="your_service_rooms">Rooms</h2>
                 <div class="room_type_wrap__maps">
-                    <p class="chosen_service__room_types">Bedroom-1<br>Bathroom-1</p>
+                    <p class="chosen_service__room_types">""</p>
                     <!--number and type of rooms would be generated based on what the user selects-->
                 </div>
             </div>
@@ -75,6 +75,20 @@
         <div id="map"></div>
     </div>
     <!--// GOOGLE MAP API-->
+
+
+
+
+    <script>
+        //GRABS VALUE FROM "HOW MANY ROOMS" PAGE AND DISPLAYS IN THE DROP DOWN INFO
+        window.addEventListener("load", function () {
+            const url = new URL(location.href);
+            document.querySelector(".chosen_service__room_types").textContent = url.searchParams.get(
+                "chosen_service__room_types");
+        })
+
+     
+    </script>
 
     <script>
         // Note: This example requires that you consent to location sharing when

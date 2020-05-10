@@ -78,7 +78,7 @@
     <!--CENTER CONTENTS (desktop)-->
     <div class="services_wrap__desktop">
 
-        <div class="basic_clean_wrap__desktop" onClick="location.href='number_of_rooms.html'">
+        <div class="basic_clean_wrap__desktop" value onClick="location.href='number_of_rooms.html'">
             <img src="./images/basiclean_mop.png" alt="" class="basic_clean_image__desktop">
             <h1 class="basic_clean_title__desktop">OneHourmaid's<br>Basic Clean</h1>
             <p class="basic_clean_blurb__desktop">
@@ -145,6 +145,15 @@
     <!--BOTTOM CONTENTS (desktop)-->
     <div class="bottom_wrap__desktop">Choose a service by clicking the desired card.</div>
     <!--// BOTTOM CONTENTS (desktop)-->
+
+
+    <script>
+        function overlay() {
+            var cookieValue = document.getElementsByClassName('basic_clean_wrap__desktop').getAttribute('value');
+            alert(cookieValue);
+        }
+    </script>
+
 
 
     <script src="./JS/jquery-3.5.0.min.js" type="text/javascript"></script>
