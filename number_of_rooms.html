@@ -32,7 +32,7 @@
             <div class="subtractRoom" onclick="minusOneBedrooms()">
                 <img src="./images/arrow_down.png" alt="" class="counter_down_arrow">
             </div>
-            <input type="number" id="rooms_amount_bedroom" autocomplete="off" value="0">
+            <input type="number" class="room_count" id="rooms_amount_bedroom" autocomplete="off" value="0">
             <div class="addRoom" onclick="plusOneBedrooms()">
                 <img src="./images/arrow_up_white.png" alt="" class="counter_up_arrow">
             </div>
@@ -44,7 +44,7 @@
             <div class="subtractRoom" onclick="minusOneBathrooms()">
                 <img src="./images/arrow_down.png" alt="" class="counter_down_arrow">
             </div>
-            <input type="number" id="rooms_amount_bathrooms" autocomplete="off" value="0">
+            <input type="number" class="room_count" id="rooms_amount_bathrooms" autocomplete="off" value="0">
             <div class="addRoom" onclick="plusOneBathrooms()">
                 <img src="./images/arrow_up_white.png" alt="" class="counter_up_arrow">
             </div>
@@ -56,7 +56,7 @@
             <div class="subtractRoom" onclick="minusOneKitchens()">
                 <img src="./images/arrow_down.png" alt="" class="counter_down_arrow">
             </div>
-            <input type="number" id="rooms_amount_kitchens" autocomplete="off" value="0">
+            <input type="number" class="room_count" id="rooms_amount_kitchens" autocomplete="off" value="0">
             <div class="addRoom" onclick="plusOneKitchens()">
                 <img src="./images/arrow_up_white.png" alt="" class="counter_up_arrow">
             </div>
@@ -84,17 +84,6 @@
     </div>
     <!--// NEXT/PREVIOUS BUTTONS-->
 
-    <script>
-        //GRABS VALUE OF BEDROOM IN PUT AND DISPLAYS IN MAPSAPI PAGE
-        window.addEventListener("load", function () {
-            document.querySelector(".next_button__rooms").addEventListener("click", function (e) {
-                e.preventDefault(); // if it is a link or a submit button
-                location = "mapsAPI.html?chosen_service__room_types=" + document.getElementById(
-                    "rooms_amount_bedroom").value;
-            })
-        })
-
-    </script>
 
 
 

@@ -79,22 +79,8 @@
 
 
 
-    <script>
-        //GRABS VALUE FROM "HOW MANY ROOMS" PAGE AND DISPLAYS IN THE DROP DOWN INFO
-        window.addEventListener("load", function () {
-            const url = new URL(location.href);
-            document.querySelector(".chosen_service__room_types").textContent = url.searchParams.get(
-                "chosen_service__room_types");
-        })
-
-     
-    </script>
 
     <script>
-        // Note: This example requires that you consent to location sharing when
-        // prompted by your browser. If you see the error "The Geolocation service
-        // failed.", it means you probably did not give permission for the browser to
-        // locate you.
         var map, infoWindow;
 
         function initMap() {
