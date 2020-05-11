@@ -9,6 +9,9 @@ $(document).ready(function () {
             height: "85%",
         }, 200);
         $(".chosen_service_wrap").css("visibility", "visible");
+        $(".tap_for_map").animate({
+            opacity: "1",
+        }, 2000);
         $(".open_close_info_button").fadeOut("fast");
 
     }
@@ -109,4 +112,3 @@ function minusOneKitchens() {
     subtractRoom.innerHTML = value;
 
 }
-
