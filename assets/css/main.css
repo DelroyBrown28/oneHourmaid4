@@ -1059,6 +1059,7 @@ html {
         display: none;
     }
 
+    /*------------**MAIN/INDEX PAGE**-----------*/
     /*---TOP CONTENTS---*/
     .top_contents_wrapper {
         height: 20%;
@@ -1117,6 +1118,7 @@ html {
     }
 
     /*---//  NEXT/PREVIOUS BUTTONS---*/
+    /*------------//  **MAIN/INDEX PAGE**-----------*/
 
 
 
@@ -1341,6 +1343,52 @@ html {
     }
 
     /*------------//  MAPS API PAGE-----------*/
+
+
+
+    /*------------**CLEANER IS BOOKED PAGE**-----------*/
+
+    .moving_details_title__cib {
+        font-size: 1.8em;
+    }
+
+    .cleaner_arrival_info {
+        width: 70%;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .chosen_cleaner__wrap {
+        width: 50%;
+    }
+
+    #users_name {
+        font-size: 22px;
+    }
+
+    .cleaner_will_arrive_title,
+    .date_of_arrival_title,
+    .chosen_cleaner_title {
+        font-size: 25px;
+    }
+
+    #users_street_address,
+    #users_town_city,
+    #users_booked_date,
+    #chosen_cleaner {
+        font-size: 20px;
+    }
+
+    .back_to_index_button {
+        height: 87.0313px;
+        font-size: 1.5em;
+        font-weight: 200;
+    }
+
+
+
+    /*------------//  **CLEANER IS BOOKED PAGE**-----------*/
 
 
 
