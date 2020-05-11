@@ -841,8 +841,11 @@ html {
         align-items: center;
         justify-content: center;
         flex-flow: column;
+        border-bottom: 1px solid #EDC681;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
 
-        border: 1px solid white;
+
     }
 
     .moving_details_title__cib {
@@ -862,22 +865,20 @@ html {
 
     /*-----//  TOP CONTENTS-----*/
     /*-----CLEANER ARRIVAL CONTENTS-----*/
-
-
-
-
-
     .cleaner_arrival_wrap {
         width: 100%;
         height: 70%;
-        
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-flow: column;
 
-        border: 1px solid red;
 
+    }
+
+    .cleaner_booked_line {
+        width: 50%;
+        border: 1px solid #EDC681;
     }
 
 
@@ -885,6 +886,7 @@ html {
         height: 100%;
         display: flex;
         flex-flow: column;
+        justify-content: center;
 
     }
 
@@ -897,7 +899,6 @@ html {
         font-size: 20px;
         font-weight: 200;
         margin-bottom: 10px;
-
 
     }
 
@@ -912,7 +913,10 @@ html {
         margin: 0;
     }
 
+    #users_street_address {
+        opacity: 0;
 
+    }
 
     #users_name {
         width: 100%;
@@ -925,11 +929,13 @@ html {
     #users_town_city,
     #users_booked_date {
         margin-bottom: 15px;
+        opacity: 0;
 
     }
 
     .user_name_input {
         font-weight: 200;
+        opacity: 0;
 
     }
 
@@ -950,12 +956,50 @@ html {
     }
 
     #chosen_cleaner {
-        color: #EDC681;
+        color: #fff;
         font-size: 18px;
         margin: 0;
     }
 
     /*-----//  CLEANER ARRIVAL CONTENTS-----*/
+    /*-----BACK TO INDEX BUTTON-----*/
+
+    .back_to_index_wrap {
+        width: 100%;
+        height: 15%;
+        color: #EDC681;
+        font-size: 22px;
+        font-weight: 200;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid #EDC681;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+
+    }
+
+    .back_to_index_button {
+        width: 80%;
+        height: 48.2656px;
+        background-color: transparent;
+        border: none;
+        border-left: 1px solid #EDC681;
+        border-right: 1px solid #EDC681;
+        color: #fff;
+        outline: none;
+        font-weight: 200;
+        font-size: 20px;
+        transition: 0.1s;
+
+    }
+
+    /*-----//  BACK TO INDEX BUTTON-----*/
+
+
+
+
     /*---------//  ** CLEANER IS BOOKED PAGE **---------*/
 
 
@@ -1995,11 +2039,13 @@ html {
 }
 
 .submit_form_button:active,
-#submit_button__movingform:active {
+#submit_button__movingform:active,
+.back_to_index_button:active {
     border-width: 10px;
     outline: none;
 
 }
+
 
 .back_button:hover {
     opacity: 1;

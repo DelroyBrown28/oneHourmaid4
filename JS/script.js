@@ -31,16 +31,19 @@ $(document).ready(function () {
     // DELAYS APPEARANCE IN DESKTOP VIEW
 
     function fadeInOnload() {
-        $(".cleaner_will_be_wrap, .moving_details_title, .basic_clean_wrap__desktop, .button_wrap__ipad, .next_prev_button_wrap, .how_many_rooms_title, .location_details_title, .counter_opacity1").animate({
+        $(".user_name_input,.cleaner_will_be_wrap, .moving_details_title, .basic_clean_wrap__desktop, .button_wrap__ipad, .next_prev_button_wrap, .how_many_rooms_title, .location_details_title, .counter_opacity1").animate({
             opacity: "1",
         }, 1000);
-        $(".your_service_wrap,.cleaning_location_title__movingform, .deep_clean_wrap__desktop, .cleaning_location_title, .counter_opacity2").animate({
+        $("#users_street_address, .your_service_wrap,.cleaning_location_title__movingform, .deep_clean_wrap__desktop, .cleaning_location_title, .counter_opacity2").animate({
             opacity: "1",
         }, 2000);
-        $(".your_service_rooms_wrap,.submit_button__movingform, .submit_form_button, .moving_in_out_wrap__desktop, .counter_opacity3").animate({
+        $("#users_town_city, .your_service_rooms_wrap,.submit_button__movingform, .submit_form_button, .moving_in_out_wrap__desktop, .counter_opacity3").animate({
             opacity: "1",
         }, 3000);
-        $(".bottom_wrap__desktop").animate({
+        $("#users_booked_date").animate({
+            opacity: "1",
+        }, 4000);
+        $("#users_booked_date,.bottom_wrap__desktop").animate({
             opacity: "1",
         }, 5000);
     }
@@ -50,6 +53,10 @@ $(document).ready(function () {
         $(".left_border, .right_border").delay(500).animate({
             width: "50px",
         }, 1000);
+        $(".chosen_cleaner__wrap").animate({
+            borderLeftWidth: "8px",
+            borderRightWidth: "8px",
+        }, 1000)
     }
     window.onload = addBorders();
 
