@@ -609,7 +609,7 @@ html {
     /*---------** GOOGLE MAPS API PAGE **---------*/
     /*-----SIDE CONTENTS-----*/
 
-    .side_info {
+    .slide_info {
         position: absolute;
         width: 100%;
         height: 5%;
@@ -856,7 +856,6 @@ html {
 @media only screen and (min-device-width : 414px) {
 
 
-    .slick_wrap {}
 
     .basic_clean_wrap,
     .deep_clean_wrap,
@@ -1401,7 +1400,7 @@ html {
     .your_service,
     .your_service_rooms {
         font-size: 30px;
-        
+
     }
 
     .tap_for_map {
@@ -1412,6 +1411,7 @@ html {
     .cancel_cleaner_button {
         font-size: 2em;
     }
+
     /*---------//  MAPS API PAGE---------*/
 
 }
@@ -1700,10 +1700,77 @@ html {
         font-size: 1.4em;
     }
 
-
-
-
     /*---------//  **MOVING IN/OUT PAGE**---------*/
+    /*---------MAPS API PAGE---------*/
+
+    .left_border,
+    .right_border {
+        position: absolute;
+        width: 0px;
+        height: 75%;
+        z-index: 2;
+        background-color: #000000;
+
+    }
+
+    .left_border {
+        left: 0;
+    }
+
+    .right_border {
+        right: 0;
+    }
+
+    .open_close_info_button {
+        display: none;
+    }
+
+
+    .top_info__desktop {
+        height: 15%;
+    }
+
+    .chosen_service_wrap {
+        visibility: visible;
+        flex-flow: row;
+
+        width: 50%;
+    }
+
+    .your_service_wrap,
+    .your_service_rooms_wrap,
+    .cleaner_will_be_wrap {
+        box-shadow: none;
+        width: 170px;
+        height: 100px;
+        border-top: 1px solid #EDC681;
+        border-bottom: 1px solid #EDC681;
+        opacity: 0;
+
+    }
+
+    .your_service,
+    .your_service_rooms,
+    .cleaner_will_be {
+        font-size: 18px;
+        margin: 7px;
+    }
+
+    .cleaner_name {
+        font-size: 15px;
+
+    }
+
+    .cleaner_avatar {
+        height: 38px;
+    }
+
+
+
+
+
+
+    /*---------//  MAPS API PAGE---------*/
 
 
 

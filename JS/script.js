@@ -5,7 +5,7 @@ $(document).ready(function () {
     $(".open_close_info_button").click(openSideInfo);
 
     function openSideInfo() {
-        $(".side_info").animate({
+        $(".slide_info").animate({
             height: "85%",
         }, 200);
         $(".chosen_service_wrap").css("visibility", "visible");
@@ -19,7 +19,7 @@ $(document).ready(function () {
     $(".tap_for_map").click(closeSideInfo);
 
     function closeSideInfo() {
-        $(".side_info").animate({
+        $(".slide_info").animate({
             height: "5%",
         });
         $(".chosen_service_wrap").css("visibility", "hidden");
@@ -28,17 +28,16 @@ $(document).ready(function () {
 
     }
 
-
     // DELAYS APPEARANCE IN DESKTOP VIEW
 
     function fadeInOnload() {
-        $(".moving_details_title, .basic_clean_wrap__desktop, .button_wrap__ipad, .next_prev_button_wrap, .how_many_rooms_title, .location_details_title, .counter_opacity1").animate({
+        $(".cleaner_will_be_wrap, .moving_details_title, .basic_clean_wrap__desktop, .button_wrap__ipad, .next_prev_button_wrap, .how_many_rooms_title, .location_details_title, .counter_opacity1").animate({
             opacity: "1",
         }, 1000);
-        $(".cleaning_location_title__movingform, .deep_clean_wrap__desktop, .cleaning_location_title, .counter_opacity2").animate({
+        $(".your_service_wrap,.cleaning_location_title__movingform, .deep_clean_wrap__desktop, .cleaning_location_title, .counter_opacity2").animate({
             opacity: "1",
         }, 2000);
-        $(".submit_button__movingform, .submit_form_button, .moving_in_out_wrap__desktop, .counter_opacity3").animate({
+        $(".your_service_rooms_wrap,.submit_button__movingform, .submit_form_button, .moving_in_out_wrap__desktop, .counter_opacity3").animate({
             opacity: "1",
         }, 3000);
         $(".bottom_wrap__desktop").animate({
@@ -46,6 +45,14 @@ $(document).ready(function () {
         }, 5000);
     }
     window.onload = fadeInOnload();
+
+    function addBorders() {
+        $(".left_border, .right_border").delay(500).animate({
+            width: "50px",
+        }, 1000);
+    }
+    window.onload = addBorders();
+
 
     function locationDetailsFadeIn() {}
     window.onload = locationDetailsFadeIn();
