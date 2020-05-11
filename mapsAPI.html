@@ -49,7 +49,7 @@
             <hr class="info_line">
 
             <div class="your_service_rooms_wrap">
-                <h2 class="your_service_rooms">Rooms</h2>
+                <h2 class="your_service_rooms">Rooms total</h2>
                 <div class="room_type_wrap__maps">
                     <p class="chosen_service__room_types">""</p>
                     <!--number and type of rooms would be generated based on what the user selects-->
@@ -79,7 +79,6 @@
 
 
 
-
     <script>
         var map, infoWindow;
 
@@ -90,12 +89,12 @@
                     lat: -34.397,
                     lng: 150.644
                 },
-                zoom: 17,
+                zoom: 18,
                 disableDefaultUI: true, //DISABLES GOOGLE MAPS DEFAULT FUNCTIONS
                 styles: [{
                         elementType: 'geometry',
                         stylers: [{
-                            color: '#797979'
+                            color: '#ffffff'
                         }]
                     },
                     {
@@ -114,49 +113,49 @@
                         featureType: 'administrative.locality',
                         elementType: 'labels.text.fill',
                         stylers: [{
-                            color: '#d59563'
+                            color: '#000000'
                         }]
                     },
                     {
                         featureType: 'poi',
                         elementType: 'labels.text.fill',
                         stylers: [{
-                            color: '#000000'
+                            color: '#000000',
                         }]
                     },
                     {
                         featureType: 'poi.park',
                         elementType: 'geometry',
                         stylers: [{
-                            color: '#263c3f'
+                            color: '#98A139'
                         }]
                     },
                     {
                         featureType: 'poi.park',
                         elementType: 'labels.text.fill',
                         stylers: [{
-                            color: '#6b9a76'
+                            color: '#228B22'
                         }]
                     },
                     {
                         featureType: 'road',
                         elementType: 'geometry',
                         stylers: [{
-                            color: '#ffffff'
+                            color: '#EDC681'
                         }]
                     },
                     {
                         featureType: 'road',
                         elementType: 'geometry.stroke',
                         stylers: [{
-                            color: '#ffffff'
+                            color: '#000000'
                         }]
                     },
                     {
                         featureType: 'road',
                         elementType: 'labels.text.fill',
                         stylers: [{
-                            color: '#000000'
+                            color: '#000000',
                         }]
                     },
                     {
@@ -198,7 +197,7 @@
                         featureType: 'water',
                         elementType: 'geometry',
                         stylers: [{
-                            color: '#17263c'
+                            color: '#318DB4'
                         }]
                     },
                     {

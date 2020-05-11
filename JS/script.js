@@ -9,6 +9,7 @@ $(document).ready(function () {
             height: "85%",
         }, 200);
         $(".chosen_service_wrap").css("visibility", "visible");
+        $(".open_close_info_button").fadeOut("fast");
 
     }
 
@@ -19,6 +20,8 @@ $(document).ready(function () {
             height: "5%",
         });
         $(".chosen_service_wrap").css("visibility", "hidden");
+        $(".open_close_info_button").fadeIn("fast");
+
 
     }
 
