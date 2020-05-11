@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <script src="./JS/jquery-3.5.0.min.js"></script>
-    <script src="./JS/script.js" type="text/javascript"></script>
     <link rel="stylesheet" href="main.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -28,10 +25,10 @@
     <!--MOVING IN/OUT FORM-->
     <form class="moving_contact_form">
 
-        <input type="text" class="form_inputs__movingform fullName_input" autocomplete="off" placeholder="Full Name"
+        <input type="text" id="full_name_input" class="form_inputs__movingform" autocomplete="off" placeholder="Full Name"
             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required>
 
-        <input type="number" class="form_inputs__movingform contactNum_input" autocomplete="off"
+        <input type="number" class="form_inputs__movingform contact_number_input" autocomplete="off"
             placeholder="Contact Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact Number'"
             required>
 
@@ -49,9 +46,22 @@
 
         <input class="form_inputs__movingform dateTime_input" type="datetime-local" autocomplete="off" required>
 
-        <button class="submit_button__movingform">BOOK MY CLEANER</button>
+        <button id="submit_button__movingform" onClick="location.href='cleaner_is_booked.html'">BOOK MY
+            CLEANER</button>
     </form>
     <!--// MOVING IN/OUT FORM-->
+
+    <script>
+        document.getElementById('submit_button__movingform').addEventListener('click', function () {
+            let val = document.getElementById('full_name_input').value;
+            localStorage.setItem('input', val)
+        })
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="./JS/jquery-3.5.0.min.js"></script>
+    <script src="./JS/script.js" type="text/javascript"></script>
+
 
 
 

@@ -539,6 +539,7 @@ html {
         border-bottom: 1px solid #EDC681;
         outline: none;
         color: #fff;
+        text-transform: uppercase;
         background-color: transparent;
 
     }
@@ -550,7 +551,7 @@ html {
 
     }
 
-    .submit_button__movingform {
+    #submit_button__movingform {
         width: 100%;
         height: 10%;
         color: #fff;
@@ -607,7 +608,7 @@ html {
 
 
     /*---------** GOOGLE MAPS API PAGE **---------*/
-    /*-----SIDE CONTENTS-----*/
+    /*-----SLIDE CONTENTS-----*/
 
     .slide_info {
         position: absolute;
@@ -647,7 +648,7 @@ html {
 
     }
 
-    /*-----//  SIDE CONTENTS-----*/
+    /*-----//  SLIDE CONTENTS-----*/
     /*-----CHOSEN SERVICE INFO-----*/
 
     .chosen_service_wrap {
@@ -727,7 +728,6 @@ html {
 
 
     /*-----//  CHOSEN SERVICE INFO-----*/
-
     /*-----TAP FOR MAP BUTTON-----*/
 
     .tap_for_map {
@@ -746,15 +746,7 @@ html {
 
     }
 
-
-
-
     /*-----//  TAP FOR MAP BUTTON-----*/
-
-
-
-
-
     /*-----GOOGLE MAP API STYLEs-----*/
     #maps_body {
         display: flex;
@@ -795,8 +787,6 @@ html {
     /*-----//  CANCEL CLEANER BUTTON-----*/
     /*-----OPEN/CLOSE SIDE INFO BUTTON-----*/
 
-
-
     .open_close_info_button {
         position: absolute;
         z-index: 1;
@@ -828,6 +818,147 @@ html {
     }
 
     /*-----//  OPEN/CLOSE SIDE INFO BUTTON-----*/
+    /*---------//  ** GOOGLE MAPS API PAGE **---------*/
+
+
+
+    /*---------** CLEANER IS BOOKED PAGE **---------*/
+
+    #booked_cleaner_body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /*-----TOP CONTENTS-----*/
+
+    .top_contents__cib {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+
+        border: 1px solid white;
+    }
+
+    .moving_details_title__cib {
+        color: #EDC681;
+        font-size: 22px;
+        font-weight: 200;
+        margin: 0;
+        margin-top: 5px;
+
+    }
+
+    .back_button__cib {
+        height: 20px;
+        margin-top: 5px;
+
+    }
+
+    /*-----//  TOP CONTENTS-----*/
+    /*-----CLEANER ARRIVAL CONTENTS-----*/
+
+
+
+
+
+    .cleaner_arrival_wrap {
+        width: 100%;
+        height: 70%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+
+        border: 1px solid red;
+
+    }
+
+
+    .cleaner_arrival_info {
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    .cleaner_will_arrive_title,
+    .date_of_arrival_title,
+    .chosen_cleaner_title {
+        color: #EDC681;
+        margin: 0;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 200;
+        margin-bottom: 10px;
+
+
+    }
+
+
+    #users_street_address,
+    #users_town_city,
+    #users_booked_date,
+    #users_name {
+        color: #fff;
+        text-align: center;
+        font-weight: 200;
+        margin: 0;
+    }
+
+
+
+    #users_name {
+        width: 100%;
+        text-align: left;
+        font-size: 15px;
+        margin-bottom: 25px;
+
+    }
+
+    #users_town_city,
+    #users_booked_date {
+        margin-bottom: 15px;
+
+    }
+
+    .user_name_input {
+        font-weight: 200;
+
+    }
+
+    .chosen_cleaner__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        border-left: 1px solid #EDC681;
+        border-right: 1px solid #EDC681;
+    }
+
+    .cleaner_avatar__cib {
+        height: 30px;
+        border-radius: 100px;
+        margin-bottom: 10px;
+
+    }
+
+    #chosen_cleaner {
+        color: #EDC681;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    /*-----//  CLEANER ARRIVAL CONTENTS-----*/
+    /*---------//  ** CLEANER IS BOOKED PAGE **---------*/
+
+
 
 
 
@@ -1110,7 +1241,7 @@ html {
         text-transform: uppercase;
     }
 
-    .submit_button__movingform {
+    #submit_button__movingform {
         font-size: 22px;
     }
 
@@ -1370,7 +1501,7 @@ html {
         font-size: 1.8em;
     }
 
-    .submit_button__movingform {
+    #submit_button__movingform {
         font-size: 30px;
     }
 
@@ -1692,7 +1823,7 @@ html {
         opacity: 0;
     }
 
-    .submit_button__movingform {
+    #submit_button__movingform {
         width: 100%;
         /*---Opacity set to 0, resets to 1 on window load---*/
         opacity: 0;
@@ -1864,7 +1995,7 @@ html {
 }
 
 .submit_form_button:active,
-.submit_button__movingform:active {
+#submit_button__movingform:active {
     border-width: 10px;
     outline: none;
 
