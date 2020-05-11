@@ -39,14 +39,17 @@ html {
     .button_wrap__ipad,
     .services_wrap__desktop,
     .bottom_wrap__desktop {
+        /*--hides elements from mobile view--*/
         display: none;
     }
+
 
     body {
         overflow: hidden;
         justify-content: space-between;
     }
 
+    /*-----TOP CONTENTS-----*/
     .top_contents_wrapper {
         position: relative;
         height: 15%;
@@ -90,7 +93,7 @@ html {
         margin-top: 5px;
     }
 
-
+    /*-----//  TOP CONTENTS-----*/
     /*-----SERVICE CONTENTS-----*/
     .slick_wrap {
         width: 100%;
@@ -365,7 +368,6 @@ html {
 
     /*-----//  TOP CONTENTS-----*/
     /*-----CONTACT FORM-----*/
-
     .contact_form {
         width: 90%;
         height: 85%;
@@ -565,7 +567,6 @@ html {
         transition: 0.1s;
         outline: none;
 
-
     }
 
     /*-----// MOVING IN/OUT FORM-----*/
@@ -613,7 +614,6 @@ html {
 
     /*---------** GOOGLE MAPS API PAGE **---------*/
     /*-----SLIDE CONTENTS-----*/
-
     .slide_info {
         position: absolute;
         width: 100%;
@@ -729,7 +729,6 @@ html {
         width: 20px;
         margin-top: 10px;
     }
-
 
     /*-----//  CHOSEN SERVICE INFO-----*/
     /*-----TAP FOR MAP BUTTON-----*/
@@ -850,7 +849,6 @@ html {
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
 
-
     }
 
     .moving_details_title__cib {
@@ -951,7 +949,7 @@ html {
         flex-flow: column;
         border-left: 0px solid #EDC681;
         border-right: 0px solid #EDC681;
-        
+
     }
 
     .cleaner_avatar__cib {
@@ -959,7 +957,7 @@ html {
         border-radius: 100px;
         margin-bottom: 10px;
         opacity: 0;
-        
+
 
     }
 
@@ -1005,10 +1003,6 @@ html {
     }
 
     /*-----//  BACK TO INDEX BUTTON-----*/
-
-
-
-
     /*---------//  ** CLEANER IS BOOKED PAGE **---------*/
 
 
