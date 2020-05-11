@@ -4,17 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <script type="text/javascript" src="./JS/jquery-3.5.0.min.js"></script>
-    <script type="text/javascript" src="./JS/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-marker-clusterer/1.0.0/markerclusterer_compiled.js">
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOTUPWNqxR4wNAFerPPw5MBSFMcSw9h7E&callback=initMap">
-    </script>
     <link rel="icon" type="image/x-icon" href="./images/oHmfavicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css">
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
     <title>oneHourmaid - Your Cleaners On The Way...</title>
@@ -34,7 +26,7 @@
             <div class="cleaner_will_be_wrap">
                 <h2 class="cleaner_will_be">Your cleaner will be:</h2>
                 <div class="chosen_cleaner_wrap">
-                    <img src="./images/fake_avatar.png" alt="" class="cleaner_avatar">
+                    <img src="./assets/images/fake_avatar.png" alt="" class="cleaner_avatar">
                     <p class="cleaner_name">Sam Brown</p>
                 </div>
             </div>
@@ -68,11 +60,9 @@
     <!--OPEN/CLOSE SIDE INFO BUTTON-->
 
     <div class="open_close_info_button">
-        <img src="./images/info_icon_gold.png" alt="" class="info_icon">
+        <img src="./assets/images/info_icon_gold.png" alt="" class="info_icon">
     </div>
     <!--// OPEN/CLOSE SIDE INFO BUTTON-->
-
-
 
     <!--GOOGLE MAP API-->
     <div class="map_wrap">
@@ -80,191 +70,21 @@
     </div>
     <!--// GOOGLE MAP API-->
 
-    <!--DESKTOP SIDE INFO-->
-
-
-
-    <!--// DESKTOP SIDE INFO-->
-
-
-
-
-
-
-    <script>
-        var map, infoWindow;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                disableDefaultUI: true, //DISABLES GOOGLE MAPS DEFAULT FUNCTIONS
-                center: {
-                    lat: -34.397,
-                    lng: 150.644
-                },
-                zoom: 18,
-                disableDefaultUI: true, //DISABLES GOOGLE MAPS DEFAULT FUNCTIONS
-                styles: [{
-                        elementType: 'geometry',
-                        stylers: [{
-                            color: '#ffffff'
-                        }]
-                    },
-                    {
-                        elementType: 'labels.text.stroke',
-                        stylers: [{
-                            color: 'transparent'
-                        }]
-                    },
-                    {
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#000000'
-                        }]
-                    },
-                    {
-                        featureType: 'administrative.locality',
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#000000'
-                        }]
-                    },
-                    {
-                        featureType: 'poi',
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#000000',
-                        }]
-                    },
-                    {
-                        featureType: 'poi.park',
-                        elementType: 'geometry',
-                        stylers: [{
-                            color: '#98A139'
-                        }]
-                    },
-                    {
-                        featureType: 'poi.park',
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#228B22'
-                        }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'geometry',
-                        stylers: [{
-                            color: '#EDC681'
-                        }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'geometry.stroke',
-                        stylers: [{
-                            color: '#000000'
-                        }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#000000',
-                        }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'geometry',
-                        stylers: [{
-                            color: '#746855'
-                        }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'geometry.stroke',
-                        stylers: [{
-                            color: '#1f2835'
-                        }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#f3d19c'
-                        }]
-                    },
-                    {
-                        featureType: 'transit',
-                        elementType: 'geometry',
-                        stylers: [{
-                            color: '#2f3948'
-                        }]
-                    },
-                    {
-                        featureType: 'transit.station',
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#d59563'
-                        }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'geometry',
-                        stylers: [{
-                            color: '#318DB4'
-                        }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#515c6d'
-                        }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'labels.text.stroke',
-                        stylers: [{
-                            color: '#17263c'
-                        }]
-                    }
-                ]
-            });
-            infoWindow = new google.maps.InfoWindow;
-
-            // Try HTML5 geolocation.
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    var pos = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    };
-
-                    infoWindow.setPosition(pos);
-                    infoWindow.setContent('Location found.');
-                    infoWindow.open(map);
-                    map.setCenter(pos);
-                }, function () {
-                    handleLocationError(true, infoWindow, map.getCenter());
-                });
-            } else {
-                // Browser doesn't support Geolocation
-                handleLocationError(false, infoWindow, map.getCenter());
-            }
-        }
-
-        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-            infoWindow.setPosition(pos);
-            infoWindow.setContent(browserHasGeolocation ?
-                'Error: The Geolocation service failed.' :
-                'Error: Your browser doesn\'t support geolocation.');
-            infoWindow.open(map);
-        }
-    </script>
-
-
     <!--CANCEL CLEANER BUTTON-->
     <button class="cancel_cleaner_button" onClick="location.href='index.html'">CANCEL CLEANER</button>
     <!--// CANCEL CLEANER BUTTON-->
 
+
+    <!--SCRIPTS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-marker-clusterer/1.0.0/markerclusterer_compiled.js">
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOTUPWNqxR4wNAFerPPw5MBSFMcSw9h7E&callback=initMap">
+    </script>
+    <!--// SCRIPTS-->
 
 
 </body>
