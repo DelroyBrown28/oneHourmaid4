@@ -55,7 +55,7 @@ $(document).ready(function () {
         }, 1000);
         $("#chosen_cleaner, .cleaner_avatar__cib").animate({
             opacity: "1",
-        },5000)
+        }, 5000)
         $(".chosen_cleaner__wrap").animate({
             borderLeftWidth: "4px",
             borderRightWidth: "4px",
@@ -71,6 +71,20 @@ $(document).ready(function () {
             opacity: "1",
         })
     }
+
+    $(".cancel_cleaner_no").click(closePopup);
+    function closePopup() {
+        $(".cancel_cleaner_popup").animate({
+            opacity: "0",
+        })
+        $(".cancel_cleaner_wrap").delay(2000).css("visibility", "hidden");
+    }
+
+    $(".cancel_cleaner_yes").click(cancelCleaner);
+    function cancelCleaner() {
+        window.location.href = "index.html";
+    }
+
 
 
     // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
