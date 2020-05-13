@@ -855,12 +855,13 @@ html {
         justify-content: center;
         color: #000;
         background-color: #DFE0DF;
+        cursor: pointer;
     }
 
     .cancel_cleaner_yes {
         color: #fff;
         margin-top: 15px;
-
+        cursor: pointer;
     }
 
     /*-----//  OPEN/CLOSE SIDE INFO BUTTON-----*/
@@ -2033,11 +2034,6 @@ html {
         height: 38px;
     }
 
-
-
-
-
-
     /*---------//  MAPS API PAGE---------*/
 
 
@@ -2157,4 +2153,5 @@ html {
 .cancel_cleaner_no:active,
 .cancel_cleaner_yes:active {
     opacity: 0.7;
+
 }
