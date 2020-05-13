@@ -1048,11 +1048,6 @@ html {
     /*-----//  BACK TO INDEX BUTTON-----*/
     /*---------//  ** CLEANER IS BOOKED PAGE **---------*/
 
-
-
-
-
-
 }
 
 @media only screen and (min-device-width : 375px) {
@@ -1069,6 +1064,19 @@ html {
         margin-top: 36px;
 
     }
+
+    /*---------** CLEANER IS BOOKED PAGE **---------*/
+    
+    .cleaner_arrival_info {
+        width: 72%;
+        justify-content: space-evenly;
+
+        
+    }
+    
+    
+    /*---------//  ** CLEANER IS BOOKED PAGE **---------*/
+
 
 
 
