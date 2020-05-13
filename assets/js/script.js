@@ -63,9 +63,14 @@ $(document).ready(function () {
     }
     window.onload = addBorders();
 
+    $(".cancel_cleaner_button").click(showPopUp);
 
-    function locationDetailsFadeIn() {}
-    window.onload = locationDetailsFadeIn();
+    function showPopUp() {
+        $(".cancel_cleaner_wrap").css("visibility", "visible");
+        $(".cancel_cleaner_popup").animate({
+            opacity: "1",
+        })
+    }
 
 
     // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES

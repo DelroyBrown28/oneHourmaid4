@@ -14,13 +14,23 @@
 
 <body id="maps_body">
 
+    <!--ANIMATED "BORDERS" FOR DESKTOP VIEW-->
     <div class="left_border"></div>
     <div class="right_border"></div>
+    <!--// ANIMATED "BORDERS" FOR DESKTOP VIEW-->
+
+    <!--CANCEL CLEANER POP UP-->
+
+    <div class="cancel_cleaner_wrap">
+        <!--visibility set to hiden, jquery sets to visible so opacity can be gradually brought in on pop up-->
+        <div class="cancel_cleaner_popup">
+            <h2 class="are_you_sure">Are You Sure?</h2>
+        </div>
+    </div>
+    <!--// CANCEL CLEANER POP UP-->
 
     <!--SLIDE INFO-->
     <div class="slide_info top_info__desktop">
-
-
         <div class="chosen_service_wrap">
 
             <div class="cleaner_will_be_wrap">
@@ -50,19 +60,17 @@
                     <!--number and type of rooms would be generated based on what the user selects-->
                 </div>
             </div>
-
             <div class="tap_for_map">Tap for map</div>
         </div>
     </div>
     <!--// SLIDE INFO-->
 
 
-    <!--OPEN/CLOSE SIDE INFO BUTTON-->
-
+    <!--OPEN/CLOSE SLIDE INFO BUTTON-->
     <div class="open_close_info_button">
         <img src="./assets/images/info_icon_gold.png" alt="" class="info_icon">
     </div>
-    <!--// OPEN/CLOSE SIDE INFO BUTTON-->
+    <!--// OPEN/CLOSE SLIDE INFO BUTTON-->
 
     <!--GOOGLE MAP API-->
     <div class="map_wrap">
@@ -71,7 +79,7 @@
     <!--// GOOGLE MAP API-->
 
     <!--CANCEL CLEANER BUTTON-->
-    <button class="cancel_cleaner_button" onClick="location.href='index.html'">CANCEL CLEANER</button>
+    <button class="cancel_cleaner_button">CANCEL CLEANER</button>
     <!--// CANCEL CLEANER BUTTON-->
 
 
