@@ -713,7 +713,7 @@ html {
     }
 
     .chosen_service,
-    .chosen_service__room_types {
+    #chosen_service__room_types {
         color: #EDC681;
         margin: 0;
         font-weight: 200;

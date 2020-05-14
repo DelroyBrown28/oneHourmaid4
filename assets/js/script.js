@@ -65,6 +65,8 @@ $(document).ready(function () {
 
     $(".cancel_cleaner_button").click(showPopUp);
 
+
+    // SHOWS AND HIDES POP UP ON MAPS API PAGE
     function showPopUp() {
         $(".cancel_cleaner_wrap").css("visibility", "visible");
         $(".cancel_cleaner_popup").animate({
@@ -73,6 +75,7 @@ $(document).ready(function () {
     }
 
     $(".cancel_cleaner_no").click(closePopup);
+
     function closePopup() {
         $(".cancel_cleaner_popup").animate({
             opacity: "0",
@@ -81,6 +84,7 @@ $(document).ready(function () {
     }
 
     $(".cancel_cleaner_yes").click(cancelCleaner);
+
     function cancelCleaner() {
         window.location.href = "index.html";
     }
@@ -93,6 +97,8 @@ $(document).ready(function () {
         nextArrow: $('.next_button'),
         prevArrow: $('.previous_button'),
     });
+
+    $(".next_button__rooms").click(getInputData);
 
 
 
@@ -117,8 +123,8 @@ function minusOneBedrooms() {
 }
 
 //INCREMENTS/DECREMENTS BATHROOMS BY 1
-function plusOneBathrooms() { //make sure onclick goes to this function
-    var addRoom = document.getElementById('rooms_amount_bathrooms'); //make sure input ID has this name
+function plusOneBathrooms() {
+    var addRoom = document.getElementById('rooms_amount_bathrooms');
     value = parseInt(addRoom.getAttribute('value'), 10) + 1;
     addRoom.setAttribute('value', value);
     addRoom.innerHTML = value;
@@ -148,6 +154,8 @@ function minusOneKitchens() {
     subtractRoom.innerHTML = value;
 
 }
+
+// MAPS API WITH STYLES
 
 var map, infoWindow;
 
@@ -315,3 +323,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         'Error: Your browser doesn\'t support geolocation.');
     infoWindow.open(map);
 }
+
+var getInputData = document.getElementById("rooms_amount_bedroom").value;
+document.getElementById("chosen_service__room_types").innerHTML = getInputData;
+
