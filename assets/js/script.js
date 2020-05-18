@@ -99,7 +99,6 @@ $(document).ready(function () {
 
 //INCREMENTS/DECREMENTS BEDROOMS BY 1
 
-
 function plusOneBedrooms() {
     var addRoom = document.getElementById('rooms_amount_bedroom');
     value = parseInt(addRoom.getAttribute('value'), 10) + 1;
@@ -320,4 +319,3 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
 //var getInputData = document.getElementById("rooms_amount_bedroom").value;
 //document.getElementById("chosen_service__room_types").innerHTML = getInputData;
-
