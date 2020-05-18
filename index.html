@@ -153,6 +153,19 @@
     <script src="./assets/js/slick.js"></script>
     <!--// SCRIPTS-->
 
+    <!--SLICK CAROUSEL-->
+    <script>
+        // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
+        $(".slick_wrap").slick({
+            dots: false,
+            nextArrow: $('.next_button'),
+            prevArrow: $('.previous_button'),
+        });
+
+        $(".next_button__rooms").click(getInputData);
+    </script>
+    <!--// SLICK CAROUSEL-->
+
 </body>
 
 </html>

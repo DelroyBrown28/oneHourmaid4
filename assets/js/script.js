@@ -91,14 +91,6 @@ $(document).ready(function () {
 
 
 
-    // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
-    $(".slick_wrap").slick({
-        dots: false,
-        nextArrow: $('.next_button'),
-        prevArrow: $('.previous_button'),
-    });
-
-    $(".next_button__rooms").click(getInputData);
 
 
 
@@ -324,6 +316,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.open(map);
 }
 
-var getInputData = document.getElementById("rooms_amount_bedroom").value;
-document.getElementById("chosen_service__room_types").innerHTML = getInputData;
+//var getInputData = document.getElementById("rooms_amount_bedroom").value;
+//document.getElementById("chosen_service__room_types").innerHTML = getInputData;
 
