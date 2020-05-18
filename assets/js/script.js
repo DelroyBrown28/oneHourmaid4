@@ -98,6 +98,8 @@ $(document).ready(function () {
 
 
 //INCREMENTS/DECREMENTS BEDROOMS BY 1
+
+
 function plusOneBedrooms() {
     var addRoom = document.getElementById('rooms_amount_bedroom');
     value = parseInt(addRoom.getAttribute('value'), 10) + 1;
