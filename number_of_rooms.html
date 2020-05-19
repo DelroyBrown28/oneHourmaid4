@@ -85,8 +85,11 @@
     <!--// SCRIPTS-->
 
     <script>
+        document.getElementById('input_info').addEventListener('click', function () {
+            let val = document.getElementById('rooms_amount_bedroom').value;
+            localStorage.setItem('input', val)
+        })    
 
-        localStorage.setItem()
     </script>
 
 </body>

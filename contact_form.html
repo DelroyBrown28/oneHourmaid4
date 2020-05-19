@@ -49,7 +49,7 @@
             onblur="this.placeholder = 'Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout...'"
             required></textarea>
 
-        <button class="submit_form_button" type="submit">FIND ME A
+        <button class="submit_form_button" type="submit" onclick="location.href='mapsAPI.html'">FIND ME A
             CLEANER</button>
     </form>
     <!--// LOCATION FORM-->
@@ -70,7 +70,7 @@
 
     <!--Sends contact form info to oneHourmaid, customer receives auto-reply if email address entered correctly-->
     <script>
-        function sendMail(contactForm) {
+        //function sendMail(contactForm) {
             emailjs.send("gmail", "contact_form", {
                     "full_name": contactForm.fullname.value,
                     "user_email": contactForm.emailAddress.value,
