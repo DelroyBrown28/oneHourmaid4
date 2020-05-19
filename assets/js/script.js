@@ -319,3 +319,5 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
 //var getInputData = document.getElementById("rooms_amount_bedroom").value;
 //document.getElementById("chosen_service__room_types").innerHTML = getInputData;
+
+

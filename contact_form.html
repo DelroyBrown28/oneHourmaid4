@@ -25,8 +25,8 @@
     <!--LOCATION FORM-->
     <form id="contact_form" onsubmit="return sendMail(this);">
 
-        <input type="text" name="fullname" class="form_inputs fullName_input" autocomplete="off"
-            placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required>
+        <input type="text" name="fullname" class="form_inputs fullName_input" autocomplete="off" placeholder="Full Name"
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required>
 
         <input type="text" name="emailAddress" class="form_inputs emailAddress_input" autocomplete="off"
             placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
@@ -65,6 +65,31 @@
         (function () {
             emailjs.init("user_zOJXdo5flT9TmEDrhagtW");
         })();
+    </script>
+
+
+    <!--Sends contact form info to oneHourmaid, customer receives auto-reply if email address entered correctly-->
+    <script>
+        function sendMail(contactForm) {
+            emailjs.send("gmail", "contact_form", {
+                    "full_name": contactForm.fullname.value,
+                    "user_email": contactForm.emailAddress.value,
+                    "street_address": contactForm.streetAddress.value,
+                    "town_city": contactForm.townCity.value,
+                    "user_postcode": contactForm.postcode.value,
+                    "clean_request": contactForm.cleanRequest.value,
+                })
+                .then(
+                    function (response) {
+                        console.log("SUCCESS", response);
+                        location.href = "mapsAPI.html";
+                    },
+                    function (error) {
+                        console.log("FAILED", error);
+                    }
+                );
+            return false;
+        }
     </script>
     <!--// SCRIPTS-->
 
