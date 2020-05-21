@@ -28,8 +28,8 @@
         <input type="text" name="fullname" class="form_inputs fullName_input" autocomplete="off" placeholder="Full Name"
             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required>
 
-        <input type="text" name="emailAddress" class="form_inputs emailAddress_input" autocomplete="off"
-            placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+        <input type="number" name="contactNumber" class="form_inputs emailAddress_input" autocomplete="off"
+            placeholder="Contact Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact Number'">
 
         <p class="cleaning_location_title">Cleaning Location:</p>
 
@@ -49,7 +49,7 @@
             onblur="this.placeholder = 'Please give a short description of your cleaning needs. i.e Washing dishes, vacuuming throughout...'"
             required></textarea>
 
-        <button class="submit_form_button" type="submit" onclick="location.href='mapsAPI.html'">FIND ME A
+        <button class="submit_form_button" type="submit">FIND ME A
             CLEANER</button>
     </form>
     <!--// LOCATION FORM-->
@@ -70,10 +70,10 @@
 
     <!--Sends contact form info to oneHourmaid, customer receives auto-reply if email address entered correctly-->
     <script>
-        //function sendMail(contactForm) {
+        function sendMail(contactForm) {
             emailjs.send("gmail", "contact_form", {
                     "full_name": contactForm.fullname.value,
-                    "user_email": contactForm.emailAddress.value,
+                    "contact_number": contactForm.contactNumber.value,
                     "street_address": contactForm.streetAddress.value,
                     "town_city": contactForm.townCity.value,
                     "user_postcode": contactForm.postcode.value,
@@ -85,7 +85,7 @@
                         location.href = "mapsAPI.html";
                     },
                     function (error) {
-                        console.log("FAILED", error);
+                        alert("FAILED", error);
                     }
                 );
             return false;
