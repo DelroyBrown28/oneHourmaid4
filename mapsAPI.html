@@ -104,6 +104,10 @@
         document.getElementById('chosen_service__room_types')
             .innerHTML = `Bedrooms: ${value1} Bathrooms: ${value2} Kitchens: ${value3}`;
 
+            if (value2 == null || value2 == "" || value2 == 0) {
+                alert("No rooms here!");
+            }
+
         const setBasicClean = localStorage.getItem("basicClean");
         const setDeepClean = localStorage.getItem("deepClean");
         const setMovingInOut = localStorage.getItem("movingInOut");
