@@ -86,10 +86,13 @@
 
     <script>
         document.getElementById('input_info').addEventListener('click', function () {
-            let val = document.getElementById('rooms_amount_bedroom').value;
-            localStorage.setItem('input', val)
-        })    
-
+            let val1 = document.getElementById('rooms_amount_bedroom').value;
+            let val2 = document.getElementById('rooms_amount_bathrooms').value;
+            let val3 = document.getElementById('rooms_amount_kitchens').value;
+            localStorage.setItem("input1", val1);
+            localStorage.setItem("input2", val2);
+            localStorage.setItem("input3", val3);
+        })
     </script>
 
 </body>

@@ -96,9 +96,12 @@
     <!--// SCRIPTS-->
 
     <script>
-        document.getElementById('chosen_service__room_types').innerHTML = localStorage.getItem('input');
-        document.getElementById('chosen_service__room_types').innerHTML = localStorage.getItem('input');
+        const value1 = localStorage.getItem('input1');
+        const value2 = localStorage.getItem('input2');
+        const value3 = localStorage.getItem('input3');
 
+        document.getElementById('chosen_service__room_types')
+            .innerHTML = `${value1} ${value2} ${value3}`;
     </script>
 
 
