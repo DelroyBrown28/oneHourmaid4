@@ -96,11 +96,13 @@
     <!--// SCRIPTS-->
 
     <script>
+        // grabs the type of service chosen on index page
+        // and displays in top slide down menu
         const value1 = localStorage.getItem('input1');
         const value2 = localStorage.getItem('input2');
         const value3 = localStorage.getItem('input3');
         document.getElementById('chosen_service__room_types')
-            .innerHTML = `${value1} ${value2} ${value3}`;
+            .innerHTML = `Bedrooms: ${value1} Bathrooms: ${value2} Kitchens: ${value3}`;
 
         const setBasicClean = localStorage.getItem("basicClean");
         const setDeepClean = localStorage.getItem("deepClean");

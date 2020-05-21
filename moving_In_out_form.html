@@ -25,10 +25,10 @@
     <!--MOVING IN/OUT FORM-->
     <form class="moving_contact_form" onsubmit="return sendMail(this);">
 
-        <input type="text" id="full_name_input" name="fullname" class="form_inputs__movingform" autocomplete="off"
+        <input type="text" id="full_name_input" value="" name="fullname" class="form_inputs__movingform" autocomplete="off"
             placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required>
 
-        <input type="number" name="contactNumber" class="form_inputs__movingform contact_number_input"
+        <input type="number" name="contactNumber" value="" class="form_inputs__movingform contact_number_input"
             autocomplete="off" placeholder="Contact Number" onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Contact Number'" required>
 
@@ -47,7 +47,7 @@
         <input class="form_inputs__movingform dateTime_input" name="requested_time " type="datetime-local"
             autocomplete="off" required>
 
-        <button id="submit_button__movingform">BOOK MY
+        <button id="submit_button__movingform" onclick="location.href='cleaner_is_booked.html'">BOOK MY
             CLEANER</button>
     </form>
     <!--// MOVING IN/OUT FORM-->
@@ -65,25 +65,16 @@
     </script>
 
     <script>
-        function sendMail(contactForm) {
-            emailjs.send("gmail", "contact_form", {
-                    "full_name": contactForm.fullname.value,
-                    "contact_number": contactForm.contactNumber.value,
-                    "street_address": contactForm.streetAddress.value,
-                    "town_city": contactForm.townCity.value,
-                    "user_postcode": contactForm.postcode.value,
-                })
-                .then(
-                    function (response) {
-                        console.log("SUCCESS", response);
-                        location.href = "cleaner_is_booked.html";
-                    },
-                    function (error) {
-                        console.log("FAILED", error);
-                    }
-                );
-            return false;
-        }
+
+        document.getElementById("submit_button__movingform").addEventListener("click", function() {
+            let userName = document.getElementById("full_name_input").value;
+            let userTownCity = document.getElementById("users_town_city").value;
+            let userBookedDate = document.getElementById("users_booked_date").value;
+            localStorage.setItem("userNameKey", userName);
+            localStorage.setItem("userTownCityKey", userTownCity);
+            localStorage.setItem("userBookedKey", userBookedDate);
+        })
+
     </script>
 
 

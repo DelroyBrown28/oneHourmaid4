@@ -24,7 +24,7 @@
     <!--CLEANER ARRIVAL INFORMATION-->
     <div class="cleaner_arrival_wrap">
         <div class="cleaner_arrival_info">
-            <h1 id="users_name">Hello, <span class="user_name_input"><em>Delroy.</em></span></h1>
+            <h1 id="users_name">Hello, <span class="user_name_input"></span></h1>
             <h1 class="cleaner_will_arrive_title">Your cleaner will arrive at:</h1>
             <p id="users_street_address">247 Bowerdean Road</p>
             <p id="users_town_city">High Wycombe</p>
@@ -57,6 +57,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <!--// SCRIPTS-->
+
+    <script>
+        const usersName = localStorage.getItem("userNameKey");
+        const usersTown = localStorage.getItem("userTownCityKey");
+        const usersBookedDate = localStorage.getItem("userBookedKey");
+
+        document.getElementById("user_name_input").innerHTML = `${usersName}`
+    </script>
 
 </body>
 
