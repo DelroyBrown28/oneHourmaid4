@@ -712,7 +712,7 @@ html {
         justify-content: space-evenly;
     }
 
-    .chosen_service,
+    #chosen_service,
     #chosen_service__room_types {
         color: #EDC681;
         margin: 0;

@@ -47,7 +47,7 @@
             <div class="your_service_wrap">
                 <h2 class="your_service">Your Service:</h2>
                 <div class="service_type_wrap">
-                    <p class="chosen_service">""</p>
+                    <p id="chosen_service"></p>
                     <!--service type would be generated based on what service the user selects-->
                 </div>
             </div>
@@ -99,9 +99,15 @@
         const value1 = localStorage.getItem('input1');
         const value2 = localStorage.getItem('input2');
         const value3 = localStorage.getItem('input3');
-
         document.getElementById('chosen_service__room_types')
             .innerHTML = `${value1} ${value2} ${value3}`;
+
+        const setBasicClean = localStorage.getItem("basicClean");
+        const setDeepClean = localStorage.getItem("deepClean");
+        const setMovingInOut = localStorage.getItem("movingInOut");
+        document.getElementById("chosen_service").innerHTML = `${setBasicClean}`;
+        document.getElementById("chosen_service").innerHTML = `${setDeepClean}`;
+        document.getElementById("chosen_service").innerHTML = `${setMovingInOut}`;
     </script>
 
 

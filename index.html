@@ -29,7 +29,8 @@
     <div class="slick_wrap">
 
         <a class="link_styles" href="./number_of_rooms.html">
-            <div class="basic_clean_wrap">
+
+            <div class="basic_clean_wrap" name="Basic Clean">
                 <img class="basic_clean_image" src="./assets/images/basiclean_mop.png" alt="">
                 <h1 class="basic_clean_title">OneHourmaid's<br>Basic Clean</h1>
                 <p class="basic_clean_blurb">
@@ -42,8 +43,9 @@
             </div>
         </a>
 
+
         <a class="link_styles" href="./number_of_rooms.html">
-            <div class="deep_clean_wrap">
+            <div class="deep_clean_wrap" name="Deep Clean">
                 <img class="deep_clean_image" src="./assets/images/deepclean_image.png" alt="">
                 <h1 class="deep_clean_title">OneHourmaid's<br>Deep Clean</h1>
                 <p class="deep_clean_blurb">
@@ -58,7 +60,9 @@
             </div>
         </a>
 
-        <div class="moving_in_out_wrap" onClick="location.href='moving_in_out_form.html'">
+
+
+        <div class="moving_in_out_wrap" name="Moving In/Out" onClick="location.href='moving_in_out_form.html'">
             <img class="moving_in_out_image" src="./assets/images/movinginout.png" alt="">
             <h1 class="moving_in_out_title">Property<br>Moving In/Out</h1>
             <p class="moving_in_out_blurb">
@@ -162,6 +166,26 @@
             prevArrow: $('.previous_button'),
         });
 
+        // GRABS BASIC CLEAN NAME AND STORES IN LOCALSTORAGE
+
+        $('.basic_clean_wrap').on('click', function () {
+            var BasicCleanValue = $(this).attr('name');
+            localStorage.setItem("basicClean", BasicCleanValue);
+        });
+
+        // GRABS DEEP CLEAN NAME AND STORES IN LOCALSTORAGE
+
+        $('.deep_clean_wrap').on('click', function () {
+            var DeepCleanValue = $(this).attr('name');
+            localStorage.setItem("deepClean", DeepCleanValue);
+        });
+
+        // GRABS MOVING IN/OUT NAME AND STORES IN LOCALSTORAGE
+
+        $('.moving_in_out_wrap').on('click', function () {
+            var movingInOutValue = $(this).attr('name');
+            localStorage.setItem("movingInOut", movingInOutValue);
+        });
     </script>
     <!--// SLICK CAROUSEL-->
 
