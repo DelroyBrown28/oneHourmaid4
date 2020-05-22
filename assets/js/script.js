@@ -72,6 +72,11 @@ $(document).ready(function () {
         $(".cancel_cleaner_popup").animate({
             opacity: "1",
         })
+        $(".slide_info").animate({
+            height: "5%",
+        });
+        $(".chosen_service_wrap").css("visibility", "hidden");
+        
     }
 
     $(".cancel_cleaner_no").click(closePopup);
@@ -80,6 +85,7 @@ $(document).ready(function () {
         $(".cancel_cleaner_popup").animate({
             opacity: "0",
         })
+        
         $(".cancel_cleaner_wrap").delay(2000).css("visibility", "hidden");
     }
 
@@ -319,5 +325,3 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
 //var getInputData = document.getElementById("rooms_amount_bedroom").value;
 //document.getElementById("chosen_service__room_types").innerHTML = getInputData;
-
-
