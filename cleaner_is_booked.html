@@ -24,14 +24,14 @@
     <!--CLEANER ARRIVAL INFORMATION-->
     <div class="cleaner_arrival_wrap">
         <div class="cleaner_arrival_info">
-            <h1 id="users_name">Hello, <span class="user_name_input"></span></h1>
+            <h1 id="users_name">Hello, <em><span id="user_name_input"></span></em></h1>
             <h1 class="cleaner_will_arrive_title">Your cleaner will arrive at:</h1>
-            <p id="users_street_address">247 Bowerdean Road</p>
-            <p id="users_town_city">High Wycombe</p>
+            <p id="users_street_address"></p>
+            <p id="users_town_city"></p>
             <hr class="cleaner_booked_line">
 
             <h1 class="date_of_arrival_title">On:</h1>
-            <p id="users_booked_date">02/04/2020 2:30pm</p>
+            <p id="users_booked_date"></p>
             <hr class="cleaner_booked_line">
 
             <h1 class="chosen_cleaner_title">Your cleaner will be:</h1>
@@ -59,11 +59,15 @@
     <!--// SCRIPTS-->
 
     <script>
-        const usersName = localStorage.getItem("userNameKey");
-        const usersTown = localStorage.getItem("userTownCityKey");
-        const usersBookedDate = localStorage.getItem("userBookedKey");
+        const usersName = !localStorage.getItem("userNameKey");
+        const usersAddress = !localStorage.getItem("userAddressKey");
+        const usersTownCity = !localStorage.getItem("userTownCityKey");
+        const usersBookingDate = !localStorage.getItem("userBookingKey");
 
-        document.getElementById("user_name_input").innerHTML = `${usersName}`
+        document.getElementById("user_name_input").innerHTML = `${usersName}`;
+        document.getElementById("users_street_address").innerHTML = `${usersAddress}`;
+        document.getElementById("users_town_city").innerHTML = `${usersTownCity}`;
+        document.getElementById("users_booked_date").innerHTML = `${usersBookingDate}`;
     </script>
 
 </body>

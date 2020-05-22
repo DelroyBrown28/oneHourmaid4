@@ -979,7 +979,7 @@ html {
 
     }
 
-    .user_name_input {
+    #user_name_input {
         font-weight: 200;
         opacity: 0;
 

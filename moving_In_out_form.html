@@ -23,31 +23,33 @@
     <!--// TOP CONTENTS-->
 
     <!--MOVING IN/OUT FORM-->
-    <form class="moving_contact_form" onsubmit="return sendMail(this);">
+    <form class="moving_contact_form">
 
-        <input type="text" id="full_name_input" value="" name="fullname" class="form_inputs__movingform" autocomplete="off"
-            placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required>
+        <input type="text" id="full_name_input" value="" name="fullname" class="form_inputs__movingform"
+            autocomplete="off" placeholder="Full Name" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Full Name'" required>
 
-        <input type="number" name="contactNumber" value="" class="form_inputs__movingform contact_number_input"
-            autocomplete="off" placeholder="Contact Number" onfocus="this.placeholder = ''"
-            onblur="this.placeholder = 'Contact Number'" required>
+        <input type="number" id="contact_number" name="contactNumber" value=""
+            class="form_inputs__movingform contact_number_input" autocomplete="off" placeholder="Contact Number"
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact Number'" required>
 
         <p class="cleaning_location_title__movingform">Details of cleaning location:</p>
 
-        <input type="text" name="streetAddress " class="form_inputs__movingform streetAddress_input" autocomplete="off"
-            placeholder="Street Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Street Address'"
-            required>
+        <input type="text" id="street_address" name="streetAddress " class="form_inputs__movingform streetAddress_input"
+            autocomplete="off" placeholder="Street Address" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Street Address'" required>
 
-        <input type="text" name="townCity " class="form_inputs__movingform townCity_input" autocomplete="off"
-            placeholder="Town/City" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Town/City'" required>
+        <input type="text" id="town_city" name="townCity " class="form_inputs__movingform townCity_input"
+            autocomplete="off" placeholder="Town/City" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Town/City'" required>
 
         <input type="text" name="postcode " class="form_inputs__movingform postcode_input" autocomplete="off"
             placeholder="Postcode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" required>
 
-        <input class="form_inputs__movingform dateTime_input" name="requested_time " type="datetime-local"
-            autocomplete="off" required>
+        <input class="form_inputs__movingform dateTime_input" id="booking_date" type="date" name="requested_time "
+            type="datetime-local" autocomplete="off" required>
 
-        <button id="submit_button__movingform" onclick="location.href='cleaner_is_booked.html'">BOOK MY
+        <button id="submit_button__movingform">BOOK MY
             CLEANER</button>
     </form>
     <!--// MOVING IN/OUT FORM-->
@@ -65,18 +67,27 @@
     </script>
 
     <script>
-
-        document.getElementById("submit_button__movingform").addEventListener("click", function() {
+        document.getElementById("submit_button__movingform").addEventListener("click", function () {
             let userName = document.getElementById("full_name_input").value;
-            let userTownCity = document.getElementById("users_town_city").value;
-            let userBookedDate = document.getElementById("users_booked_date").value;
-            localStorage.setItem("userNameKey", userName);
-            localStorage.setItem("userTownCityKey", userTownCity);
-            localStorage.setItem("userBookedKey", userBookedDate);
+            let userAddress = document.getElementById("street_address").value;
+            let userTownCity = document.getElementById("town_city").value;
+            let bookingDate = document.getElementById("booking_date").value;
+            !localStorage.setItem("userNameKey", userName);
+            !localStorage.setItem("userAddressKey", userAddress);
+            !localStorage.setItem("userTownCityKey", userTownCity);
+            !localStorage.setItem("userBookingKey", bookingDate);
+
         })
 
-    </script>
+        function changePage() {
+            $("#submit_button__movingform").click(function () {
+                location.href = "cleaner_is_booked.html";
 
+            })
+            setTimeout(changePage, 1000);
+
+        }
+    </script>
 
 
 
