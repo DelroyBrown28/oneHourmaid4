@@ -117,6 +117,7 @@ function minusOneBedrooms() {
 
 }
 
+
 //INCREMENTS/DECREMENTS BATHROOMS BY 1
 function plusOneBathrooms() {
     var addRoom = document.getElementById('rooms_amount_bathrooms');
