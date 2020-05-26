@@ -46,8 +46,8 @@
         <input type="text" name="postcode " class="form_inputs__movingform postcode_input" autocomplete="off"
             placeholder="Postcode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" required>
 
-        <input class="form_inputs__movingform dateTime_input" id="booking_date" type="date" name="requested_time "
-            type="datetime-local" autocomplete="off" required>
+        <input type="datetime-local" class="form_inputs__movingform dateTime_input" id="booking_date" name="requested_time "
+            autocomplete="off" required>
 
         <button id="submit_button__movingform">BOOK MY
             CLEANER</button>
@@ -76,17 +76,10 @@
             !localStorage.setItem("userAddressKey", userAddress);
             !localStorage.setItem("userTownCityKey", userTownCity);
             !localStorage.setItem("userBookingKey", bookingDate);
+            location.href = "cleaner_is_booked.html";
 
         })
 
-        function changePage() {
-            $("#submit_button__movingform").click(function () {
-                location.href = "cleaner_is_booked.html";
-
-            })
-            setTimeout(changePage, 1000);
-
-        }
     </script>
 
 

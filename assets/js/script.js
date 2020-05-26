@@ -28,6 +28,8 @@ $(document).ready(function () {
 
     }
 
+
+    
     // DELAYS APPEARANCE IN DESKTOP VIEW
 
     function fadeInOnload() {
@@ -63,10 +65,12 @@ $(document).ready(function () {
     }
     window.onload = addBorders();
 
-    $(".cancel_cleaner_button").click(showPopUp);
-
 
     // SHOWS AND HIDES POP UP ON MAPS API PAGE
+
+
+    $(".cancel_cleaner_button").click(showPopUp);
+
     function showPopUp() {
         $(".cancel_cleaner_wrap").css("visibility", "visible");
         $(".cancel_cleaner_popup").animate({
@@ -76,7 +80,7 @@ $(document).ready(function () {
             height: "5%",
         });
         $(".chosen_service_wrap").css("visibility", "hidden");
-        
+
     }
 
     $(".cancel_cleaner_no").click(closePopup);
@@ -85,7 +89,7 @@ $(document).ready(function () {
         $(".cancel_cleaner_popup").animate({
             opacity: "0",
         })
-        
+
         $(".cancel_cleaner_wrap").delay(2000).css("visibility", "hidden");
     }
 
@@ -291,7 +295,7 @@ function initMap() {
     });
     infoWindow = new google.maps.InfoWindow;
 
-    
+
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
             var pos = {
@@ -319,4 +323,3 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         'Error: Your browser doesn\'t support geolocation.');
     infoWindow.open(map);
 }
-

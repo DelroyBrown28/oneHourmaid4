@@ -59,10 +59,10 @@
     <!--// SCRIPTS-->
 
     <script>
-        const usersName = !localStorage.getItem("userNameKey");
-        const usersAddress = !localStorage.getItem("userAddressKey");
-        const usersTownCity = !localStorage.getItem("userTownCityKey");
-        const usersBookingDate = !localStorage.getItem("userBookingKey");
+        const usersName = localStorage.getItem("userNameKey");
+        const usersAddress = localStorage.getItem("userAddressKey");
+        const usersTownCity = localStorage.getItem("userTownCityKey");
+        const usersBookingDate = localStorage.getItem("userBookingKey");
 
         document.getElementById("user_name_input").innerHTML = `${usersName}`;
         document.getElementById("users_street_address").innerHTML = `${usersAddress}`;

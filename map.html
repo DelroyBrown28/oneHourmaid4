@@ -85,7 +85,6 @@
 
 
     <!--SCRIPTS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-marker-clusterer/1.0.0/markerclusterer_compiled.js">
@@ -104,14 +103,15 @@
         document.getElementById('chosen_service__room_types')
             .innerHTML = `Bedrooms: ${value1}<br>Bathrooms: ${value2}<br>Kitchens: ${value3}`;
 
-            if (value2 == null || value2 == "" || value2 == 0) {
-                alert("No rooms here!");
-            }
+        /*if (value2 == null || value2 == "" || value2 == 0) {
+            $('#chosen_service__room_types').text('0');
+        }*/
 
         const setBasicClean = localStorage.getItem("basicClean");
         const setDeepClean = localStorage.getItem("deepClean");
         const setMovingInOut = localStorage.getItem("movingInOut");
-        document.getElementById("chosen_service").innerHTML = `${setBasicClean}<br>${setDeepClean}<br>${setMovingInOut}`;
+        document.getElementById("chosen_service").innerHTML =
+        `${setBasicClean}<br>${setDeepClean}<br>${setMovingInOut}`;
     </script>
 
 
