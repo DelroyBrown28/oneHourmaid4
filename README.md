@@ -10,10 +10,13 @@ oneHourmaid was designed for working people or families that may not have the ti
 Designed in Figma, oneHourmaid keeps to a clean black and gold theme throughout.
 
 #### Index/Main Page
+![Image of basic clean mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/basic_clean_page.png)
+![Image of basic clean mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/deep_clean_page.png)
+![Image of basic clean mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/moving_in_out_page.png)
 
 
 
 ### Wireframes
-hello
+
 ### Features
 
