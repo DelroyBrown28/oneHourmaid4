@@ -7,6 +7,7 @@ oneHourmaid is a cleaning app designed to have a cleaner at your door with in mi
 oneHourmaid was designed for working people or families that may not have the time to focus on basic house chores. oneHourmaid can take care of all your in home cleaning needs quickly and effeciently. The app was made to be simple and straightforward as to remain relevant amongst all audiences. 
 
 ### Mockups/Project Skeleton
+Designed in Figma, oneHourmaid keeps to a black and gold theme
 
 
 ### Wireframes
