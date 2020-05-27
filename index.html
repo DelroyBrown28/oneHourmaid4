@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -169,24 +169,12 @@
 
         // GRABS BASIC CLEAN NAME AND STORES IN LOCALSTORAGE
 
-        $('.basic_clean_wrap, .basic_clean_wrap__desktop').on('click', function () {
-            var BasicCleanValue = $(this).attr('name');
-            localStorage.setItem("basicClean", BasicCleanValue);
-        });
+        $('.basic_clean_wrap, .basic_clean_wrap__desktop, .deep_clean_wrap, .deep_clean_wrap__desktop, .moving_in_out_wrap, .moving_in_out_wrap__desktop')
+            .on('click', function () {
+                var BasicCleanValue = $(this).attr('name');
+                localStorage.setItem("basicClean", BasicCleanValue);
+            });
 
-        // GRABS DEEP CLEAN NAME AND STORES IN LOCALSTORAGE
-
-        $('.deep_clean_wrap, .deep_clean_wrap__desktop').on('click', function () {
-            var DeepCleanValue = $(this).attr('name');
-            localStorage.setItem("deepClean", DeepCleanValue);
-        });
-
-        // GRABS MOVING IN/OUT NAME AND STORES IN LOCALSTORAGE
-
-        $('.moving_in_out_wrap, .moving_in_out_wrap__desktop').on('click', function () {
-            var movingInOutValue = $(this).attr('name');
-            localStorage.setItem("movingInOut", movingInOutValue);
-        });
     </script>
     <!--// SLICK CAROUSEL-->
 

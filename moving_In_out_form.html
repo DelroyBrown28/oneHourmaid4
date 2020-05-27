@@ -73,10 +73,10 @@
             let userAddress = document.getElementById("street_address").value;
             let userTownCity = document.getElementById("town_city").value;
             let bookingDate = document.getElementById("booking_date").value;
-            !localStorage.setItem("userNameKey", userName);
-            !localStorage.setItem("userAddressKey", userAddress);
-            !localStorage.setItem("userTownCityKey", userTownCity);
-            !localStorage.setItem("userBookingKey", bookingDate);
+            localStorage.setItem("userNameKey", userName);
+            localStorage.setItem("userAddressKey", userAddress);
+            localStorage.setItem("userTownCityKey", userTownCity);
+            localStorage.setItem("userBookingKey", bookingDate);
 
         })
 
