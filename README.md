@@ -9,14 +9,13 @@ oneHourmaid was designed for working people or families that may not have the ti
 ### Original Mockups/Project Skeleton
 Designed in Figma, oneHourmaid keeps to a clean black and gold theme throughout.
 
-#### Index/Main Pages
+#### Wireframes
+##### Index/Main Pages
 
 The Index/Main page has 3 options: Basic Clean, Deep Clean and Property Moving In/Out. I used [Ken Wheeler's](http://kenwheeler.github.io/) [Slick Carousel](https://kenwheeler.github.io/slick/) to create the swipe functionality between each service.
 
-![Image of basic clean mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/Basic%20Clean.png)
-![Image of deep clean mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/Deep%20Clean.png)
-![Image of moving in out page](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/Out.png)
-### Wireframes
+![Basic Clean Mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/basic_clean_page.png)
+
 
 ### Features
 
