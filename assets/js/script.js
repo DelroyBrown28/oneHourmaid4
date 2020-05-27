@@ -103,29 +103,35 @@ $(document).ready(function () {
 
     // INCREMENTS ROOMS BY 1
 
-    $('#addBedroom').click(function() {
+    $('#addBedroom').click(function () {
         $('#rooms_amount_bedroom').get(0).value++;
     })
 
-    $('#subtractBedroom').click(function() {
+    $('#subtractBedroom').click(function () {
+        let currentValue = $('#rooms_amount_bedroom').get(0).value;
+        if (currentValue == 0) return;
         $('#rooms_amount_bedroom').get(0).value--;
     })
 
 
-    $('#addBathroom').click(function() {
+    $('#addBathroom').click(function () {
         $('#rooms_amount_bathrooms').get(0).value++;
     })
 
-    $('#subtractBathroom').click(function() {
+    $('#subtractBathroom').click(function () {
+        let currentValue = $('#rooms_amount_bathrooms').get(0).value;
+        if (currentValue == 0) return;
         $('#rooms_amount_bathrooms').get(0).value--;
     })
 
 
-    $('#addKitchen').click(function() {
+    $('#addKitchen').click(function () {
         $('#rooms_amount_kitchens').get(0).value++;
     })
 
-    $('#subtractKitchen').click(function() {
+    $('#subtractKitchen').click(function () {
+        let currentValue = $('#rooms_amount_kitchens').get(0).value;
+        if (currentValue == 0) return;
         $('#rooms_amount_kitchens').get(0).value--;
     })
 
