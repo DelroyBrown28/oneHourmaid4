@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     // SHOWS AND HIDES INFO ON MAPS API PAGE
     $(".open_close_info_button").click(openSideInfo);
 
@@ -27,8 +26,6 @@ $(document).ready(function () {
 
 
     }
-
-
 
     // DELAYS APPEARANCE IN DESKTOP VIEW
 
@@ -136,8 +133,21 @@ $(document).ready(function () {
     })
 
 
-
 });
+
+// grabs the type of service chosen on index page
+// and displays in top slide down menu...maps.html
+const value1 = localStorage.getItem('input1');
+const value2 = localStorage.getItem('input2');
+const value3 = localStorage.getItem('input3');
+document.getElementById('chosen_service__room_types')
+    .innerHTML = `Bedrooms: ${value1}<br>Bathrooms: ${value2}<br>Kitchens: ${value3}`;
+
+const setBasicClean = localStorage.getItem("basicClean");
+const setDeepClean = localStorage.getItem("deepClean");
+const setMovingInOut = localStorage.getItem("movingInOut");
+document.getElementById("chosen_service").innerHTML =
+    `${setBasicClean}`;
 
 
 

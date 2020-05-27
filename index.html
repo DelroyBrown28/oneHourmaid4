@@ -158,16 +158,8 @@
     <script src="./assets/js/slick.js"></script>
     <!--// SCRIPTS-->
 
-    <!--SLICK CAROUSEL-->
     <script>
-        // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES
-        $(".slick_wrap").slick({
-            dots: false,
-            nextArrow: $('.next_button'),
-            prevArrow: $('.previous_button'),
-        });
-
-        // GRABS BASIC CLEAN NAME AND STORES IN LOCALSTORAGE
+        // GRABS CHOSEN SERVICE AND STORES IN LOCALSTORAGE
 
         $('.basic_clean_wrap, .basic_clean_wrap__desktop, .deep_clean_wrap, .deep_clean_wrap__desktop, .moving_in_out_wrap, .moving_in_out_wrap__desktop')
             .on('click', function () {
@@ -175,8 +167,14 @@
                 localStorage.setItem("basicClean", BasicCleanValue);
             });
 
+        // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES...INDEX.HTML
+        $(".slick_wrap").slick({
+            infinite: false,
+            dots: false,
+            nextArrow: $('.next_button'),
+            prevArrow: $('.previous_button'),
+        });
     </script>
-    <!--// SLICK CAROUSEL-->
 
 </body>
 
