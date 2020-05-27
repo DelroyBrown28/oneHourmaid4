@@ -18,6 +18,9 @@ The Index/Main page has 3 options: Basic Clean, Deep Clean and Property Moving I
 ![Deep Clean Mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/deep_clean_page.png)
 ![Moving In/Out Mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/moving_in_out_page.png)
 
+Originally it was a button tap/click that was needed to go through the 3 services, when adding the design to HTML/CSS i found it more intuitive to have the swipe functionality instead.
+![New index page](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/new_basic_clean.png)
+
 
 ### Features
 
