@@ -12,7 +12,7 @@ Designed in Figma, oneHourmaid keeps to a clean black and gold theme throughout.
 #### Index/Main Page
 ![Image of basic clean mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/basic_clean_page.png)
 ![Image of deep clean mockup]
-(https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/deep_clean_page.png)
+(https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/basic_clean_page.png)
 ![Image of moving in out mockup]
 (https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/moving_in_out_page.png)
 
