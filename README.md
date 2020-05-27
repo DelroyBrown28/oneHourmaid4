@@ -6,10 +6,13 @@ oneHourmaid is a cleaning app designed to have a cleaner at your door with in mi
 ## UX
 oneHourmaid was designed for working people or families that may not have the time to focus on basic house chores. oneHourmaid can take care of all your in home cleaning needs quickly and effeciently. The app was made to be simple and straightforward as to remain relevant amongst all audiences. 
 
-### Mockups/Project Skeleton
+### Original Mockups/Project Skeleton
 Designed in Figma, oneHourmaid keeps to a clean black and gold theme throughout.
 
 #### Index/Main Pages
+
+The Index/Main page has 3 options: Basic Clean, Deep Clean and Property Moving In/Out. I used [Ken Wheeler's](http://kenwheeler.github.io/) [Slick Carousel](https://kenwheeler.github.io/slick/) to create the swipe functionality between each service.
+
 ![Image of basic clean mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/Basic%20Clean.png)
 ![Image of deep clean mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/Deep%20Clean.png)
 ![Image of moving in out page](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/Out.png)
