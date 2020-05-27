@@ -70,7 +70,7 @@
         </div>
         <p class="to_select_service_text__rooms">Tap the <span class="gold_text">next arrow</span> to enter your details
         </p>
-        <div class="next_button__rooms" id="input_info" onClick="location.href='contact_form.html'">
+        <div class="next_button__rooms" id="input_info">
             <img src="./assets/images/next_arrow.png" alt="" class="next_arrow_icon__rooms">
         </div>
 
@@ -89,9 +89,14 @@
             let val1 = document.getElementById('rooms_amount_bedroom').value;
             let val2 = document.getElementById('rooms_amount_bathrooms').value;
             let val3 = document.getElementById('rooms_amount_kitchens').value;
+            if (val1 == 0 && val2 == 0 && val3 == 0) {
+                return; //stops user from going to the next page if values are set to 0
+            }
+
             localStorage.setItem("input1", val1);
             localStorage.setItem("input2", val2);
             localStorage.setItem("input3", val3);
+            location.href = 'contact_form.html';
         })
     </script>
 
