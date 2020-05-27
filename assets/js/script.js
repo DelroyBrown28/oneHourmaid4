@@ -29,7 +29,7 @@ $(document).ready(function () {
     }
 
 
-    
+
     // DELAYS APPEARANCE IN DESKTOP VIEW
 
     function fadeInOnload() {
@@ -100,60 +100,40 @@ $(document).ready(function () {
     }
 
 
+
+    // INCREMENTS ROOMS BY 1
+
+    $('#addBedroom').click(function() {
+        $('#rooms_amount_bedroom').get(0).value++;
+    })
+
+    $('#subtractBedroom').click(function() {
+        $('#rooms_amount_bedroom').get(0).value--;
+    })
+
+
+    $('#addBathroom').click(function() {
+        $('#rooms_amount_bathrooms').get(0).value++;
+    })
+
+    $('#subtractBathroom').click(function() {
+        $('#rooms_amount_bathrooms').get(0).value--;
+    })
+
+
+    $('#addKitchen').click(function() {
+        $('#rooms_amount_kitchens').get(0).value++;
+    })
+
+    $('#subtractKitchen').click(function() {
+        $('#rooms_amount_kitchens').get(0).value--;
+    })
+
+
+
 });
 
 
-//INCREMENTS/DECREMENTS BEDROOMS BY 1
-
-function plusOneBedrooms() {
-    var addRoom = document.getElementById('rooms_amount_bedroom');
-    value = parseInt(addRoom.getAttribute('value'), 10) + 1;
-    addRoom.setAttribute('value', value);
-    addRoom.innerHTML = value;
-
-}
-
-function minusOneBedrooms() {
-    var subtractRoom = document.getElementById('rooms_amount_bedroom');
-    value = parseInt(subtractRoom.getAttribute('value'), 10) - 1;
-    subtractRoom.setAttribute('value', value);
-    subtractRoom.innerHTML = value;
-
-}
-
-
-//INCREMENTS/DECREMENTS BATHROOMS BY 1
-function plusOneBathrooms() {
-    var addRoom = document.getElementById('rooms_amount_bathrooms');
-    value = parseInt(addRoom.getAttribute('value'), 10) + 1;
-    addRoom.setAttribute('value', value);
-    addRoom.innerHTML = value;
-
-}
-
-function minusOneBathrooms() {
-    var subtractRoom = document.getElementById('rooms_amount_bathrooms');
-    value = parseInt(subtractRoom.getAttribute('value'), 10) - 1;
-    subtractRoom.setAttribute('value', value);
-    subtractRoom.innerHTML = value;
-
-}
-//INCREMENTS/DECREMENTS KITCHENS BY 1
-function plusOneKitchens() {
-    var addRoom = document.getElementById('rooms_amount_kitchens');
-    value = parseInt(addRoom.getAttribute('value'), 10) + 1;
-    addRoom.setAttribute('value', value);
-    addRoom.innerHTML = value;
-
-}
-
-function minusOneKitchens() {
-    var subtractRoom = document.getElementById('rooms_amount_kitchens');
-    value = parseInt(subtractRoom.getAttribute('value'), 10) - 1;
-    subtractRoom.setAttribute('value', value);
-    subtractRoom.innerHTML = value;
-
-}
 
 // MAPS API WITH STYLES
 
