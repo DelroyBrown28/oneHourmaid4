@@ -43,6 +43,11 @@ The bottom left and right arrows will either take you back to the index/main pag
 
 
 ##### Location Details
-The [Location Details](https://delroybrown28.github.io/oneHourmaid4/location_details.html) page is a form the user must fill in with thieir Name, Address and Cleaning location. Once the "Find me a cleaner" button is clicked/tapped, this information is then sent via [Emailjs](https://www.emailjs.com/) to oneHourmaid (the cleaner) with the details of his/her next job.
+The [Location Details](https://delroybrown28.github.io/oneHourmaid4/location_details.html) page is a form the user must fill in with thieir Name, Address and Cleaning location. Once the "Find me a cleaner" button is clicked/tapped, this information is then sent via [Emailjs](https://www.emailjs.com/) to oneHourmaid (the cleaner) with the details of his/her next job. The User will also receive an email informing them that their cleaner is on the way.
 
 ![location details](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/locationdetailspage.png)
+![user side email](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/cleanersideemail.png)
+![cleaner side email](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/usersideemail.png)
+
+##### Map Page
+After entering your details and hitting "Find me a cleaner", your cleaner is on the way! The [Maps Page,](https://delroybrown28.github.io/oneHourmaid4/map.html) currently only shows the location of the user, in a future update this page will show both the users location and the location of the cleaner
