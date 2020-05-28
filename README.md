@@ -38,4 +38,5 @@ In a future project update this form will also send an email to oneHourmaid with
 The [How Many Rooms](https://delroybrown28.github.io/oneHourmaid4/number_of_rooms.html) page originally had 4 options, Bedrooms, Bathrooms, Kitchens and Other. I decided to simplify this by taking away the "Other" option. Each option has an up and down arrow button to increment or decrement the amount of rooms you wish to have cleaned for each.
 
 ![How many rooms](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/howManyRoomspage.png)
+
 The bottom left and right arrows will either take you back to the index/main page or on to the next age to enter your details.
