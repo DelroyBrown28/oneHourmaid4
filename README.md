@@ -23,6 +23,8 @@ Originally it was a button tap/click that was needed to go through the 3 service
 
 A tap or click on the image of each service will store the value of the chosen service in ```LocalStorage``` to be retrived on the final "maps.html" page. You can also tap the left or right arrows at the bottom of the screen the cycle through each choice.
 
+<img align="left" width="204" height="363" src="https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/new_movinginout.png">
+
 
 
 
