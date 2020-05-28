@@ -28,6 +28,7 @@ A tap or click on the image of each service will store the value of the chosen s
  ![new deep clean](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/newdeepclean.png)
 
 The Property Moving/InOut choice takes the user to a form to be filled out with the information of the location they would like the cleaner to arrive at. Along with a date and time, these choices will also be stored in the ```localStorage``` to be displayed on the next page.
+![new moving in](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/newmovingin.png)
 
 
 ### Features
