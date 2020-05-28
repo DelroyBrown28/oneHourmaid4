@@ -31,7 +31,7 @@
 
         <a class="link_styles" href="./number_of_rooms.html">
 
-            <div class="basic_clean_wrap" name="Basic Clean">
+            <div class="basic_clean_wrap" data-value="Basic Clean">
                 <img class="basic_clean_image" src="./assets/images/basiclean_mop.png" alt="">
                 <h1 class="basic_clean_title">OneHourmaid's<br>Basic Clean</h1>
                 <p class="basic_clean_blurb">
@@ -45,7 +45,7 @@
         </a>
 
         <a class="link_styles" href="./number_of_rooms.html">
-            <div class="deep_clean_wrap" name="Deep Clean">
+            <div class="deep_clean_wrap" data-value="Deep Clean">
                 <img class="deep_clean_image" src="./assets/images/deepclean_image.png" alt="">
                 <h1 class="deep_clean_title">OneHourmaid's<br>Deep Clean</h1>
                 <p class="deep_clean_blurb">
@@ -60,7 +60,7 @@
             </div>
         </a>
 
-        <div class="moving_in_out_wrap" name="Moving In/Out" onClick="location.href='./moving_in_out_form.html'">
+        <div class="moving_in_out_wrap" data-value="Moving In/Out" onClick="location.href='./moving_in_out_form.html'">
             <img class="moving_in_out_image" src="./assets/images/movinginout.png" alt="">
             <h1 class="moving_in_out_title">Property<br>Moving In/Out</h1>
             <p class="moving_in_out_blurb">
@@ -80,7 +80,7 @@
     <!--CENTER CONTENTS (desktop)-->
     <div class="services_wrap__desktop">
 
-        <div class="basic_clean_wrap__desktop" name="Basic Clean" onClick="location.href='number_of_rooms.html'">
+        <div class="basic_clean_wrap__desktop" data-value="Basic Clean" onClick="location.href='number_of_rooms.html'">
             <img src="./assets/images/basiclean_mop.png" alt="" class="basic_clean_image__desktop">
             <h1 class="basic_clean_title__desktop">OneHourmaid's<br>Basic Clean</h1>
             <p class="basic_clean_blurb__desktop">
@@ -92,7 +92,7 @@
             </p>
         </div>
 
-        <div class="deep_clean_wrap__desktop" name="Deep Clean" onClick="location.href='number_of_rooms.html'">
+        <div class="deep_clean_wrap__desktop" data-value="Deep Clean" onClick="location.href='number_of_rooms.html'">
             <img src="./assets/images/deepclean_image.png" alt="" class="deep_clean_image__desktop">
             <h1 class="deep_clean_title__desktop">OneHourmaid's<br>Deep Clean</h1>
             <p class="deep_clean_blurb__desktop">
@@ -102,7 +102,8 @@
             </p>
         </div>
 
-        <div class="moving_in_out_wrap__desktop" name="Moving In/Out" onClick="location.href='./moving_in_out_form.html'">
+        <div class="moving_in_out_wrap__desktop" data-value="Moving In/Out"
+            onClick="location.href='./moving_in_out_form.html'">
             <img class="moving_in_out_image__desktop" src="./assets/images/movinginout.png" alt="">
             <h1 class="moving_in_out_title__desktop">Property<br>Moving In/Out</h1>
             <p class="moving_in_out_blurb__desktop">
@@ -160,11 +161,11 @@
 
         $('.basic_clean_wrap, .basic_clean_wrap__desktop, .deep_clean_wrap, .deep_clean_wrap__desktop, .moving_in_out_wrap, .moving_in_out_wrap__desktop')
             .on('click', function () {
-                var BasicCleanValue = $(this).attr('name');
+                var BasicCleanValue = $(this).attr('data-value');
                 localStorage.setItem("basicClean", BasicCleanValue);
             });
 
-        // SLICK CAROUSEL FOR SWIPING THROUGH SERVICES...INDEX.HTML
+// SLICK CAROUSEL FOR SWIPING THROUGH SERVICES...INDEX.HTML
         $(".slick_wrap").slick({
             infinite: false,
             dots: false,
