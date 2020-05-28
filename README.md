@@ -39,4 +39,4 @@ The [How Many Rooms](https://delroybrown28.github.io/oneHourmaid4/number_of_room
 
 ![How many rooms](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/howManyRoomspage.png)
 
-The bottom left and right arrows will either take you back to the index/main page or on to the next age to enter your details.
+The bottom left and right arrows will either take you back to the index/main page or on to the next age to enter your details. Howver the user will not be able to proceed on to the next page until at least 1 room as been incremented.
