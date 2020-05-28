@@ -77,4 +77,7 @@ I used a mixture of pure Javascript and [JQuery](https://jquery.com/) for all of
 - Could not go from "index.html" to "moving_in_out_form.html" - **FIXED**<br>
 (moving_in_out_form.html was spelt differently in link)
 
+- On the "location_details.html" page, the inputted info was storing but not allowing you to go to the nextpage when clicking the next button - **FIXED**<br>
+(The "next" button had an ```onclick``` event that was trying to fire before the details were saved to ```localStorage```.)
+
 
