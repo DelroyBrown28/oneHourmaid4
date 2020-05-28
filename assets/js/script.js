@@ -54,11 +54,11 @@ $(document).ready(function () {
         }, 1000);
         $("#chosen_cleaner, .cleaner_avatar__cib").animate({
             opacity: "1",
-        }, 5000)
+        }, 5000);
         $(".chosen_cleaner__wrap").animate({
             borderLeftWidth: "4px",
             borderRightWidth: "4px",
-        }, 500)
+        }, 500);
     }
     window.onload = addBorders();
 
@@ -72,7 +72,7 @@ $(document).ready(function () {
         $(".cancel_cleaner_wrap").css("visibility", "visible");
         $(".cancel_cleaner_popup").animate({
             opacity: "1",
-        })
+        });
         $(".slide_info").animate({
             height: "5%",
         });
@@ -85,7 +85,7 @@ $(document).ready(function () {
     function closePopup() {
         $(".cancel_cleaner_popup").animate({
             opacity: "0",
-        })
+        });
 
         $(".cancel_cleaner_wrap").delay(2000).css("visibility", "hidden");
     }
@@ -102,50 +102,50 @@ $(document).ready(function () {
 
     $('#addBedroom').click(function () {
         $('#rooms_amount_bedroom').get(0).value++;
-    })
+    });
 
     $('#subtractBedroom').click(function () {
-        let currentValue = $('#rooms_amount_bedroom').get(0).value;
+        var currentValue = $('#rooms_amount_bedroom').get(0).value;
         if (currentValue == 0) return;
         $('#rooms_amount_bedroom').get(0).value--;
-    })
+    });
 
 
     $('#addBathroom').click(function () {
         $('#rooms_amount_bathrooms').get(0).value++;
-    })
+    });
 
     $('#subtractBathroom').click(function () {
-        let currentValue = $('#rooms_amount_bathrooms').get(0).value;
+        var currentValue = $('#rooms_amount_bathrooms').get(0).value;
         if (currentValue == 0) return;
         $('#rooms_amount_bathrooms').get(0).value--;
-    })
+    });
 
 
     $('#addKitchen').click(function () {
         $('#rooms_amount_kitchens').get(0).value++;
-    })
+    });
 
     $('#subtractKitchen').click(function () {
-        let currentValue = $('#rooms_amount_kitchens').get(0).value;
+        var currentValue = $('#rooms_amount_kitchens').get(0).value;
         if (currentValue == 0) return;
         $('#rooms_amount_kitchens').get(0).value--;
-    })
+    });
 
 
 });
 
 // grabs the type of service chosen on index page
 // and displays in top slide down menu...maps.html
-const value1 = localStorage.getItem('input1');
-const value2 = localStorage.getItem('input2');
-const value3 = localStorage.getItem('input3');
+var value1 = localStorage.getItem('input1');
+var value2 = localStorage.getItem('input2');
+var value3 = localStorage.getItem('input3');
 document.getElementById('chosen_service__room_types')
     .innerHTML = `Bedrooms: ${value1}<br>Bathrooms: ${value2}<br>Kitchens: ${value3}`;
 
-const setBasicClean = localStorage.getItem("basicClean");
-const setDeepClean = localStorage.getItem("deepClean");
-const setMovingInOut = localStorage.getItem("movingInOut");
+var setBasicClean = localStorage.getItem("basicClean");
+var setDeepClean = localStorage.getItem("deepClean");
+var setMovingInOut = localStorage.getItem("movingInOut");
 document.getElementById("chosen_service").innerHTML =
     `${setBasicClean}`;
 
