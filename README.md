@@ -59,3 +59,9 @@ The user can tap the small button at the top right of the map to access a small 
 ![cancel cleaner pop up](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/cancelcleanerpopup.png)
 
 When the "Cancel Cleaner" button is tapped/clicked, the User will be shown a pop up just to double check they really want to cancel. Clicking "No, i would not like to cancel" will keep you on the Maps page, clicking "Yes, i would like to cancel" will take you back to the Index/Main page.
+
+### Features Left To Implement
+
+In future updates i would like to:
+- Have the ability to geolocate both the user and cleaner.
+- Have a simple "Cleaners account" side of the app where the cleaner can sign in and see bookings and receive cleaning requests
