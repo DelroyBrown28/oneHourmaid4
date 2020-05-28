@@ -32,6 +32,8 @@ The Property Moving/InOut choice takes the user to a form to be filled out with 
 ![Moving form](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/movingform.png)
 ![Cleaner booked](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/cleanerbooked.png)
 
+In a future project update this form will also send an email to oneHourmaid with the details of the user, cleaning location and date. I can only have 1 email function at the moment and decided to use this on the ["location_details.html"]() page. 
+
 
 ### Features
 
