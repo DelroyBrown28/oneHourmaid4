@@ -82,3 +82,13 @@ I used a mixture of pure Javascript and [JQuery](https://jquery.com/) for all of
 
 - Wasn't receiving inputted details from "moving_in_out_form.html" vie Emailjs - **FIXED**<br>
 (Found out I can only have one email function per user key when using a free Emailjs account)
+
+# Credits
+
+- Image Credits<br>
+[Vector Stock](https://www.vectorstock.com/)
+
+# Deployment
+
+In order to launch you can ```git pull https://github.com/DelroyBrown28/oneHourmaid4.git``` or simply click the following link:<br>
+[oneHourmaid.](https://delroybrown28.github.io/oneHourmaid4/)
