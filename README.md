@@ -21,7 +21,7 @@ The Index/Main page has 3 options: Basic Clean, Deep Clean and Property Moving I
 
 Originally it was a button tap/click that was needed to go through the 3 services, when adding the design to HTML and CSS I found it<img align="right" width="204" height="363" src="https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/new_basic_clean.png"> more intuitive to have the swipe functionality instead.
 
-A tap or click on the image of each service will store the value of the chosen service in ```LocalStorage``` to be retrived on the final "maps.html" page. You can also tap the left or right arrows at the bottom of the screen the cycle through each choice.
+A tap or click on the image of each service will store the value of the chosen service in ```LocalStorage``` to be retrived on the final ["maps.html"](https://delroybrown28.github.io/oneHourmaid4/map.html) page *(please note: ifyou click this link the displayed info will return 'null')*. You can also tap the left or right arrows at the bottom of the screen the cycle through each choice.
 
 <img align="left" width="204" height="363" src="https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/new_movinginout.png"> The Property Moving/InOut choice takes the user to a form to be filled out with the iformation of the location they would like the cleaner to arrie at. Along with a date and time, these choices will also be stored in the ```localStorage``` to be displayed on the next page.
 
