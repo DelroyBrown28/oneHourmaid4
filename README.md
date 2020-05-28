@@ -23,7 +23,9 @@ Originally it was a button tap/click that was needed to go through the 3 service
 
 A tap or click on the image of each service will store the value of the chosen service in ```LocalStorage``` to be retrived on the final ["maps.html"](https://delroybrown28.github.io/oneHourmaid4/map.html) page. You can also tap the left or right arrows at the bottom of the screen the cycle through each choice.
  *(please note: if you click the 'maps.html' link on this page the displayed info will return 'null')*
+ 
  ![New basic clean](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/newbasicclean.png)
+ ![new deep clean](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/newdeepclean.png)
 
 The Property Moving/InOut choice takes the user to a form to be filled out with the information of the location they would like the cleaner to arrive at. Along with a date and time, these choices will also be stored in the ```localStorage``` to be displayed on the next page.
 
