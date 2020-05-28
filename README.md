@@ -56,4 +56,8 @@ After entering your details and hitting "Find me a cleaner", your cleaner is on 
 ![maps page](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/mapspage.png)
 ![slide down menu](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/mapspageslidedownmenu.png)
 
-The user can tap the small button at the top right of the map to access a small slide down menu which holds the details of the service the cleaner will carry out. These details include the tye of service, basic clean, deep clean etc. and the type of rooms to be cleaned. Also included is the hard coded cleaners name, this will be grabbed from the cleaners side of the app in a future update.
+The user can tap the small button at the top right of the map to access a small slide down menu which holds the details of the service the cleaner will carry out. These details include the type of service, basic clean, deep clean etc. and the type of rooms to be cleaned. Also included is the hard coded cleaners name, this will be grabbed from the cleaners side of the app in a future update.
+
+![cancel cleaner pop up](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/cancelcleanerpopup.png)
+
+When the "Cancel Cleaner" button is tapped/clicked, the User will be shown a pop up just to double check they really want to cancel. Clicking "No, i would not like to cancel" will keep you on the Maps page, clicking "Yes, i would like to cancel" will take you back to the Index/Main page.
