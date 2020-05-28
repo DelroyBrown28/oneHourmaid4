@@ -33,3 +33,8 @@ The Property Moving/InOut choice takes the user to a form to be filled out with 
 ![Cleaner booked](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/cleanerbooked.png)
 
 In a future project update this form will also send an email to oneHourmaid with the details of the user, cleaning location and date. I can only have 1 email function at the moment and decided to use this on the ["location_details.html"](https://delroybrown28.github.io/oneHourmaid4/location_details.html) page. The name and avatar of the cleaner is currently hard coded but will be grabbed from the cleaner side of the app in a future update as well.
+
+##### How Many Rooms Page
+The How Many Rooms page originally had 4 options, Bedrooms, Bathrooms, Kitchens and Other. I decided to simplify this but takeing away the "Other" option. Each option has an up and down arrow button to increment or decrement the amount of rooms you wish to have cleaned for each.
+
+![How many rooms](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/howManyRoomspage.png)
