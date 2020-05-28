@@ -80,4 +80,5 @@ I used a mixture of pure Javascript and [JQuery](https://jquery.com/) for all of
 - On the "location_details.html" page, the inputted info was storing but not allowing you to go to the nextpage when clicking the next button - **FIXED**<br>
 (The "next" button had an ```onclick``` event that was trying to fire before the details were saved to ```localStorage```.)
 
-
+- Wasn't receiving inputted details from "moving_in_out_form.html" vie Emailjs - **FIXED**<br>
+(Found out I can only have one email function per user key when using a free Emailjs account)
