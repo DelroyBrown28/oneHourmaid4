@@ -50,4 +50,6 @@ The [Location Details](https://delroybrown28.github.io/oneHourmaid4/location_det
 ![cleaner side email](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/usersideemail.png)
 
 ##### Map Page
-After entering your details and hitting "Find me a cleaner", your cleaner is on the way! The [Maps Page,](https://delroybrown28.github.io/oneHourmaid4/map.html) currently only shows the location of the user, in a future update this page will show both the users location and the location of the cleaner
+After entering your details and hitting "Find me a cleaner", your cleaner is on the way! The [Maps Page,](https://delroybrown28.github.io/oneHourmaid4/map.html) currently only shows the location of the user, in a future update this page will show both the users location and the location of the cleaner on route. I've used the Google Maps API to generate the map shown and added additional styles to match the theme of the app.
+
+![maps page](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/mapspage.png)
