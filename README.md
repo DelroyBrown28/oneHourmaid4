@@ -67,4 +67,6 @@ Project updates i would like to implement:
 - Have a simple "Cleaners account" side of the app where the cleaner can sign in and see bookings and receive cleaning requests.
 - Possibly find a way to send a text message to the User to inform them of the Cleaners arrival.
 
+## Technologies Used
 
+I used a mixture of pure Javascript and JQuery for all of the DOM manipulation eg. animating ```divs``` and storing info in ```localStorage```. As mentioned before I used [Ken Wheeler's](http://kenwheeler.github.io/) [Slick Carousel](https://kenwheeler.github.io/slick/) to create the swipe functionality between each service.
