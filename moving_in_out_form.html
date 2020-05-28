@@ -65,7 +65,9 @@
         })();
     </script>
 
+    
     <script>
+        // STORES INFO FROM FORM
         document.getElementById("submit_button__movingform").addEventListener("click", function () {
             let userName = document.getElementById("full_name_input").value;
             let userAddress = document.getElementById("street_address").value;
@@ -81,10 +83,10 @@
         $('#submit_button__movingform').click(function () {
             console.log('waiting...');
 
-            setTimeout(function() {
+            setTimeout(function () {
                 location.href = 'cleaner_is_booked.html';
             })
-        })       
+        })
     </script>
 
 </body>
