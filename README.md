@@ -62,6 +62,9 @@ When the "Cancel Cleaner" button is tapped/clicked, the User will be shown a pop
 
 ### Features Left To Implement
 
-In future updates i would like to:
+Project updates i would like to implement:
 - Have the ability to geolocate both the user and cleaner.
-- Have a simple "Cleaners account" side of the app where the cleaner can sign in and see bookings and receive cleaning requests
+- Have a simple "Cleaners account" side of the app where the cleaner can sign in and see bookings and receive cleaning requests.
+- Possibly find a way to send a text message to the User to inform them of the Cleaners arrival.
+
+
