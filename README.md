@@ -70,4 +70,10 @@ Project updates i would like to implement:
 
 ## Technologies Used
 
-I used a mixture of pure Javascript and [JQuery](https://jquery.com/) for all of the DOM manipulation eg. animating ```divs``` and storing info in ```localStorage```. As mentioned before I used [Ken Wheeler's](http://kenwheeler.github.io/) [Slick Carousel](https://kenwheeler.github.io/slick/) to create the swipe functionality between each service on the [Index/Main Page](https://delroybrown28.github.io/oneHourmaid4/)
+I used a mixture of pure Javascript and [JQuery](https://jquery.com/) for all of the DOM manipulation eg. animating ```divs``` and storing info in ```localStorage```. As mentioned before I used [Ken Wheeler's](http://kenwheeler.github.io/) [Slick Carousel](https://kenwheeler.github.io/slick/) to create the swipe functionality between each service on the [Index/Main Page.](https://delroybrown28.github.io/oneHourmaid4/)
+
+## Bugs
+
+- Could not go from "index.html" to "moving_in_out_form.html" - **FIXED** (moving_in_out_form.html was spelt differently in link)
+
+
