@@ -19,7 +19,7 @@ The Index/Main page has 3 options: Basic Clean, Deep Clean and Property Moving I
 ![Moving In/Out Mockup](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/moving_in_out_page.png)
 
 
-Originally it was a button tap/click that was needed to go through the 3 services, when adding the design to HTML and CSS I found it more intuitive to have the swipe functionality instead.<img align="right" width="204" height="363" src="https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/new_basic_clean.png">
+Originally it was a button tap/click that was needed to go through the 3 services, when adding the design to HTML and CSS I found it<img align="right" width="204" height="363" src="https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/new_basic_clean.png"> more intuitive to have the swipe functionality instead.
 
 A tap or click on the image of each service will store the value of the chosen service in ```LocalStorage``` to be retrived on the final "maps.html" page. You can also tap the left or right arrows at the bottom of the screen the cycle through each choice.
 
