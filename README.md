@@ -69,4 +69,4 @@ Project updates i would like to implement:
 
 ## Technologies Used
 
-I used a mixture of pure Javascript and JQuery for all of the DOM manipulation eg. animating ```divs``` and storing info in ```localStorage```. As mentioned before I used [Ken Wheeler's](http://kenwheeler.github.io/) [Slick Carousel](https://kenwheeler.github.io/slick/) to create the swipe functionality between each service.
+I used a mixture of pure Javascript and JQuery for all of the DOM manipulation eg. animating ```divs``` and storing info in ```localStorage```. As mentioned before I used [Ken Wheeler's](http://kenwheeler.github.io/) [Slick Carousel](https://kenwheeler.github.io/slick/) to create the swipe functionality between each service on the [Index/Main Page](https://delroybrown28.github.io/oneHourmaid4/)
