@@ -74,6 +74,7 @@ I used a mixture of pure Javascript and [JQuery](https://jquery.com/) for all of
 
 ## Bugs
 
-- Could not go from "index.html" to "moving_in_out_form.html" - **FIXED** (moving_in_out_form.html was spelt differently in link)
+- Could not go from "index.html" to "moving_in_out_form.html" - **FIXED**<br>
+(moving_in_out_form.html was spelt differently in link)
 
 
