@@ -27,7 +27,8 @@ A tap or click on the image of each service will store the value of the chosen s
  ![New basic clean](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/newbasicclean.png)
  ![new deep clean](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/newdeepclean.png)
 
-The Property Moving/InOut choice takes the user to a form to be filled out with the information of the location they would like the cleaner to arrive at. Along with a date and time, these choices will also be stored in the ```localStorage``` to be displayed on the next page.
+##### Property Moving In/Out
+The Property Moving In/Out choice takes the user to a form to be filled out with the information of the location they would like the cleaner to arrive at. Along with a date and time, these choices will also be stored in the ```localStorage``` to be displayed on the next page.
 
 ![Moving form](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/movingform.png)
 ![Cleaner booked](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/cleanerbooked.png)
@@ -39,7 +40,7 @@ The [How Many Rooms](https://delroybrown28.github.io/oneHourmaid4/number_of_room
 
 ![How many rooms](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/howManyRoomspage.png)
 
-The bottom left and right arrows will either take you back to the index/main page or on to the next page to enter your details. However the user will not be able to proceed on to the next page until at least 1 room as been incremented.
+The bottom left and right arrows will either take you back to the index/main page or on to the next page to enter your details. However the user will not be able to proceed on to the next page until at least 1 room has been incremented.
 
 
 ##### Location Details
@@ -50,4 +51,9 @@ The [Location Details](https://delroybrown28.github.io/oneHourmaid4/location_det
 ![cleaner side email](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/usersideemail.png)
 
 ##### Map Page
-After entering your details and hitting "Find me a cleaner", your cleaner is on the way! The [Maps Page,](https://delroybrown28.github.io/oneHourmaid4/map.html) currently only shows the location of the user, in a future update this page will show both the users location and the location of the cleaner
+After entering your details and hitting "Find me a cleaner", your cleaner is on the way! The [Maps Page,](https://delroybrown28.github.io/oneHourmaid4/map.html) currently only shows the location of the user, in a future update this page will show both the users location and the location of the cleaner on route. I've used the Google Maps API to generate the map shown and added additional styles to match the theme of the app.
+
+![maps page](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/mapspage.png)
+![slide down menu](https://github.com/DelroyBrown28/oneHourmaid4/blob/master/assets/images/README_images/mapspageslidedownmenu.png)
+
+The user can tap the small button at the top right of the map to access a small slide down menu which holds the details of the service the cleaner will carry out. These details include the tye of service, basic clean, deep clean etc. and the type of rooms to be cleaned. Also included is the hard coded cleaners name, this will be grabbed from the cleaners side of the app in a future update.
