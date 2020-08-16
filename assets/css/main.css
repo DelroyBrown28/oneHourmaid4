@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 body,
 html {
     overflow: hidden;
@@ -19,7 +12,7 @@ html {
     -ms-flex-flow: column;
     flex-flow: column;
     font-family: 'Lato', sans-serif;
-    background-color: #181717;
+    
 }
 
 
@@ -371,13 +364,10 @@ html {
         -ms-flex-pack: center;
         justify-content: center;
         cursor: pointer;
-        border-radius: 0px;
-        background: -o-linear-gradient(305deg, #1a1919, #161515);
-        background: linear-gradient(145deg, #1a1919, #161515);
-        -webkit-box-shadow: 5px 5px 0px #161515,
-            -5px -5px 0px #1a1919;
-        box-shadow: 5px 5px 0px #161515,
-            -5px -5px 0px #1a1919;
+        border-radius: 7px;
+        background: linear-gradient(145deg, #16242d, #131f26);
+        box-shadow: 5px 5px 10px #121d24,
+            -5px -5px 10px #182730;
     }
 
     .counter_down_arrow,
@@ -2135,13 +2125,9 @@ html {
         cursor: pointer;
         opacity: 0;
         border-radius: 0px;
-        background: -o-linear-gradient(305deg, #1a1919, #161515);
-        background: linear-gradient(145deg, #1a1919, #161515);
-        -webkit-box-shadow: 5px 5px 10px #161515,
-            -5px -5px 10px #1a1919;
-        box-shadow: 5px 5px 10px #161515,
-            -5px -5px 10px #1a1919;
-
+        background: linear-gradient(145deg, #16242d, #131f26);
+        box-shadow: 5px 5px 10px #142027,
+            -5px -5px 10px #16242d;
     }
 
     .basic_clean_title__desktop,
@@ -2541,15 +2527,12 @@ html {
 .basic_clean_wrap__desktop:active,
 .deep_clean_wrap__desktop:active,
 .moving_in_out_wrap__desktop:active {
-    border-radius: 0px;
-    background: -o-linear-gradient(305deg, #161515, #1a1919);
-    background: linear-gradient(145deg, #161515, #1a1919);
-    -webkit-box-shadow: 5px 5px 10px #161515,
-        -5px -5px 10px #1a1919;
-    box-shadow: 5px 5px 10px #161515,
-        -5px -5px 10px #1a1919;
     border-top: 1px solid #EDC68164;
     border-bottom: 1px solid #EDC68164;
+    border-radius: 0px;
+    background: #15222A;
+    box-shadow: inset 5px 5px 10px #142027,
+        inset -5px -5px 10px #16242d;
 }
 
 
@@ -2575,14 +2558,10 @@ html {
 
 .addRoom:active,
 .subtractRoom:active {
-    border-radius: 0px;
-    background: -o-linear-gradient(305deg, #161515, #1a1919);
-    background: linear-gradient(145deg, #161515, #1a1919);
-    -webkit-box-shadow: 5px 5px 0px #161515,
-        -5px -5px 0px #1a1919;
-    box-shadow: 5px 5px 0px #161515,
-        -5px -5px 0px #1a1919;
-
+    border-radius: 7px;
+    background: #15222A;
+    box-shadow: inset 5px 5px 10px #121d24,
+        inset -5px -5px 10px #182730;
 }
 
 .submit_form_button:active,

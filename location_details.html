@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
 </head>
 
-<body id="contact_form_body">
+<body id="contact_form_body" background="./assets/images/sunset_bg_full.png"
+style="background-repeat: no-repeat; background-position: center; background-size: cover;">
 
     <!--TOP CONTENTS-->
     <div class="top_contents_wrapper__form">
@@ -62,10 +63,9 @@
     <script src="./assets/js/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/sendEmail.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
     </script>
-    <script>
+    <!-- <script>
         (function () {
             emailjs.init("user_zOJXdo5flT9TmEDrhagtW");
         })();
@@ -73,7 +73,7 @@
 
 
     <!--Sends contact form info to oneHourmaid, customer receives auto-reply if email address entered correctly-->
-    <script>
+    <!-- <script>
         function sendMail(contactForm) {
             emailjs.send("gmail", "contact_form", {
                     "full_name": contactForm.fullname.value,
@@ -95,8 +95,8 @@
                 );
             return false;
         }
-    </script>
-    <!--// SCRIPTS-->
+    </script> --> -->
+   
 
 </body>
 
