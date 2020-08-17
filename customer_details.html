@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oneHourmaid - Customer Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo_gold.png" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
+
+</head>
+
+<body id="contact_form_body" background="./assets/images/sunset_bg_full.png"
+    style="background-repeat: no-repeat; background-position: center; background-size: cover;">
+
+    <!--TOP CONTENTS-->
+    <div class="top_contents_wrapper__form">
+        <img src="./assets/images/arrowleft.png" alt="" class="back_button"
+            onClick="location.href='number_of_rooms.html'">
+        <h1 class="location_details_title">Customer Details</h1>
+    </div>
+
+    <!--DETAILS FORM-->
+    <!--method="POST" action="{{ url_for('customer_details') }}"-->
+    <form id="customer_details_form"></form>>
+        <div class="row">
+            <div class="col s12">
+                <!--Users fullname-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="text" id="user_fullname" name="user_fullname" class="input_fields autocomplete">
+                        <label for="user_fullname">Full name</label>
+                    </div>
+                </div>
+                <!--Users contact number-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="number" id="user_contact" name="user_contact" class="input_fields autocomplete">
+                        <label for="user_contact">Contact number</label>
+                    </div>
+                </div>
+                <!--Users street address-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="text" id="user_address" name="user_address" class="input_fields autocomplete">
+                        <label for="user_address">Street address</label>
+                    </div>
+                </div>
+                <!--Users postcode-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="text" id="user_postcode" name="user_postcode" class="input_fields autocomplete">
+                        <label for="user_postcode">Postcode</label>
+                    </div>
+                </div>
+                <!--Users request message-->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea validate input_fields"></textarea>
+                        <label for="textarea1">Cleaning request</label>
+                    </div>
+                </div>
+                <button class="submit_form_btn" type="submit">Send Request</button>
+
+            </div>
+        </div>
+    </form>
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+
+
+</body>
+
+</html>
