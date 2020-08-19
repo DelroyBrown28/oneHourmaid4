@@ -17,11 +17,11 @@
 <body background="{{ url_for('static', filename='images/sunset_bg_full.png') }}"
     style="background-repeat: no-repeat; background-position: center; background-size: cover;">
 
-    
+
 
     <!--TOP CONTENTS-->
     <div class="top_contents_wrapper">
-       <h3 class="userside_title">oneHourmaid</h3>
+        <h3 class="userside_title">oneHourmaid</h3>
     </div>
     <!--TOP CONTENTS //-->
 
@@ -30,31 +30,31 @@
     <div class="slick_wrap">
 
 
-            <div class="basic_clean_wrap" data-value="Basic Clean">
-                <img class="basic_clean_image" src="{{ url_for('static', filename='images/basiclean_mop.png') }}" alt="">
-                <h1 class="basic_clean_title">OneHourmaid's<br>Basic Clean</h1>
-                <p class="basic_clean_blurb">
-                    Our Basic Clean consists of your general in<br>
-                    home clean, including washing
-                    dishes,<br>vacuuming throughout<br>
-                    (or specific rooms) mopping of kitchen,<br>
-                    wooden or ceramic floors.
-                </p>
-            </div>
+        <div class="basic_clean_wrap" data-value="Basic Clean">
+            <img class="basic_clean_image" src="{{ url_for('static', filename='images/basiclean_mop.png') }}" alt="">
+            <h1 class="basic_clean_title">OneHourmaid's<br>Basic Clean</h1>
+            <p class="basic_clean_blurb">
+                Our Basic Clean consists of your general in<br>
+                home clean, including washing
+                dishes,<br>vacuuming throughout<br>
+                (or specific rooms) mopping of kitchen,<br>
+                wooden or ceramic floors.
+            </p>
+        </div>
 
-            <div class="deep_clean_wrap" data-value="Deep Clean">
-                <img class="deep_clean_image" src="{{ url_for('static', filename='images/deepclean_image.png') }}" alt="">
-                <h1 class="deep_clean_title">OneHourmaid's<br>Deep Clean</h1>
-                <p class="deep_clean_blurb">
-                    Our Deep Clean consists of pulling out and<br>
-                    cleaning behind “white goods” i.e
-                    Washing<br>Maschines, Regridgerators, Cookers or any<br>heavy goods with in the house. We
-                    also<br>provide the
-                    choice of
-                    deep
-                    carpet and oven<br>cleans.
-                </p>
-            </div>
+        <div class="deep_clean_wrap" data-value="Deep Clean">
+            <img class="deep_clean_image" src="{{ url_for('static', filename='images/deepclean_image.png') }}" alt="">
+            <h1 class="deep_clean_title">OneHourmaid's<br>Deep Clean</h1>
+            <p class="deep_clean_blurb">
+                Our Deep Clean consists of pulling out and<br>
+                cleaning behind “white goods” i.e
+                Washing<br>Maschines, Regridgerators, Cookers or any<br>heavy goods with in the house. We
+                also<br>provide the
+                choice of
+                deep
+                carpet and oven<br>cleans.
+            </p>
+        </div>
 
         <div class="moving_in_out_wrap" data-value="Moving In/Out">
             <img class="moving_in_out_image" src="/static/images/movinginout.png" alt="">
@@ -70,11 +70,14 @@
                 clean and ready for you.
             </p>
         </div>
-
-
     </div>
-    <button id="choice_button"><span class="select_text">Tap to select</span></button>
 
+
+    <a href="{{ url_for('send_info') }}">
+        <button id="choice_button">
+            <span class="select_text">Tap to select</span>
+        </button>
+    </a>
     <!--CENTER CONTENTS (mobile and ipad) //-->
 
     <!--CENTER CONTENTS (desktop)-->
@@ -117,7 +120,7 @@
             </p>
         </div>
     </div>
-    
+
     <!--PICK OPTION BUTTON-->
 
 
@@ -132,7 +135,7 @@
             <img src="/static/images/next_arrow.png" alt="" class="next_arrow_icon">
         </div>
     </div>
-    
+
 
     <!--NEXT/PREV BUTTONS (IPAD)-->
     <div class="button_wrap__ipad">
@@ -173,6 +176,19 @@
             nextArrow: $('.next_button'),
             prevArrow: $('.previous_button'),
         });
+
+        // LINK TO CUSTOMER_DETAILS PAGE
+
+        // $('#choice_button').click(function () {
+        //     $('.select_text').fadeOut('fast', function () {
+        //         $('#choice_button').animate({
+        //             width: '0',
+        //             height: '0'
+        //         }, function () {
+        //             location.href = "customer_details.html";
+        //         })
+        //     })
+        // })
     </script>
 
 </body>

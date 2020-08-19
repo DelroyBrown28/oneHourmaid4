@@ -5,7 +5,8 @@ $(document).ready(function () {
     $('.basic_clean_wrap, .deep_clean_wrap, .moving_in_out_wrap').click(function () {
         $('#choice_button').fadeIn('fast', function () {
             $('#choice_button').animate({
-                width: '290px'
+                width: '290px',
+                height: '75px'
             }, function () {
                 $('.select_text').fadeIn('fast')
             })

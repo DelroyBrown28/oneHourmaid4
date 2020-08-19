@@ -172,7 +172,7 @@ html {
     #choice_button {
         position: absolute;
         width: 0px;
-        height: 75px;
+        height: 0px;
         align-self: center;
         bottom: 19%;
         border-radius: 100px;
