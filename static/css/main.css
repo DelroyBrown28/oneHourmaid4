@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
 body,
 html {
     overflow: hidden;
@@ -81,61 +83,14 @@ html {
 
     }
 
-    .index_logo {
-        width: 35px;
-        height: 35px;
-        -webkit-animation-name: logoSpin;
-        animation-name: logoSpin;
-        -webkit-animation-delay: 1000ms;
-        animation-delay: 1000ms;
-        -webkit-animation-duration: 10s;
-        animation-duration: 10s;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-    }
-
-    @-webkit-keyframes logoSpin {
-
-        0% {
-            -webkit-transform: rotate(0deg);
-            transform: rotate(0deg)
-        }
-
-        20% {
-            -webkit-transform: rotate(360deg);
-            transform: rotate(360deg)
-        }
-
-        100% {
-            -webkit-transform: rotate(360deg);
-            transform: rotate(360deg)
-        }
-    }
-
-    @keyframes logoSpin {
-
-        0% {
-            -webkit-transform: rotate(0deg);
-            transform: rotate(0deg)
-        }
-
-        20% {
-            -webkit-transform: rotate(360deg);
-            transform: rotate(360deg)
-        }
-
-        100% {
-            -webkit-transform: rotate(360deg);
-            transform: rotate(360deg)
-        }
-    }
-
-
-    .tap_to_select {
+    .userside_title {
         color: #fff;
-        font-size: 10px;
-        margin-top: 5px;
+        font-weight: 400;
+        font-family: 'Oswald', sans-serif;
+        font-size: 25px;
+
     }
+
 
     /*-----//  TOP CONTENTS-----*/
     /*-----SERVICE CONTENTS-----*/
@@ -151,6 +106,7 @@ html {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+
 
     }
 
@@ -210,6 +166,33 @@ html {
     }
 
     /*-----//  SERVICE CONTENTS-----*/
+
+    /*-----PICK OPTION BUTTON-----*/
+
+    #choice_button {
+        position: absolute;
+        width: 0px;
+        height: 75px;
+        align-self: center;
+        bottom: 19%;
+        border-radius: 100px;
+        border: none;
+        background-color: transparent;
+        border: 2px solid #EDC681;
+        color: #fff;
+        font-weight: 300;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+
+        display: none;
+        
+        
+    }
+
+    .select_text {
+        display: none;
+    }
+
     /*-----NEXT/PREVIOUS BUTTONS-----*/
     .button_wrap {
         position: relative;
@@ -1319,15 +1302,6 @@ html {
         height: 20%;
     }
 
-    .index_logo {
-        width: 60px;
-        height: 60px;
-    }
-
-    .tap_to_select {
-        font-size: 15px;
-    }
-
 
     /*---//  TOP CONTENTS---*/
     /*---SERVICE CONTENTS---*/
@@ -1679,14 +1653,7 @@ html {
 @media only screen and (min-device-width : 1024px) {
 
     /*---TOP CONTENTS---*/
-    .index_logo {
-        width: 100px;
-        height: 100px;
-    }
 
-    .tap_to_select {
-        font-size: 22px;
-    }
 
     /*---//  TOP CONTENTS---*/
     /*---SERVICE CONTENTS---*/
@@ -1952,14 +1919,6 @@ html {
 
     }
 
-    .index_logo {
-        width: 40px;
-        height: 40px;
-    }
-
-    .tap_to_select {
-        font-size: 13px;
-    }
 
     /*---//  TOP CONTENTS---*/
     /*---SERVICE CONTENTS---*/
