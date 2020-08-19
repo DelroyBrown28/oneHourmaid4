@@ -24,8 +24,7 @@
     </div>
 
     <!--DETAILS FORM-->
-    <!--method="POST" action="{{ url_for('customer_details') }}"-->
-    <form id="customer_details_form"></form>>
+    <form id="customer_details_form" method="POST" action="{{ url_for('submit_info') }}"></form>>
         <div class="row">
             <div class="col s12">
                 <!--Users fullname-->
@@ -59,7 +58,7 @@
                 <!--Users request message-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea validate input_fields"></textarea>
+                        <textarea id="textarea1 user_message" class="materialize-textarea validate input_fields"></textarea>
                         <label for="textarea1">Cleaning request</label>
                     </div>
                 </div>
