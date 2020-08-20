@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oneHourmaid - Customer Details</title>
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/oHmfavicon.png') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css">
@@ -13,60 +14,78 @@
 
 </head>
 
-<body background="{{ url_for('static', filename='images/sunset_bg_full.png') }}"
+<body id="contact_details_body" background="{{ url_for('static', filename='images/sunset_bg_full.png') }}"
     style="background-repeat: no-repeat; background-position: center; background-size: cover;">
 
     <!--TOP CONTENTS-->
     <div class="top_contents_wrapper__form">
         <img src="{{ url_for('static', filename='images/arrowleft.png') }}" alt="" class="back_button"
-            onClick="location.href='number_of_rooms.html'">
+            onClick="location.href = 'index.html'">
         <h1 class="location_details_title">Customer Details</h1>
     </div>
 
-    <!--DETAILS FORM-->
-    <form id="customer_details_form" method="POST"></form>>
-        <div class="row">
-            <div class="col s12">
-                <!--Users fullname-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input type="text" id="user_fullname" name="user_fullname" class="input_fields autocomplete">
-                        <label for="user_fullname">Full name</label>
-                    </div>
-                </div>
-                <!--Users contact number-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input type="number" id="user_contact" name="user_contact" class="input_fields autocomplete">
-                        <label for="user_contact">Contact number</label>
-                    </div>
-                </div>
-                <!--Users street address-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input type="text" id="user_address" name="user_address" class="input_fields autocomplete">
-                        <label for="user_address">Street address</label>
-                    </div>
-                </div>
-                <!--Users postcode-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input type="text" id="user_postcode" name="user_postcode" class="input_fields autocomplete">
-                        <label for="user_postcode">Postcode</label>
-                    </div>
-                </div>
-                <!--Users request message-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <textarea id="textarea1 user_message" class="materialize-textarea validate input_fields"></textarea>
-                        <label for="textarea1">Cleaning request</label>
-                    </div>
-                </div>
-                <button class="submit_form_btn" type="submit">Send Request</button>
+    <!--CUSTOMER DETAILS AND REQUEST FORM-->
 
+
+
+    <div class="row">
+        <form class="col s12" id="user_details_form">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="user_name" name="user_name" type="text" class="all_inputs validate">
+                    <label for="user_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="user_lname" name="user_lname" type="text" class="all_inputs validate">
+                    <label for="user_lname">Last Name</label>
+                </div>
             </div>
-        </div>
-    </form>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="user_street" name="user_street" type="text" class="all_inputs validate">
+                    <label for="user_street">Street Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="user_postcode" name="user_postcode" type="text" class="all_inputs validate">
+                    <label for="user_postcode">Postcode</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="user_contact" name="user_contact" type="number" class="all_inputs validate">
+                    <label for="user_contact">Contact Number</label>
+                </div>
+            </div>
+            <p class="choose_service_blurb">Please select the type of service<br>you require.</p>
+
+            <div class="choice_buttons">
+                <button class="service_choice_buttons z-depth-3" id="basic_clean_choice">
+                    <img src="{{ url_for('static', filename='images/basic_clean.png') }}" alt="" class="ser_card_img">
+                    Basic Clean</button>
+                <button class="service_choice_buttons z-depth-3" id="deep_clean_choice">
+                    <img src="{{ url_for('static', filename='images/deep_clean.png') }}" alt="" class="ser_card_img">
+                    Deep Clean</button>
+                <button class="service_choice_buttons z-depth-3" id="moving_choice">
+                    <img src="{{ url_for('static', filename='images/help_move.png') }}" alt="" class="ser_card_img">
+                    Moving In/Out</button>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="user_message" name="user_message" class="all_inputs materialize-textarea"></textarea>
+                            <label for="user_message">Cleaning Request</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="submit_user_form" class="z-depth-3">Request Cleaner</button>
+
+        </form>
+    </div>
 
 
 
@@ -78,7 +97,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
-
+    <script>
+        $('#user_message').on('blur', function () {
+            $('#submit_user_form').fadeIn('fast')
+        })
+    </script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
 
     // TAP TO SELECT BUTTON ANIMATION
 
