@@ -38,11 +38,18 @@ def send_info():
             "user_street": request.form.get("user_street"),
             "user_postcode": request.form.get("user_postcode"),
             "user_message": request.form.get("user_message"),
+            "user_date": request.form.get("user_date"),
         }
         mongo.db.user_details.insert_one(user_details)
+        flash("Request sent to cleaner")
         return redirect(url_for("send_info"))
     details = mongo.db.user_details.find().sort("category_name", 1)
-    return render_template("customer_details.html", details=details)
+    return render_template("customer_details.html", user_details=details)
+
+
+# @app.route("/request_sent", methods=["GET", "POST"])
+# def request_sent():
+#     return render_template("cleaner_requested.html")
 
 
 if __name__ == "__main__":

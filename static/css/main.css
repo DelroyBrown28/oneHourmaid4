@@ -91,6 +91,13 @@ html {
 
     }
 
+    .service_blurb {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+    }
+
 
     /*-----//  TOP CONTENTS-----*/
     /*-----SERVICE CONTENTS-----*/
@@ -172,17 +179,18 @@ html {
     #choice_button {
         position: absolute;
         width: 0px;
-        height: 0px;
+        height: 75px;
         align-self: center;
         bottom: 19%;
-        border-radius: 100px;
+        /* border-radius: 100px; */
         border: none;
-        background-color: transparent;
         border: 2px solid #EDC681;
+        background-color: #edc58144;
         color: #fff;
         font-weight: 300;
         font-size: 18px;
         font-family: 'Lato', sans-serif;
+        left: 35px;
 
         display: none;
 
@@ -428,7 +436,7 @@ html {
     }
 
     /*-----//  NEXT/PREVIOUS BUTTONS-----*/
-    /*---------** CONTACT FORM PAGE **---------*/
+    /*---------** CUSTOMER DETAILS PAGE **---------*/
 
     #contact_details_body {
         display: flex;
@@ -453,10 +461,6 @@ html {
         -ms-flex-pack: center;
         justify-content: center;
 
-        /* border: 1px solid red; */
-
-
-
     }
 
     .location_details_title {
@@ -473,9 +477,25 @@ html {
         height: 30px;
     }
 
+    #text_tag {
+        text-align: center;
+        width: 98px;
+        color: #fff;
+        font-size: 12px;
+        padding: 3px;
+        margin-top: 10px;
+        background-color: #b45f1993;
+    }
+
     /*-----//  TOP CONTENTS-----*/
 
     /*-------CUSTOMER DETAILS FORM-------*/
+
+    .form_wrap {
+        height: 90%;
+        display: flex;
+
+    }
 
     #user_details_form {
         width: 100%;
@@ -483,18 +503,13 @@ html {
         display: flex;
         flex-flow: column;
         margin-bottom: 35px;
-
-        /* border: 1px solid red; */
-
-
     }
 
-    .choose_service_blurb {
+    .customer_details_blurb {
         color: #fff;
-        text-align: center;
+        width: 85%;
         font-weight: 300;
-        font-size: 18px;
-        margin: 0;
+        text-align: center;
     }
 
     input {
@@ -535,27 +550,110 @@ html {
         margin: 15px 0px;
     }
 
+    .datepicker {
+        color: #EDC681;
+    }
+
+    .message_box {
+        margin: 0 auto;
+        width: 85%;
+        height: 150px;
+        margin-bottom: 25px;
+        display: flex;
+        background-color: #3b494c4d;
+        color: #fff;
+        text-align: center;
+        overflow: auto;
+
+        border: 1px solid #3B494C;
+    }
+
     #submit_user_form {
-        position: absolute;
+        position: relative;
         width: 290px;
         height: 45px;
         bottom: 40px;
         align-self: center;
-        background-color: transparent;
+        background-color: #3B494C;
         border: none;
-        border: 1px solid #edc5812f;
+        border: 1px solid #3B494C;
         color: #fff;
         font-weight: 300;
         font-size: 18px;
         font-family: 'Lato', sans-serif;
+        opacity: 0.3;
 
-        display: none;
+    }
 
+    .flash_messages {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        background-color: #fff;
+    }
+
+    .flash_text {
+        color: #000;
+        font-size: 22px;
+        font-weight: 500;
+        margin: 10px;
+    } 
+
+    .menu_wrap {
+        width: 85%;
+        height: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+
+    }
+
+    .request_sent_menu {
+        height: 85%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column;
 
 
     }
 
+    .req_menu_item {
+        width: 100%;
+        font-weight: 300;
+        font-size: 20px;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
 
+    }
+
+    .chat_icon {
+        height: 80px;
+        margin-top: 10px;
+    }
+
+    .home_btn {
+        width: 290px;
+        height: 45px;
+        color: #fff;
+        font-weight: 300;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+
+        background-color: #3b494c60;
+        border: 1px solid #3B494C;
+    }
     /*---------** MOVING IN/OUT PAGE **---------*/
 
     #moving_in_out_body {

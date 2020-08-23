@@ -1,13 +1,14 @@
 $(document).ready(function () {
-    
+
+
+
 
     // TAP TO SELECT BUTTON ANIMATION
 
     $('.basic_clean_wrap, .deep_clean_wrap, .moving_in_out_wrap').click(function () {
         $('#choice_button').fadeIn('fast', function () {
             $('#choice_button').animate({
-                width: '290px',
-                height: '75px'
+                width: '290px'
             }, function () {
                 $('.select_text').fadeIn('fast')
             })
@@ -160,5 +161,5 @@ document.getElementById('chosen_service__room_types')
 var setBasicClean = localStorage.getItem("basicClean");
 var setDeepClean = localStorage.getItem("deepClean");
 var setMovingInOut = localStorage.getItem("movingInOut");
-document.getElementById("chosen_service").innerHTML =
+document.getElementById("text_tag").innerHTML =
     `${setBasicClean}`;

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
 </head>
@@ -21,14 +20,19 @@
     <div class="top_contents_wrapper__form">
         <img src="{{ url_for('static', filename='images/arrowleft.png') }}" alt="" class="back_button"
             onClick="location.href = 'index.html'">
-        <h1 class="location_details_title">Customer Details</h1>
+        <h1 class="location_details_title">Customer Request Details</h1>
     </div>
+
+    <p class="customer_details_blurb">We'll need a few details before we can send a cleaner to your house. Please
+        fill out the form below and give a short description of your cleaning needs.</p>
+
+
+    <span id="text_tag">Basic Clean</span>
+
 
     <!--CUSTOMER DETAILS AND REQUEST FORM-->
 
-
-
-    <div class="row">
+    <div class="row form_wrap">
         <form class="col s12" id="user_details_form" method="POST">
             <div class="row">
                 <div class="input-field col s6">
@@ -43,7 +47,7 @@
             <div class="row">
                 <div class="input-field col s6">
                     <input id="user_street" name="user_street" type="text" class="all_inputs validate">
-                    <label for="user_street">Street Name</label>
+                    <label for="user_street">Street Name/Number</label>
                 </div>
                 <div class="input-field col s6">
                     <input id="user_postcode" name="user_postcode" type="text" class="all_inputs validate">
@@ -52,40 +56,62 @@
             </div>
 
             <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s6">
                     <input id="user_contact" name="user_contact" type="number" class="all_inputs validate">
                     <label for="user_contact">Contact Number</label>
                 </div>
-            </div>
-            <p class="choose_service_blurb">Please select the type of service<br>you require.</p>
+                <div class="input-field col s6">
+                    <input id="user_date" name="user_date" minlength="5" maxlength="50" type="text"
+                        class="datepicker validate">
+                    <label for="user_date">Choose a date</label>
+                </div>
 
-            <div class="choice_buttons">
-                <button class="service_choice_buttons z-depth-3" id="basic_clean_choice">
-                    <img src="{{ url_for('static', filename='images/basic_clean.png') }}" alt="" class="ser_card_img">
-                    Basic Clean</button>
-                <button class="service_choice_buttons z-depth-3" id="deep_clean_choice">
-                    <img src="{{ url_for('static', filename='images/deep_clean.png') }}" alt="" class="ser_card_img">
-                    Deep Clean</button>
-                <button class="service_choice_buttons z-depth-3" id="moving_choice">
-                    <img src="{{ url_for('static', filename='images/help_move.png') }}" alt="" class="ser_card_img">
-                    Moving In/Out</button>
             </div>
 
             <div class="row">
                 <div class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
-                            <textarea id="user_message" name="user_message" class="all_inputs materialize-textarea"></textarea>
+                            <textarea id="user_message" name="user_message"
+                                class="all_inputs materialize-textarea"></textarea>
                             <label for="user_message">Cleaning Request</label>
                         </div>
                     </div>
                 </div>
             </div>
-
             <button type="submit" id="submit_user_form" class="z-depth-3">Request Cleaner</button>
-
         </form>
     </div>
+
+    <section>
+        <!--Flash messages-->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for messages in messages %}
+        <div class="row flashes flash_messages z-depth-2">
+            <h1 class="center-align flash_text">{{ messages }}</h1>
+            <div class="menu_wrap">
+                <ul class="request_sent_menu">
+                    <li class="req_menu_item">Chat with cleaner<br>
+                        <img src="{{ url_for('static', filename='images/chat_icon.png') }}" alt="" class="chat_icon">
+                    </li>
+                    <li class="req_menu_item">Edit Request<br>
+                        <img src="{{ url_for('static', filename='images/makeedit_icon.png') }}" alt="" class="chat_icon">
+                    </li>
+                    <li class="req_menu_item">Delete Request<br>
+                        <img src="{{ url_for('static', filename='images/delete_icon.png') }}" alt="" class="chat_icon">
+                    </li>
+                </ul>
+                <a href="{{ url_for('index') }}"><button class="home_btn">Home</button></a>
+
+            </div>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </section>
+
+
 
 
 
@@ -99,8 +125,21 @@
 
     <script>
         $('#user_message').on('blur', function () {
-            $('#submit_user_form').fadeIn('fast')
+            $('#submit_user_form').animate({
+                opacity: '1'
+            })
         })
+
+        // INITIALIZE DATEPICKER
+
+        $('.datepicker').datepicker({
+            format: "dd mmmm, yyyy",
+            yearRange: 3,
+            showClearBtn: true,
+            i18n: {
+                done: "select"
+            }
+        });
     </script>
 </body>
 
